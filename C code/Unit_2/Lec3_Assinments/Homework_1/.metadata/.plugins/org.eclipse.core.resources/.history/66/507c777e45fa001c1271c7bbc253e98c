@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: 2 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include<stdlib.h>
+
+int main(){
+	float a,b,temp;
+
+	printf("Enter value of a: ");
+	fflush(stdout);
+	scanf("%f",&a);
+	fflush(stdout);fflush(stdin);
+
+	printf("Enter value of b: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%f",&b);
+
+	temp = a; a = b; b = temp;
+
+	printf("After swapping, value of a = %f",a);
+	fflush(stdout);
+	printf("After swapping, value of b = %f",b);
+
+	return 0;
+}
+

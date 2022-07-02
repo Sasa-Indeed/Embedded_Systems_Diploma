@@ -1,0 +1,98 @@
+21:34:46 **** Rebuild of configuration Debug for project 1-C Program to Print a Sentence ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-C Program to Print a Sentence.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+21:35:06 **** Incremental Build of configuration Debug for project 1-C Program to Print a Sentence ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-C Program to Print a Sentence.exe" main.o 
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 1-C Program to Print a Sentence
+21:46:39 **** Rebuild of configuration Debug for project 2-Print a Integer Entered by a User ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:11:6: warning: unused variable 'x' [-Wunused-variable]
+  int x =0;
+      ^
+gcc -ansi -std=c89 -o "2-Print a Integer Entered by a User.exe" main.o 
+21:47:08 **** Incremental Build of configuration Debug for project 2-Print a Integer Entered by a User ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Print a Integer Entered by a User.exe" main.o 
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+21:53:02 **** Rebuild of configuration Debug for project 3-Add Two Integers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Add Two Integers.exe" main.o 
+21:53:14 **** Incremental Build of configuration Debug for project 3-Add Two Integers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Add Two Integers.exe" main.o 
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 3-Add Two Integers
+21:57:19 **** Rebuild of configuration Debug for project 4-Multiply two Floating Point Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Multiply two Floating Point Numbers.exe" main.o 
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 3-Add Two Integers
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+22:13:47 **** Rebuild of configuration Debug for project 5-Find ASCII Value of a Character ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Find ASCII Value of a Character.exe" main.o 
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 3-Add Two Integers
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+22:14:11 **** Incremental Build of configuration Debug for project 5-Find ASCII Value of a Character ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Find ASCII Value of a Character.exe" main.o 
+Info: Nothing to build for 5-Find ASCII Value of a Character
+22:14:34 **** Incremental Build of configuration Debug for project 5-Find ASCII Value of a Character ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Find ASCII Value of a Character.exe" main.o 
+Info: Nothing to build for 5-Find ASCII Value of a Character
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 3-Add Two Integers
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+Info: Nothing to build for 5-Find ASCII Value of a Character
+22:27:33 **** Rebuild of configuration Debug for project 6-Swap Two Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "6-Swap Two Numbers.exe" main.o 
+Info: Nothing to build for 6-Swap Two Numbers
+22:28:14 **** Incremental Build of configuration Debug for project 6-Swap Two Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "6-Swap Two Numbers.exe" main.o 
+Info: Nothing to build for 1-C Program to Print a Sentence
+Info: Nothing to build for 2-Print a Integer Entered by a User
+Info: Nothing to build for 3-Add Two Integers
+Info: Nothing to build for 4-Multiply two Floating Point Numbers
+Info: Nothing to build for 5-Find ASCII Value of a Character
+Info: Nothing to build for 6-Swap Two Numbers
+22:36:53 **** Rebuild of configuration Debug for project 7-Swap Two Numbers without temp variable ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "7-Swap Two Numbers without temp variable.exe" main.o 
+Info: Nothing to build for 7-Swap Two Numbers without temp variable
+Info: Nothing to build for 7-Swap Two Numbers without temp variable
+Info: Nothing to build for 5-Find ASCII Value of a Character
+Info: Nothing to build for 5-Find ASCII Value of a Character
+Info: Nothing to build for 5-Find ASCII Value of a Character
+Info: Nothing to build for 5-Find ASCII Value of a Character

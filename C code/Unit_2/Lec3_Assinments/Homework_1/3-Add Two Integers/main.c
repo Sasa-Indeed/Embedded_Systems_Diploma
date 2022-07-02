@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: 2 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int x,y;
+	printf("Enter two integers: ");
+	fflush(stdout);
+	scanf("%d%d",&x,&y);
+	printf("Sum: %d",(x+y));
+	return 0;
+}
+
