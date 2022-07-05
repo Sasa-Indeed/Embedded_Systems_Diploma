@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: 5 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	float matrix [2][2];
+	int i,j;
+
+
+	printf("Enter elements of 1st matrix\n");
+		fflush(stdout);
+		for(i = 0; i < 2; ++i){
+			for(j = 0; j < 2; ++j){
+				printf("Enter a%d%d: ",(i+1),(j+1));
+				fflush(stdout);fflush(stdin);
+				scanf("%f",&matrix[i][j]);
+			}
+		}
+
+
+
+	return 0;
+}

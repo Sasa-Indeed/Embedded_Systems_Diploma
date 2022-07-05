@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1-Frequency of Characters.exe,org.eclipse.launchbar.core.descriptorType.default\:2-Length of a string.exe,org.eclipse.launchbar.core.descriptorType.default\:3-Reverse String.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1-Frequency\ of\ Characters.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1-Frequency\ of\ Characters.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

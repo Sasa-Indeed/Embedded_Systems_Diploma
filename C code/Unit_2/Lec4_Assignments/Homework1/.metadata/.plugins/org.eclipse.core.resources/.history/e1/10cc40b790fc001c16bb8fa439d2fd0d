@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: 5 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	int i = 0, Asize, data [100], number, index;
+
+	printf("Enter no of elements : ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d", &Asize);
+	for(i = 0; i < Asize; ++i){
+		fflush(stdout);fflush(stdin);
+		scanf("%f", &data[i]);
+	}
+
+	for(i = 0; i < Asize; ++i){
+
+	}
+	average /= Asize;
+	printf("Average = %.2f",average);
+
+
+	return 0;
+}
+

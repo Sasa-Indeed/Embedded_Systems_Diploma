@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:1-Matrix Sum.exe,org.eclipse.launchbar.core.descriptorType.default\:2-Calculate Average.exe,org.eclipse.launchbar.core.descriptorType.default\:3-Transpose Matrix.exe,org.eclipse.launchbar.core.descriptorType.default\:4-Inseret an Element.exe,org.eclipse.launchbar.core.descriptorType.default\:5-Find an Element.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1-Matrix\ Sum.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1-Matrix\ Sum.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

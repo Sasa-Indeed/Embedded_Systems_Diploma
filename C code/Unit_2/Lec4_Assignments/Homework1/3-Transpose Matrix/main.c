@@ -1,0 +1,56 @@
+/*
+ * main.c
+ *
+ *  Created on: 5 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	int i, j, row, col, Imatrix [20][20], Tmatrix [20][20];;
+
+	printf("Enter rows and column of matrix: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d%d",&row,&col);
+
+	printf("Enter elements of matrix\n");
+	for(i = 0; i < row; ++i){
+		for(j = 0; j < col; ++j){
+			printf("Enter a%d%d: ",(i+1),(j+1));
+			fflush(stdout);fflush(stdin);
+			scanf("%d",&Imatrix[i][j]);
+		}
+	}
+
+	printf("Entered Matrix:\n");
+	fflush(stdout);
+	for(i = 0; i < row; ++i){
+		for(j = 0; j < col; ++j){
+			printf("%d  ",Imatrix[i][j]);
+			fflush(stdout);
+		}
+		printf("\n\n");
+		fflush(stdout);
+	}
+
+	printf("Transpose of Matrix:\n");
+	fflush(stdout);
+	for(i = 0; i < row; ++i){
+		for(j = 0; j < col; ++j){
+			Tmatrix[j][i] = Imatrix[i][j];
+		}
+	}
+
+	for(i = 0; i < col; ++i){
+		for(j = 0; j < row; ++j){
+			printf("%d  ",Tmatrix[i][j]);
+			fflush(stdout);
+		}
+		printf("\n\n");
+		fflush(stdout);
+	}
+
+	return 0;
+}
