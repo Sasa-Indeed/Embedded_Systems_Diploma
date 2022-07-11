@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  11 Jul 2022
+ *      Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+double powerClac(double base, int pow);
+
+int main(){
+	int power;
+	double number;
+
+	printf("Enter base number: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%f",&number);
+	printf("Enter power number(positive integer): ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&power);
+
+	printf("%f^%f = %f", number, number, poweClac(number));
+
+
+	return 0;
+}
+
+double powerClac(double base, int pow){
+	if(pow == 0){
+		return 1;
+	}else{
+		return base * powerClac(base,pow-1);
+	}
+}

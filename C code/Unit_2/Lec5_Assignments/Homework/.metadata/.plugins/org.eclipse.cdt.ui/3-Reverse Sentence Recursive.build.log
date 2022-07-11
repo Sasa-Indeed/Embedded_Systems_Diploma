@@ -1,0 +1,7 @@
+11:25:14 **** Incremental Build of configuration Debug for project 3-Reverse Sentence Recursive ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse Sentence Recursive.exe" main.o 
+
+11:25:15 Build Finished (took 741ms)
+

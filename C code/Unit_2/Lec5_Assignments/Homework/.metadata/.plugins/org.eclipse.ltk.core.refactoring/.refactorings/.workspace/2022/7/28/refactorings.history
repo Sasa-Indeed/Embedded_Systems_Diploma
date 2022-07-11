@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;3-Reverse Sentence Recursive&apos;" deleteContents="true" description="Delete resource &apos;3-Reverse Sentence Recursive&apos;" element1="/3-Reverse Sentence Recursive" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1657530918645"/>
+</session>

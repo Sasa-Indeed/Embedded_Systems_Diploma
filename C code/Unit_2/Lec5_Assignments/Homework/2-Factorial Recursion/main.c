@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  11 Jul 2022
+ *      Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int factorial(int num);
+
+int main(){
+	int x =0;
+
+	printf("Enter an positive integer: ");
+	fflush(stdout);fflush(stdin);
+	scanf("%d",&x);
+
+	printf("Factorial of %d = %d", x, factorial(x));
+
+	return 0;
+}
+
+int factorial(int num){
+	if(num == 0 || num == 1)
+		return 1;
+	else
+		return num * factorial(num-1);
+}

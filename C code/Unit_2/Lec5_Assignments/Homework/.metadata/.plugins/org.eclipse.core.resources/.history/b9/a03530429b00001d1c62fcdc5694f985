@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  10 Jul 2022
+ *      Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int isPrime(int num);
+
+
+int main(){
+
+
+	return 0;
+}
+
+
+int isPrime(int num){
+	int i, x = num\2;
+
+	if(num == 1 || num ==0)
+		return 0;
+
+	for(i = 2 ; i <= x; ++i){
+		if(num%i ==0)
+			return 0;
+	}
+
+	return 1;
+}

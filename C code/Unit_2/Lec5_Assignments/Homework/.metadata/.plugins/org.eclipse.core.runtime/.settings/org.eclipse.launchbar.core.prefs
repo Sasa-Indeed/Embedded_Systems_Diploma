@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:3-Reverse Sentence Recursive.exe,org.eclipse.launchbar.core.descriptorType.default\:1-Prime Numbers.exe,org.eclipse.launchbar.core.descriptorType.default\:2-Factorial Recursion.exe,org.eclipse.launchbar.core.descriptorType.default\:4-Power Calculation Recursive.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:1-Prime\ Numbers.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:1-Prime\ Numbers.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:3-Reverse\ Sentence\ Recursive.exe/activeLaunchMode=run

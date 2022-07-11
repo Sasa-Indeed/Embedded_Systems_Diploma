@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  11 Jul 2022
+ *      Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void printReverse(char text []);
+
+int main(){
+
+	printReverse("AHMED");
+
+	return 0;
+}
+
+void printReverse(char text []){
+
+	if(text[0] != '\0'){
+		printReverse(text +1);
+		printf("%c",text[0]);
+	}
+}
