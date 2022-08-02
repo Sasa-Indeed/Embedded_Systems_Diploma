@@ -1,0 +1,170 @@
+20:03:59 **** Rebuild of configuration Debug for project 1-Handle Pointers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Handle Pointers.exe" main.o 
+Info: Nothing to build for 1-Handle Pointers
+20:05:01 **** Incremental Build of configuration Debug for project 1-Handle Pointers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Handle Pointers.exe" main.o 
+20:05:32 **** Incremental Build of configuration Debug for project 1-Handle Pointers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Handle Pointers.exe" main.o 
+Info: Nothing to build for 1-Handle Pointers
+20:27:48 **** Rebuild of configuration Debug for project 2-Print alphabets with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:8: warning: unused variable 'ptr' [-Wunused-variable]
+  char* ptr = NULL;
+        ^~~
+..\main.c:12:7: warning: unused variable 'arr' [-Wunused-variable]
+  char arr[27];
+       ^~~
+gcc -ansi -std=c89 -o "2-Print alphabets with pointer.exe" main.o 
+20:28:09 **** Incremental Build of configuration Debug for project 2-Print alphabets with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Print alphabets with pointer.exe" main.o 
+20:29:24 **** Incremental Build of configuration Debug for project 2-Print alphabets with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Print alphabets with pointer.exe" main.o 
+Info: Nothing to build for 1-Handle Pointers
+Info: Nothing to build for 2-Print alphabets with pointer
+11:21:13 **** Rebuild of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+Info: Nothing to build for 3-Reverse string with pointer
+11:21:37 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  ptr = strlen(text);
+      ^
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:22:18 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:23:42 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:24:11 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:25:56 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:27:04 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:1: error: C++ style comments are not allowed in ISO C90
+ // printf("Input a string : ");
+ ^
+..\main.c:16:1: error: (this will be reported only once per input file)
+11:27:23 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-Reverse string with pointer.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:28:56 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:29:24 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+Info: Nothing to build for 3-Reverse string with pointer
+Info: Nothing to build for 3-Reverse string with pointer
+Info: Nothing to build for 3-Reverse string with pointer
+11:32:38 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file 3-Reverse string with pointer.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:33:00 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+Info: Nothing to build for 3-Reverse string with pointer
+Info: Nothing to build for 3-Reverse string with pointer
+11:34:54 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:40:41 **** Incremental Build of configuration Debug for project 3-Reverse string with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse string with pointer.exe" main.o 
+11:50:53 **** Incremental Build of configuration Debug for project 1-Handle Pointers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Handle Pointers.exe" main.o 
+11:50:54 **** Incremental Build of configuration Debug for project 2-Print alphabets with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Print alphabets with pointer.exe" main.o 
+Info: Nothing to build for 3-Reverse string with pointer
+11:50:55 **** Rebuild of configuration Debug for project 4-Array in reverse with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Array in reverse with pointer.exe" main.o 
+Info: Nothing to build for 4-Array in reverse with pointer
+11:51:57 **** Incremental Build of configuration Debug for project 4-Array in reverse with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Array in reverse with pointer.exe" main.o 
+Info: Nothing to build for 4-Array in reverse with pointer
+Info: Nothing to build for 1-Handle Pointers
+Info: Nothing to build for 2-Print alphabets with pointer
+Info: Nothing to build for 3-Reverse string with pointer
+12:10:56 **** Incremental Build of configuration Debug for project 4-Array in reverse with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Array in reverse with pointer.exe" main.o 
+12:10:59 **** Rebuild of configuration Debug for project 5-Pointer to struct ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Pointer to struct.exe" main.o 
+Info: Nothing to build for 5-Pointer to struct
+12:12:25 **** Incremental Build of configuration Debug for project 5-Pointer to struct ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:2: warning: statement with no effect [-Wunused-value]
+  strcmp(ptr->name,"Alex");
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+gcc -ansi -std=c89 -o "5-Pointer to struct.exe" main.o 
+12:13:19 **** Incremental Build of configuration Debug for project 5-Pointer to struct ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:12: error: assignment to expression with array type
+  ptr->name = "Alex";
+            ^
+12:14:24 **** Incremental Build of configuration Debug for project 5-Pointer to struct ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Pointer to struct.exe" main.o 
+Info: Nothing to build for 1-Handle Pointers
+12:33:55 **** Incremental Build of configuration Debug for project 1-Handle Pointers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Handle Pointers.exe" main.o 
+Info: Nothing to build for 2-Print alphabets with pointer
+Info: Nothing to build for 3-Reverse string with pointer
+Info: Nothing to build for 4-Array in reverse with pointer
+12:39:39 **** Incremental Build of configuration Debug for project 4-Array in reverse with pointer ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Array in reverse with pointer.exe" main.o 
+Info: Nothing to build for 5-Pointer to struct

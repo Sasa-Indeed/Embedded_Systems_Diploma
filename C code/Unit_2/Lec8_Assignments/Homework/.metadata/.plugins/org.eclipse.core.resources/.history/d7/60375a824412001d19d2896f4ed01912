@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: 31 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+
+	char text [100];
+	char* ptr;
+
+	printf("Input a string : ");
+	fflush(stdout);fflush(stdin);
+	gets(text);
+	ptr = text + strlen(text);
+
+	while(ptr != text){
+		printf("%c",*ptr);
+		ptr--;
+	}
+
+
+	return 0;
+}
+
