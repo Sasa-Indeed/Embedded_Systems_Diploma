@@ -1,0 +1,7 @@
+22:24:08 **** Incremental Build of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 
+
+22:24:09 Build Finished (took 645ms)
+

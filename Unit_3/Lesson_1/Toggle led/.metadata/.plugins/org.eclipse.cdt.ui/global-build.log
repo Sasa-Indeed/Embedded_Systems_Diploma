@@ -1,0 +1,87 @@
+22:22:16 **** Build of configuration Debug for project Toggle_led ****
+make -j8 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c:38:27: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile R_ODR_t* R_ODR = *(volatile uint32_t *)(GPIOA_BASE + 0x0C);
+                           ^
+../Src/main.c:38:27: error: initializer element is not constant
+../Src/main.c: In function 'main':
+../Src/main.c:26:44: error: 'PortA_BASE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+ #define GPIOA_CRH   *(volatile uint32_t *)(PortA_BASE + 0x04)
+                                            ^
+../Src/main.c:43:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH &= 0xFF0FFFFF;
+  ^~~~~~~~~
+../Src/main.c:26:44: note: each undeclared identifier is reported only once for each function it appears in
+ #define GPIOA_CRH   *(volatile uint32_t *)(PortA_BASE + 0x04)
+                                            ^
+../Src/main.c:43:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH &= 0xFF0FFFFF;
+  ^~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:22:54 **** Incremental Build of configuration Debug for project Toggle_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:38:27: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile R_ODR_t* R_ODR = *(volatile uint32_t *)(GPIOA_BASE + 0x0C);
+                           ^
+../Src/main.c:38:27: error: initializer element is not constant
+../Src/main.c: In function 'main':
+../Src/main.c:26:44: error: 'PortA_BASE' undeclared (first use in this function); did you mean 'GPIOA_BASE'?
+ #define GPIOA_CRH   *(volatile uint32_t *)(PortA_BASE + 0x04)
+                                            ^
+../Src/main.c:43:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH &= 0xff0fffff;
+  ^~~~~~~~~
+../Src/main.c:26:44: note: each undeclared identifier is reported only once for each function it appears in
+ #define GPIOA_CRH   *(volatile uint32_t *)(PortA_BASE + 0x04)
+                                            ^
+../Src/main.c:43:2: note: in expansion of macro 'GPIOA_CRH'
+  GPIOA_CRH &= 0xff0fffff;
+  ^~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:24:02 **** Incremental Build of configuration Debug for project Toggle_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:38:27: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ volatile R_ODR_t* R_ODR = *(volatile uint32_t *)(GPIOA_BASE + 0x0C);
+                           ^
+../Src/main.c:38:27: error: initializer element is not constant
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:25:53 **** Incremental Build of configuration Debug for project Toggle_led ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:38:27: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+ volatile R_ODR_t* R_ODR = (volatile uint32_t *)(GPIOA_BASE + 0x0C);
+                           ^
+arm-none-eabi-gcc -o "Toggle_led.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Unit 3 (Embedded C)\Codes\Toggle led\Toggle_led\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Toggle_led.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Toggle_led.elf
+ 
+arm-none-eabi-size   Toggle_led.elf 
+arm-none-eabi-objdump -h -S  Toggle_led.elf  > "Toggle_led.list"
+arm-none-eabi-objcopy  -O ihex  Toggle_led.elf  "Toggle_led.hex"
+arm-none-eabi-objcopy  -O binary  Toggle_led.elf  "Toggle_led.bin"
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	Toggle_led.elf
+Finished building: default.size.stdout
+ 
+Finished building: Toggle_led.bin
+Finished building: Toggle_led.hex
+ 
+ 
+Finished building: Toggle_led.list
+ 
+19:03:36 **** Build of configuration Debug for project Toggle_led ****
+make -j8 all 
+arm-none-eabi-size   Toggle_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+    672	     12	   1564	   2248	    8c8	Toggle_led.elf
+Finished building: default.size.stdout
+ 

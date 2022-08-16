@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: 31 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	char arr[27];
+	char* ptr = NULL;
+
+
+
+
+
+
+	return 0;
+}

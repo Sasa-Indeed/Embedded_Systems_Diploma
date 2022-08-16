@@ -1,0 +1,66 @@
+21:45:37 **** Rebuild of configuration Debug for project 1-Frequency of Characters ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "1-Frequency of Characters.exe" main.o 
+Info: Nothing to build for 1-Frequency of Characters
+Info: Nothing to build for 1-Frequency of Characters
+Info: Nothing to build for 1-Frequency of Characters
+21:55:09 **** Rebuild of configuration Debug for project 2-Length of a string ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:13:19: warning: unused variable 'ch' [-Wunused-variable]
+  char text[1000], ch;
+                   ^~
+gcc -ansi -std=c89 -o "2-Length of a string.exe" main.o 
+21:55:19 **** Incremental Build of configuration Debug for project 2-Length of a string ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Length of a string.exe" main.o 
+Info: Nothing to build for 2-Length of a string
+21:57:16 **** Incremental Build of configuration Debug for project 2-Length of a string ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Length of a string.exe" main.o 
+21:58:25 **** Incremental Build of configuration Debug for project 2-Length of a string ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Length of a string.exe" main.o 
+21:59:56 **** Incremental Build of configuration Debug for project 2-Length of a string ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Length of a string.exe" main.o 
+Info: Nothing to build for 1-Frequency of Characters
+Info: Nothing to build for 2-Length of a string
+22:19:23 **** Rebuild of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:13: warning: unused variable 'count' [-Wunused-variable]
+  int i = 0, count = 0, size;
+             ^~~~~
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 
+22:19:27 **** Incremental Build of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:13: warning: unused variable 'count' [-Wunused-variable]
+  int i = 0, count = 0, size;
+             ^~~~~
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 
+22:20:59 **** Incremental Build of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:13: warning: unused variable 'count' [-Wunused-variable]
+  int i = 0, count = 0, size;
+             ^~~~~
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 
+22:22:32 **** Incremental Build of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 
+22:24:08 **** Incremental Build of configuration Debug for project 3-Reverse String ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Reverse String.exe" main.o 

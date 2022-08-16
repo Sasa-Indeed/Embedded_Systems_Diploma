@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: 5 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+	float data [100];
+	int i = 0;
+
+	printf("Enter elements of 1st matrix\n");
+		fflush(stdout);
+		for(i = 0; i < 2; ++i){
+
+		}
+
+
+
+
+	return 0;
+}

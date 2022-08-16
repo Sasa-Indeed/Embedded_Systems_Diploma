@@ -1,0 +1,47 @@
+/*
+ * main.c
+ *
+ *  Created on: 22 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct ScomplexNumber{
+	float m_realNum;
+	float m_imaNum;
+};
+
+struct ScomplexNumber add_distances(struct ScomplexNumber a,struct ScomplexNumber b);
+
+
+
+int main(){
+	struct ScomplexNumber numbers[2],sum;
+	int i;
+
+	for(i = 0; i < 2; ++i){
+		printf("For complex number element: %d\n",i+1);
+		fflush(stdout);
+		printf("Enter real and imaginary respectively: ");
+		fflush(stdout); fflush(stdin);
+		scanf("%f%f",&numbers[i].m_realNum,&numbers[i].m_imaNum);
+	}
+
+	sum = add_distances(numbers[0],numbers[1]);
+
+	(sum.m_imaNum >= 0)? printf("sum = %.1f+%.1fi",sum.m_realNum,sum.m_imaNum)
+			:printf("sum = %.1f%.1fi",sum.m_realNum,sum.m_imaNum);
+
+
+	return 0;
+}
+
+struct ScomplexNumber add_distances(struct ScomplexNumber a,struct ScomplexNumber b){
+	struct ScomplexNumber sum;
+	sum.m_realNum = a.m_realNum + b.m_realNum;
+	sum.m_imaNum = a.m_imaNum + b.m_imaNum;
+	return sum;
+}
+
+

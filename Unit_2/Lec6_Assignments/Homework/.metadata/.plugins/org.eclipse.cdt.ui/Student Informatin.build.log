@@ -1,0 +1,7 @@
+21:07:24 **** Incremental Build of configuration Debug for project Student Informatin ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "Student Informatin.exe" main.o 
+
+21:07:25 Build Finished (took 452ms)
+

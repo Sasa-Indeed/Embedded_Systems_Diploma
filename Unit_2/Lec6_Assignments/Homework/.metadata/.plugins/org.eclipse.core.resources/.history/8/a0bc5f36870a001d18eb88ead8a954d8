@@ -1,0 +1,50 @@
+/*
+ * main.c
+ *
+ *  Created on: 23 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Sstudent{
+	char m_name [50];
+	int m_roll;
+	float m_marks;
+};
+
+int main(){
+	struct Sstudent student [10];
+	int i;
+	printf("Enter information of students\n\n");
+	fflush(stdout);
+
+	for(i = 0; i < 10;++i){
+		printf("for roll number %d",i+1);
+		student[i].m_roll = i+1;
+		printf("Enter name: ");
+		fflush(stdout);fflush(stdin);
+		gets(student[i].m_name);
+		printf("Enter marks: ");
+		fflush(stdout);fflush(stdin);
+		scanf("%f",&student[i].m_marks);
+		printf("\n");
+		fflush(stdout);
+	}
+
+
+	printf("Displaying Information\n");
+	fflush(stdout);
+	for(i = 0; i < 10 ; ++i){
+		printf("Information for roll number %d:\n",student[i].m_roll);
+		fflush(stdout);
+		printf("Name: %s\n",student[i].m_name);
+		fflush(stdout);
+		printf("Marks: %f\n",student[i].m_marks);
+		fflush(stdout);
+	}
+
+	return 0;
+}
+
+

@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: 2 Jul 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int x;
+	printf("Enter two integers: ");
+	fflush(stdout);
+
+	if((x%2)==0){
+		printf("Enter two integers: ");
+	}else{
+		printf("Enter two integers: ");
+	}
+
+	return 0;
+}
+

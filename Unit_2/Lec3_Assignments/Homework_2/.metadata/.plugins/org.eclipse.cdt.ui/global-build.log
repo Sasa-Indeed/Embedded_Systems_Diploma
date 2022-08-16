@@ -1,0 +1,207 @@
+23:06:08 **** Rebuild of configuration Debug for project 1-Check Whether a Number is Even or Odd ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:11:6: warning: unused variable 'x' [-Wunused-variable]
+  int x;
+      ^
+gcc -o "1-Check Whether a Number is Even or Odd.exe" main.o 
+23:08:18 **** Incremental Build of configuration Debug for project 1-Check Whether a Number is Even or Odd ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%d",x);
+          ^
+..\main.c:14:2: warning: 'x' is used uninitialized in this function [-Wuninitialized]
+  scanf("%d",x);
+  ^~~~~~~~~~~~~
+gcc -o "1-Check Whether a Number is Even or Odd.exe" main.o 
+23:10:44 **** Incremental Build of configuration Debug for project 1-Check Whether a Number is Even or Odd ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "1-Check Whether a Number is Even or Odd.exe" main.o 
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+23:29:35 **** Incremental Build of configuration Debug for project 1-Check Whether a Number is Even or Odd ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "1-Check Whether a Number is Even or Odd.exe" main.o 
+23:29:35 **** Rebuild of configuration Debug for project 2-Check Vowel or Consonant ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "2-Check Vowel or Consonant.exe" main.o 
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+23:44:05 **** Rebuild of configuration Debug for project 3-Find the Largest Number Among 3 Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "3-Find the Largest Number Among 3 Numbers.exe" main.o 
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+23:51:40 **** Rebuild of configuration Debug for project 4-Check Whether a number is Postive or Negative ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Check Whether a number is Postive or Negative.exe" main.o 
+Info: Nothing to build for 4-Check Whether a number is Postive or Negative
+Info: Nothing to build for 4-Check Whether a number is Postive or Negative
+Info: Nothing to build for 4-Check Whether a number is Postive or Negative
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+23:54:32 **** Rebuild of configuration Debug for project 4-Check Whether a Number is Postive or Negative ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Check Whether a Number is Postive or Negative.exe" main.o 
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+00:03:48 **** Incremental Build of configuration Debug for project 4-Check Whether a Number is Postive or Negative ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Check Whether a Number is Postive or Negative.exe" main.o 
+00:03:49 **** Rebuild of configuration Debug for project Check Whether a character is an Alphabet or not ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "Check Whether a character is an Alphabet or not.exe" main.o 
+00:03:59 **** Incremental Build of configuration Debug for project Check Whether a character is an Alphabet or not ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "Check Whether a character is an Alphabet or not.exe" main.o 
+Info: Nothing to build for Check Whether a character is an Alphabet or not
+Info: Nothing to build for Check Whether a character is an Alphabet or not
+Info: Nothing to build for Check Whether a character is an Alphabet or not
+00:15:37 **** Incremental Build of configuration Debug for project 1-Check Whether a Number is Even or Odd ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "1-Check Whether a Number is Even or Odd.exe" main.o 
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+00:15:38 **** Incremental Build of configuration Debug for project 4-Check Whether a Number is Postive or Negative ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "4-Check Whether a Number is Postive or Negative.exe" main.o 
+00:15:39 **** Rebuild of configuration Debug for project 5-Check Whether a character is an Alphabet or not ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "5-Check Whether a character is an Alphabet or not.exe" main.o 
+00:15:41 **** Rebuild of configuration Debug for project 6-Sum of Natural Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:25:3: warning: implicit declaration of function 'prinf' [-Wimplicit-function-declaration]
+   prinf("Sum = %d",i);
+   ^~~~~
+gcc -ansi -std=c89 -o "6-Sum of Natural Numbers.exe" main.o 
+main.o: In function `main':
+D:\LearnInDepthEmbedded\C code\Unit_2\Lec3_Assinments\Homework_2\6-Sum of Natural Numbers\Debug/../main.c:25: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 5-Check Whether a character is an Alphabet or not
+00:16:00 **** Incremental Build of configuration Debug for project 6-Sum of Natural Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "6-Sum of Natural Numbers.exe" main.o 
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 6-Sum of Natural Numbers
+00:32:26 **** Incremental Build of configuration Debug for project 6-Sum of Natural Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "6-Sum of Natural Numbers.exe" main.o 
+Info: Nothing to build for 6-Sum of Natural Numbers
+00:32:59 **** Incremental Build of configuration Debug for project 6-Sum of Natural Numbers ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "6-Sum of Natural Numbers.exe" main.o 
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 5-Check Whether a character is an Alphabet or not
+Info: Nothing to build for 6-Sum of Natural Numbers
+00:40:22 **** Rebuild of configuration Debug for project 7-Factorial ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:20:3: warning: implicit declaration of function 'prinf' [-Wimplicit-function-declaration]
+   prinf("Factorial = 1");
+   ^~~~~
+gcc -ansi -std=c89 -o 7-Factorial.exe main.o 
+main.o: In function `main':
+D:\LearnInDepthEmbedded\C code\Unit_2\Lec3_Assinments\Homework_2\7-Factorial\Debug/../main.c:20: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 5-Check Whether a character is an Alphabet or not
+Info: Nothing to build for 6-Sum of Natural Numbers
+00:40:32 **** Incremental Build of configuration Debug for project 7-Factorial ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o 7-Factorial.exe main.o 
+Info: Nothing to build for 7-Factorial
+00:45:40 **** Incremental Build of configuration Debug for project 7-Factorial ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o 7-Factorial.exe main.o 
+00:46:30 **** Incremental Build of configuration Debug for project 7-Factorial ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o 7-Factorial.exe main.o 
+Info: Nothing to build for 7-Factorial
+00:50:04 **** Incremental Build of configuration Debug for project 7-Factorial ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o 7-Factorial.exe main.o 
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 5-Check Whether a character is an Alphabet or not
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 7-Factorial
+01:01:58 **** Rebuild of configuration Debug for project 8-Simple Calculator ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:16:10: warning: format '%c' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  scanf("%c",operator);
+          ^
+..\main.c:16:2: warning: 'operator' is used uninitialized in this function [-Wuninitialized]
+  scanf("%c",operator);
+  ^~~~~~~~~~~~~~~~~~~~
+gcc -ansi -std=c89 -o "8-Simple Calculator.exe" main.o 
+Info: Nothing to build for 8-Simple Calculator
+Info: Nothing to build for 8-Simple Calculator
+Info: Nothing to build for 1-Check Whether a Number is Even or Odd
+Info: Nothing to build for 2-Check Vowel or Consonant
+Info: Nothing to build for 3-Find the Largest Number Among 3 Numbers
+Info: Nothing to build for 4-Check Whether a Number is Postive or Negative
+Info: Nothing to build for 5-Check Whether a character is an Alphabet or not
+Info: Nothing to build for 6-Sum of Natural Numbers
+Info: Nothing to build for 7-Factorial
+01:03:24 **** Incremental Build of configuration Debug for project 8-Simple Calculator ****
+Info: Internal Builder is used for build
+gcc -ansi -std=c89 -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -ansi -std=c89 -o "8-Simple Calculator.exe" main.o 
+Info: Nothing to build for 8-Simple Calculator
+Info: Nothing to build for 8-Simple Calculator
+Info: Nothing to build for 8-Simple Calculator
+Info: Nothing to build for 8-Simple Calculator

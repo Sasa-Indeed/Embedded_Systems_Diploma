@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: 2 Aug 2022
+ *      Author: Ahmed
+ */
+#include <stdio.h>
+#include <string.h>
+
+struct Semployee{
+	char name [20];
+	int id;
+};
+
+struct Semployee person;
+
+int main(){
+
+	struct Semployee* ptr = &person;
+	strcmp(ptr->name,"Alex");
+	ptr->id = 1002;
+	printf("Employee Name : %s\n",ptr->name);
+	fflush(stdout);
+	printf("Employee ID : %d",ptr->id);
+
+
+	return 0;
+}
