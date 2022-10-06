@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: 4 Oct 2022
+ *      Author: Ahmed
+ */
+#include "lifo.h"
+
+int main(){
+
+	int i = 0;
+	LIFO_Buf_t buff1;
+
+	LIFO_init(&buff1, buffer_1, buffer1_lenght);
+
+
+	for (i = 0; i < 7; i++)
+	{
+		LIFO_add_item(&buff1,i);
+	}
+
+
+
+
+
+
+
+
+	return 0;
+}
+

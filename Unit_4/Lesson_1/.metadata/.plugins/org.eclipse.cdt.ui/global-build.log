@@ -1,0 +1,327 @@
+17:33:12 **** Rebuild of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:11:13: warning: unused variable 'temp' [-Wunused-variable]
+     int i , temp = 0;
+             ^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for LIFO
+17:34:53 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for LIFO
+17:40:51 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for LIFO
+Info: Nothing to build for LIFO
+17:57:41 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:24:25: warning: passing argument 2 of 'LIFO_pop_item' from incompatible pointer type [-Wincompatible-pointer-types]
+    LIFO_pop_item(&buff1,&temp);
+                         ^
+In file included from ..\main.c:7:0:
+..\lifo.h:43:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ LIFO_status LIFO_pop_item (LIFO_Buf_t* lBuf, element_type* item);
+             ^~~~~~~~~~~~~
+..\main.c:26:3: error: expected ';' before '}' token
+   }
+   ^
+17:57:53 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:24:25: warning: passing argument 2 of 'LIFO_pop_item' from incompatible pointer type [-Wincompatible-pointer-types]
+    LIFO_pop_item(&buff1,&temp);
+                         ^
+In file included from ..\main.c:7:0:
+..\lifo.h:43:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ LIFO_status LIFO_pop_item (LIFO_Buf_t* lBuf, element_type* item);
+             ^~~~~~~~~~~~~
+gcc -o LIFO.exe lifo.o main.o 
+Info: Nothing to build for LIFO
+18:01:46 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o LIFO.exe lifo.o main.o 
+19:39:50 **** Rebuild of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o FIFO.exe fifo.o main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+19:39:50 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o lifo.o "..\\lifo.c" 
+gcc -o LIFO.exe lifo.o main.o 
+19:39:56 **** Incremental Build of configuration Debug for project LIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o LIFO.exe lifo.o main.o 
+20:39:26 **** Incremental Build of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_print':
+..\fifo.c:101:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint8_t * {aka unsigned char *}' [-Wformat=]
+         printf("\t %d \n",read_temp);
+                     ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o FIFO.exe fifo.o main.o 
+Info: Nothing to build for LIFO
+Info: Nothing to build for FIFO
+14:14:38 **** Incremental Build of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o FIFO.exe fifo.o main.o 
+14:15:35 **** Incremental Build of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o FIFO.exe fifo.o main.o 
+14:16:40 **** Incremental Build of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+gcc -o FIFO.exe fifo.o main.o 
+15:27:31 **** Incremental Build of configuration Debug for project FIFO ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o fifo.o "..\\fifo.c" 
+..\fifo.c: In function 'FIFO_dequeue':
+..\fifo.c:70:10: warning: unknown escape sequence: '\R'
+   printf("\Remove failed\n");
+          ^~~~~~~~~~~~~~~~~~
+gcc -o FIFO.exe fifo.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:37:07 **** Rebuild of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main(){
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:15:3: warning: implicit declaration of function 'DPRINTE' [-Wimplicit-function-declaration]
+   DPRINTE("\n\t Choose on of the following Options \n");
+   ^~~~~~~
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_head_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+main.o: In function `main':
+D:\LearnInDepthEmbedded\Unit_4(Data_Structure)\Codes\Linked_list\Debug/../main.c:15: undefined reference to `DPRINTE'
+D:\LearnInDepthEmbedded\Unit_4(Data_Structure)\Codes\Linked_list\Debug/../main.c:22: undefined reference to `DPRINTE'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:39:01 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_head_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:41:55 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_head_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:43:13 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_head_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+main.o: In function `main':
+D:\LearnInDepthEmbedded\Unit_4(Data_Structure)\Codes\Linked_list\Debug/../main.c:28: undefined reference to `Delete_Student'
+D:\LearnInDepthEmbedded\Unit_4(Data_Structure)\Codes\Linked_list\Debug/../main.c:31: undefined reference to `View_Students'
+D:\LearnInDepthEmbedded\Unit_4(Data_Structure)\Codes\Linked_list\Debug/../main.c:34: undefined reference to `Delete_All'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:44:05 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+..\linked_list.c: In function 'Add_Student':
+..\linked_list.c:28:9: error: 'GP_head_list' undeclared (first use in this function)
+     if (GP_head_list == NULL)
+         ^~~~~~~~~~~~
+..\linked_list.c:28:9: note: each undeclared identifier is reported only once for each function it appears in
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:44:38 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_head_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:47:41 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+main.o:main.c:(.bss+0x0): multiple definition of `GP_Student_list'
+linked_list.o:linked_list.c:(.bss+0x0): first defined here
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:49:45 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list
+22:51:43 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+22:52:07 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+22:52:35 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list
+22:53:17 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+22:56:39 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:22:26 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:45:39: error: expected expression before 'int'
+    struct S_Student* student = GetNth(int index);
+                                       ^~~
+..\main.c:45:22: warning: unused variable 'student' [-Wunused-variable]
+    struct S_Student* student = GetNth(int index);
+                      ^~~~~~~
+..\main.c:44:8: warning: unused variable 'index' [-Wunused-variable]
+    int index = atoi(gets(temp_text));
+        ^~~~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:22:45 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:45:22: warning: unused variable 'student' [-Wunused-variable]
+    struct S_Student* student = GetNth(index);
+                      ^~~~~~~
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:24:14 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list
+14:36:29 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:55:24 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:53:4: error: a label can only be part of a statement and a declaration is not a statement
+    int length = Get_length();
+    ^~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:56:03 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:53:4: error: a label can only be part of a statement and a declaration is not a statement
+    int length;
+    ^~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:56:27 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:53:4: error: a label can only be part of a statement and a declaration is not a statement
+    int length;
+    ^~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:57:16 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:54:4: error: 'length' undeclared (first use in this function)
+    length = Get_length();
+    ^~~~~~
+..\main.c:54:4: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:15:6: warning: unused variable 'lenght' [-Wunused-variable]
+  int lenght = 0;
+      ^~~~~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:57:53 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:58:11 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:53:4: error: a label can only be part of a statement and a declaration is not a statement
+    int length = Get_length();
+    ^~~
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+14:58:20 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list
+15:40:47 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for FIFO
+Info: Nothing to build for LIFO
+16:00:56 **** Incremental Build of configuration Debug for project Linked_list ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o linked_list.o "..\\linked_list.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Linked_list.exe linked_list.o main.o 
+Info: Nothing to build for Linked_list

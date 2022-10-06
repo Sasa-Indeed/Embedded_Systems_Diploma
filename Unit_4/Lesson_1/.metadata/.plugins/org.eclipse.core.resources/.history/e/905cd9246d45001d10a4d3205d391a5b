@@ -1,0 +1,44 @@
+/*
+ * linked_list.h
+ *
+ *  Created on: 5 Oct 2022
+ *      Author: Ahmed
+ */
+
+#ifndef LINKED_LIST_H_
+#define LINKED_LIST_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+
+#define  DPRINTF(...)       {fflush(stdout); \
+							fflush(stdin); \
+							printf(__VA_ARGS__); \
+							fflush(stdout); \
+							fflush(stdin);}
+
+//Main data to store
+struct S_Student_Data{
+    int ID;
+    float height;
+    char name[40];
+};
+
+//linked list node
+struct S_Student
+{
+    struct S_Student_Data student;
+    struct S_Student* P_next_student;
+};
+
+
+
+void Add_Student();
+int Delete_Student();
+void View_Students();
+void Delete_All();
+struct S_Student* GetNth(int index);
+
+#endif /* LINKED_LIST_H_ */
