@@ -1,0 +1,236 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+pressure_sensor_state
+                    0x4               Pressure_Sensor.o
+alram_monitor_state_ID
+                    0x1               Alram_Monitor.o
+alram_timer         0x4               Alram_Monitor.o
+alram_monitor_state
+                    0x4               Alram_Monitor.o
+pressure_sensor_state_ID
+                    0x1               main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x20000000         xr
+sram             0x20000000         0x20000000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000      0x414
+ *(.vectors*)
+ .vectors       0x00000000       0x1c startup.o
+                0x00000000                vectors_sections
+ *(.text*)
+ .text          0x0000001c       0x20 alram.o
+                0x0000001c                start_alram
+                0x0000002c                stop_alram
+ .text          0x0000003c       0xe0 Alram_Monitor.o
+                0x0000003c                alram_monitor_initialize
+                0x00000058                ST_Alram_OFF
+                0x00000070                high_pressure_detected
+                0x0000008c                ST_Alram_ON
+                0x000000b8                ST_Alram_Monitor_Waiting
+ .text          0x0000011c      0x10c driver.o
+                0x0000011c                Delay
+                0x00000140                getPressureVal
+                0x00000158                Set_Alarm_actuator
+                0x000001a8                GPIO_INITIALIZATION
+ .text          0x00000228       0x3c main.o
+                0x00000228                setup
+                0x0000023c                main
+ .text          0x00000264       0x44 Main_Algorithm.o
+                0x00000264                pressure_detector
+                0x00000288                set_pressure_value
+ .text          0x000002a8       0x9c Pressure_Sensor.o
+                0x000002a8                pressure_sensor_initialize
+                0x000002c4                ST_pressure_sensor_reading
+                0x00000314                ST_pressure_sensor_waiting
+ .text          0x00000344       0xc8 startup.o
+                0x00000344                Reset_Handler
+                0x00000400                MM_Fault_Handler
+                0x00000400                H_Fault_Handler
+                0x00000400                Bus_Fault
+                0x00000400                Default_Handler
+                0x00000400                Usage_Fault_Handler
+                0x00000400                NMI_Handler
+ *(.rodata)
+ .rodata        0x0000040c        0x4 Alram_Monitor.o
+                0x0000040c                alram_period
+ .rodata        0x00000410        0x4 Main_Algorithm.o
+                0x00000410                Pressure_threshold
+                0x00000414                _E_text = .
+
+.glue_7         0x00000414        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x00000414        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000414        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x00000414        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x00000414        0x0
+ .iplt          0x00000000        0x0 alram.o
+
+.rel.dyn        0x00000414        0x0
+ .rel.iplt      0x00000000        0x0 alram.o
+
+.data           0x20000000        0x0 load address 0x00000414
+                0x20000000                _S_DATA = .
+ *(.data)
+ .data          0x20000000        0x0 alram.o
+ .data          0x20000000        0x0 Alram_Monitor.o
+ .data          0x20000000        0x0 driver.o
+ .data          0x20000000        0x0 main.o
+ .data          0x20000000        0x0 Main_Algorithm.o
+ .data          0x20000000        0x0 Pressure_Sensor.o
+ .data          0x20000000        0x0 startup.o
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _E_DATA = .
+
+.igot.plt       0x20000000        0x0 load address 0x00000414
+ .igot.plt      0x00000000        0x0 alram.o
+
+.bss            0x20000000      0x41c load address 0x00000414
+                0x20000000                _S_bss = .
+ *(.bss*)
+ .bss           0x20000000        0x0 alram.o
+ .bss           0x20000000        0x0 Alram_Monitor.o
+ .bss           0x20000000        0x0 driver.o
+ .bss           0x20000000        0x0 main.o
+ .bss           0x20000000        0x4 Main_Algorithm.o
+                0x20000000                Pressure_Value
+ .bss           0x20000004        0x4 Pressure_Sensor.o
+                0x20000004                Pressure_value
+ .bss           0x20000008      0x400 startup.o
+                0x20000408                _E_bss = .
+ COMMON         0x20000408        0xc Alram_Monitor.o
+                0x20000408                alram_monitor_state_ID
+                0x2000040c                alram_timer
+                0x20000410                alram_monitor_state
+ COMMON         0x20000414        0x1 main.o
+                0x20000414                pressure_sensor_state_ID
+ *fill*         0x20000415        0x3 
+ COMMON         0x20000418        0x4 Pressure_Sensor.o
+                0x20000418                pressure_sensor_state
+LOAD alram.o
+LOAD Alram_Monitor.o
+LOAD driver.o
+LOAD main.o
+LOAD Main_Algorithm.o
+LOAD Pressure_Sensor.o
+LOAD startup.o
+OUTPUT(Pressure_Cabin_Contoller.elf elf32-littlearm)
+
+.debug_info     0x00000000      0x7a0
+ .debug_info    0x00000000       0xa4 alram.o
+ .debug_info    0x000000a4      0x158 Alram_Monitor.o
+ .debug_info    0x000001fc      0x103 driver.o
+ .debug_info    0x000002ff      0x123 main.o
+ .debug_info    0x00000422       0xe1 Main_Algorithm.o
+ .debug_info    0x00000503      0x111 Pressure_Sensor.o
+ .debug_info    0x00000614      0x18c startup.o
+
+.debug_abbrev   0x00000000      0x3f1
+ .debug_abbrev  0x00000000       0x40 alram.o
+ .debug_abbrev  0x00000040       0x99 Alram_Monitor.o
+ .debug_abbrev  0x000000d9       0x9d driver.o
+ .debug_abbrev  0x00000176       0xa5 main.o
+ .debug_abbrev  0x0000021b       0x81 Main_Algorithm.o
+ .debug_abbrev  0x0000029c       0x92 Pressure_Sensor.o
+ .debug_abbrev  0x0000032e       0xc3 startup.o
+
+.debug_loc      0x00000000      0x3a0
+ .debug_loc     0x00000000       0x58 alram.o
+ .debug_loc     0x00000058       0xdc Alram_Monitor.o
+ .debug_loc     0x00000134       0xc8 driver.o
+ .debug_loc     0x000001fc       0x58 main.o
+ .debug_loc     0x00000254       0x64 Main_Algorithm.o
+ .debug_loc     0x000002b8       0x84 Pressure_Sensor.o
+ .debug_loc     0x0000033c       0x64 startup.o
+
+.debug_aranges  0x00000000       0xe0
+ .debug_aranges
+                0x00000000       0x20 alram.o
+ .debug_aranges
+                0x00000020       0x20 Alram_Monitor.o
+ .debug_aranges
+                0x00000040       0x20 driver.o
+ .debug_aranges
+                0x00000060       0x20 main.o
+ .debug_aranges
+                0x00000080       0x20 Main_Algorithm.o
+ .debug_aranges
+                0x000000a0       0x20 Pressure_Sensor.o
+ .debug_aranges
+                0x000000c0       0x20 startup.o
+
+.debug_line     0x00000000      0x2c1
+ .debug_line    0x00000000       0x3a alram.o
+ .debug_line    0x0000003a       0x69 Alram_Monitor.o
+ .debug_line    0x000000a3       0x99 driver.o
+ .debug_line    0x0000013c       0x76 main.o
+ .debug_line    0x000001b2       0x45 Main_Algorithm.o
+ .debug_line    0x000001f7       0x62 Pressure_Sensor.o
+ .debug_line    0x00000259       0x68 startup.o
+
+.debug_str      0x00000000      0x36a
+ .debug_str     0x00000000       0xc6 alram.o
+                                 0xff (size before relaxing)
+ .debug_str     0x000000c6       0xb6 Alram_Monitor.o
+                                0x1bf (size before relaxing)
+ .debug_str     0x0000017c       0x55 driver.o
+                                0x135 (size before relaxing)
+ .debug_str     0x000001d1       0x41 main.o
+                                0x1a5 (size before relaxing)
+ .debug_str     0x00000212       0x58 Main_Algorithm.o
+                                0x147 (size before relaxing)
+ .debug_str     0x0000026a       0x72 Pressure_Sensor.o
+                                0x1b1 (size before relaxing)
+ .debug_str     0x000002dc       0x8e startup.o
+                                0x169 (size before relaxing)
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 alram.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 Alram_Monitor.o
+ .comment       0x00000000       0x12 driver.o
+ .comment       0x00000000       0x12 main.o
+ .comment       0x00000000       0x12 Main_Algorithm.o
+ .comment       0x00000000       0x12 Pressure_Sensor.o
+ .comment       0x00000000       0x12 startup.o
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 alram.o
+ .ARM.attributes
+                0x00000033       0x33 Alram_Monitor.o
+ .ARM.attributes
+                0x00000066       0x33 driver.o
+ .ARM.attributes
+                0x00000099       0x33 main.o
+ .ARM.attributes
+                0x000000cc       0x33 Main_Algorithm.o
+ .ARM.attributes
+                0x000000ff       0x33 Pressure_Sensor.o
+ .ARM.attributes
+                0x00000132       0x33 startup.o
+
+.debug_frame    0x00000000      0x290
+ .debug_frame   0x00000000       0x48 alram.o
+ .debug_frame   0x00000048       0x90 Alram_Monitor.o
+ .debug_frame   0x000000d8       0x78 driver.o
+ .debug_frame   0x00000150       0x48 main.o
+ .debug_frame   0x00000198       0x4c Main_Algorithm.o
+ .debug_frame   0x000001e4       0x60 Pressure_Sensor.o
+ .debug_frame   0x00000244       0x4c startup.o
