@@ -1,3 +1,0 @@
-D:/LearnInDepthEmbedded/Unit_5(midterm)/Project_2/Student_Managment/cmake-build-debug/CMakeFiles/Student_Managment.dir
-D:/LearnInDepthEmbedded/Unit_5(midterm)/Project_2/Student_Managment/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/LearnInDepthEmbedded/Unit_5(midterm)/Project_2/Student_Managment/cmake-build-debug/CMakeFiles/rebuild_cache.dir
