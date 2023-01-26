@@ -1,0 +1,20 @@
+13:44:17 **** Incremental Build of configuration Debug for project Unit6_lesson3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Unit6_lesson3.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Unit_6(Microcontroller_Architecture)\Assignments\Assignment_2\Code\Unit6_lesson3\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Unit6_lesson3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Unit6_lesson3.elf
+ 
+arm-none-eabi-objdump -h -S  Unit6_lesson3.elf  > "Unit6_lesson3.list"
+arm-none-eabi-objcopy  -O binary  Unit6_lesson3.elf  "Unit6_lesson3.bin"
+arm-none-eabi-size   Unit6_lesson3.elf 
+   text	   data	    bss	    dec	    hex	filename
+    832	      8	   1568	   2408	    968	Unit6_lesson3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Unit6_lesson3.bin
+Finished building: Unit6_lesson3.list
+ 
+ 
+
+13:44:17 Build Finished. 0 errors, 0 warnings. (took 565ms)
+
