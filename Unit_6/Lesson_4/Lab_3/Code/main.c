@@ -46,7 +46,7 @@ void interrupt_init(void){
 	MCUCR |= (0b01 << 0);
 
 	//Enabling INT1 for any rising edge change
-	MCUCR |= (0b11 << 0);
+	MCUCR |= (0b11 << 2);
 
 	//Enabling INT2 for any falling edge change
 	MCUCSR &= ~(1 << 6);
