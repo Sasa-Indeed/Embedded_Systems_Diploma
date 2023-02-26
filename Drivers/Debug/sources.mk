@@ -20,6 +20,9 @@ OBJCOPY_BIN :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+HAL/Keypad \
+HAL/LCD \
+STM32_F103C6_Drivers/EXTI \
 STM32_F103C6_Drivers/GPIO \
 Src \
 Startup \

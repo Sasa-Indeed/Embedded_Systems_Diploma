@@ -106,6 +106,7 @@ typedef struct {
 //								APIs supported by "MCAL GPIO Driver"
 //------------------------------------------------------------------------------------------'
 
+//Initializations APIs
 void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
 void MCAL_GPIO_deInit(GPIO_Typedef * GPIOX);
 

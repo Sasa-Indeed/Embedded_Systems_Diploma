@@ -23,77 +23,62 @@
 
 #include "STM32F103x6.h"
 #include "STM32F103C6_GPIO_Driver.h"
+#include "STM32F103C6_EXTI_Driver.h"
+#include "lcd.h"
+#include "keypad.h"
 
-
+unsigned int flag = 0;
 
 //APIs
+void _delay(uint32_t time);
 void clock_init(void);
-void GPIO_init(void);
-void delay(uint32_t time);
+void interr_9(void);
 
 int main(void){
 
-	//Initialising Peripherals
+	//Initializing Peripherals
 	clock_init();
-	GPIO_init();
+	LCD_Clear_Screen();
 
+	//Configuring the interrupt
+	EXTI_PinConfig_t t;
+	t.EXTI_Pin = EXTI9PB9;
+	t.Trigger_Case = EXTI_Trigger_Rising;
+	t.P_IRQ_Callback = interr_9;
+	t.IRQ_EN = EXTI_IRQ_ENABLE;
+	MCAL_EXTI_GPIO_init((&t));
+
+	flag = 1;
 
 	while(1){
-		if(MCAL_GPIO_readPin(GPIOA, GPIO_PIN_1) == 0){
-			MCAL_GPIO_togglePin(GPIOB, GPIO_PIN_1);
-			while(MCAL_GPIO_readPin(GPIOA, GPIO_PIN_1) == 0);
+		if(flag){
+			LCD_Clear_Screen();
+			flag = 0;
 		}
-
-		if(MCAL_GPIO_readPin(GPIOA, GPIO_PIN_13) == 1){
-			MCAL_GPIO_togglePin(GPIOB, GPIO_PIN_13);
-
-		}
-
-		delay(2);
 	}
 }
 
 
-void clock_init(void){
-	//Enable GPIO A clock
-	RCC_GPIOA_CLK_EN();
-	//Enable GPIO B clock
-	RCC_GPIOB_CLK_EN();
-}
 
-void GPIO_init(void){
-
-	GPIO_pinConfig_t pinConfig;
-
-	//Enabling port A1 as input floating
-	pinConfig.GPIO_pinNumber = GPIO_PIN_1;
-	pinConfig.GPIO_mode = GPIO_MODE_INPUT_FLO;
-	MCAL_GPIO_init(GPIOA, &pinConfig);
-
-	//Enabling port B1 as output push-pull
-	pinConfig.GPIO_pinNumber = GPIO_PIN_1;
-	pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_PP;
-	pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
-
-	MCAL_GPIO_init(GPIOB, &pinConfig);
-
-	//Enabling port A13 as input floating
-	pinConfig.GPIO_pinNumber = GPIO_PIN_13;
-	pinConfig.GPIO_mode = GPIO_MODE_INPUT_FLO;
-	MCAL_GPIO_init(GPIOA, &pinConfig);
-
-	//Enabling port B13 as output push-pull
-	pinConfig.GPIO_pinNumber = GPIO_PIN_13;
-	pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_PP;
-	pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
-	MCAL_GPIO_init(GPIOB, &pinConfig);
-
-}
-
-void delay(uint32_t time){
+void _delay(uint32_t time){
 	uint32_t i,j;
 	for(i = 0; i <  time; i++){
 		for(j = 0; j <  255; j++);
 	}
 }
 
+void clock_init(void){
+	RCC_GPIOA_CLK_EN();
+
+	RCC_GPIOB_CLK_EN();
+
+	RCC_AFIO_CLK_EN();
+
+	LCD_INIT();
+}
+
+void interr_9(void){
+	flag = 1;
+	LCD_WRITE_STRING("IRQ EXTI9 has happened :)");
+	_delay(1000);
+}

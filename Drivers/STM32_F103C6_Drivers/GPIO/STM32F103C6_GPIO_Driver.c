@@ -14,7 +14,7 @@
 * @param[in]	-PinNumber: which  pin number according @ref
 * 				 GPIO PINS_define to get bit
 * @retval		-Starting bit
-* Note			-none
+* Note			-None
 ======================================================================================*/
 uint8_t get_CRLH_position(uint16_t pinNumber){
 	switch(pinNumber){
@@ -105,7 +105,7 @@ uint8_t get_CRLH_position(uint16_t pinNumber){
 * 				 the GPIO peripheral
 * @param[in]	-PinConfig pointer to a GPIO_PinConfig_t structure that contains
 *				 the configuration information for the specified GPIO PIN.
-* @retval		-none
+* @retval		-None
 * Note			-Stm32F103C6 MCU has GPIO A,B,C,D,E Modules,but LQFP48 Package
 * 				 has only GPIO A,B,PART of C/D exported as external PINS from the M
 ======================================================================================*/
@@ -155,8 +155,8 @@ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig){
 * @brief		-Reset all the GPIO Registers
 * @param[in]	-GPIOx: where x can be (A. .E depending on device used) to select
 * 				 the GPIO peripheral
-* @retval		-none
-* Note			-none
+* @retval		-None
+* Note			-None
 ======================================================================================*/
 void MCAL_GPIO_deInit(GPIO_Typedef * GPIOX){
 
@@ -196,7 +196,7 @@ void MCAL_GPIO_deInit(GPIO_Typedef * GPIOX){
 * 				 the GPIO peripheral
 * @param[in]	-PinNumber: Set Pin Number according @ref GPIO PINS_define
 * @retval		-The input pin value (two values based on @ref GPIO_PIN_state)
-* Note			-none
+* Note			-None
 ======================================================================================*/
 uint8_t MCAL_GPIO_readPin(GPIO_Typedef * GPIOX, uint16_t  pinNumber){
 
@@ -211,7 +211,7 @@ uint8_t MCAL_GPIO_readPin(GPIO_Typedef * GPIOX, uint16_t  pinNumber){
 * @param[in]	-GPIOx: where x can be (A. .E depending on device used) to select
 * 				 the GPIO peripheral
 * @retval		-The input Port Value
-* Note			-none
+* Note			-None
 ======================================================================================*/
 uint16_t MCAL_GPIO_readPort(GPIO_Typedef * GPIOX){
 	return (uint16_t)(GPIOX->IDR);
@@ -226,8 +226,8 @@ uint16_t MCAL_GPIO_readPort(GPIO_Typedef * GPIOX){
 * 				 the GPIO peripheral
 * @param[in]	-PinNumber: specifies the port bit to read. Set by @ref GPIO_PINS_define
 * @param[in]	-value: Pin Value
-* @retval		-none
-* Note			-none
+* @retval		-None
+* Note			-None
 ======================================================================================*/
 void MCAL_GPIO_writePin(GPIO_Typedef * GPIOX, uint16_t  pinNumber, uint8_t  value){
 
@@ -249,8 +249,8 @@ void MCAL_GPIO_writePin(GPIO_Typedef * GPIOX, uint16_t  pinNumber, uint8_t  valu
 * @param[in]	-GPIOx: where x can be (A. .E depending on device used) to select
 * 				 the GPIO peripheral
 * @param[in]	-value: port Value to be written
-* @retval		-none
-* Note			-none
+* @retval		-None
+* Note			-None
 ======================================================================================*/
 void MCAL_GPIO_writePort(GPIO_Typedef * GPIOX, uint16_t  value){
 	GPIOX->ODR = (uint32_t) value;
@@ -263,8 +263,8 @@ void MCAL_GPIO_writePort(GPIO_Typedef * GPIOX, uint16_t  value){
 * @param[in]	-GPIOx: where x can be (A. .E depending on device used) to select
 * 				 the GPIO peripheral
 * @param[in]	-PinNumber: toggle pin number according @ref GPIO_PINS_define
-* @retval		-none
-* Note			-none
+* @retval		-None
+* Note			-None
 ======================================================================================*/
 void MCAL_GPIO_togglePin(GPIO_Typedef * GPIOX, uint16_t  pinNumber){
 	GPIOX->ODR ^= (uint32_t) pinNumber;
@@ -280,7 +280,7 @@ void MCAL_GPIO_togglePin(GPIO_Typedef * GPIOX, uint16_t  pinNumber){
 * @param[in]	-PinNumber: locks pin number according @ref GPIO_PINS_define
 * @retval		-Ok if pin Config is locked Or ERROR if pin not locked
 * 				 (OK & ERROR are defined @ref GPIO_LOCK_status)
-* Note			-none
+* Note			-None
 ======================================================================================*/
 uint8_t MCAL_GPIO_lockPin(GPIO_Typedef * GPIOX, uint16_t  pinNumber){
 
