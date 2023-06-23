@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="ENABLE"/>
+		<list key="findhistory">
+			<item value="enable"/>
+			<item value="BaudRate"/>
+			<item value="RS_Switch"/>
+			<item value="RW_Switch"/>
+			<item value="Enable_Switch"/>
+			<item value="MCAL_GPIO_INIT"/>
+			<item value="my_wait"/>
+			<item value="MCAL_GPIO_WritePort"/>
+			<item value="MCAL_GPIO_WritePin"/>
+			<item value="GPIO_PinMode"/>
+			<item value="GPIO_PinNumber"/>
+			<item value="LCD_Control"/>
+			<item value="ENABLE"/>
+			<item value="EXTI_GPIO_Mapping_t"/>
+		</list>
+		<list key="replacehistory">
+			<item value="ENABLE"/>
+			<item value="BAUD_RATE"/>
+			<item value="RS_SWITCH"/>
+			<item value="RS_Switch"/>
+			<item value="RW_SWITCH"/>
+			<item value="ENABLE_SWITCH"/>
+			<item value="MCAL_GPIO_init"/>
+			<item value="MCAL_GPIO_writePort"/>
+			<item value="MCAL_GPIO_writePin"/>
+			<item value="GPIO_mode"/>
+			<item value="GPIO_pinNumber"/>
+			<item value="LCD_CTRL"/>
+			<item value="DISABLE"/>
+			<item value="EXTI_GPIO_MAPPING_t"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1230"/>
+		<item key="DIALOG_Y_ORIGIN" value="193"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

@@ -1,0 +1,25 @@
+/*
+ * STM32F103C6_RCC_Driver.c
+ *
+ *  Created on: 22 Jun 2023
+ *      Author: Ahmed
+ */
+
+#include "STM32F103C6_RCC_Driver.h"
+
+uint32_t MCAL_RCC_getSYSCLKFreq(void){
+
+}
+
+
+uint32_t MCAL_RCC_getHCLKFreq(void){
+
+}
+
+uint32_t MCAL_RCC_getPCLK1Freq(void){
+
+}
+
+uint32_t MCAL_RCC_getPCLK2Freq(void){
+
+}

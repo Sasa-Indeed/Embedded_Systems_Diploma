@@ -1,4 +1,0 @@
-main.c:37:5:main	32	static
-main.c:63:6:_delay	24	static
-main.c:70:6:clock_init	8	static
-main.c:80:6:interr_9	8	static

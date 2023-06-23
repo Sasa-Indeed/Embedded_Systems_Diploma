@@ -1,0 +1,33 @@
+/*
+ * STM32F103C6_USART_Driver.h
+ *
+ *  Created on: 22 Jun 2023
+ *      Author: Ahmed
+ */
+
+#ifndef INC_STM32F103C6_USART_DRIVER_H_
+#define INC_STM32F103C6_USART_DRIVER_H_
+
+#include "STM32F103x6.h"
+#include "STM32F103C6_GPIO_Driver.h"
+#include "STM32F103C6_RCC_Driver.h"
+
+
+//Configuration Structure
+typedef struct{
+	uint8_t 		USART_mode; // Specifies the TX/RX mode.
+			// This parameter must be set based on @ref UART_mode_define
+
+}USART_config_t;
+
+
+
+//-------------------------------------------------------------------
+//==================Macros Configuration References==================
+//-------------------------------------------------------------------
+
+//@ref UART_mode_define
+#define USART_MODE_RX
+
+
+#endif /* INC_STM32F103C6_USART_DRIVER_H_ */

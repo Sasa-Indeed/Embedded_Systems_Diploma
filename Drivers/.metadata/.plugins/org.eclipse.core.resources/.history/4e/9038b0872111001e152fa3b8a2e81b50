@@ -1,0 +1,88 @@
+/*
+ * STM32F103C6_USART_Driver.c
+ *
+ *  Created on: 22 Jun 2023
+ *      Author: Ahmed
+ */
+
+#include "STM32F103C6_USART_Driver.h"
+
+
+/*
+ * =======================================================================================
+ * 							Generic Variables
+ * =======================================================================================
+ */
+USART_config_t* Global_UART_Config  = NULL;
+
+
+
+/*
+ * =======================================================================================
+ * 							APIs Implementations
+ * =======================================================================================
+ */
+
+/**===========================================================================
+ * @Fn				-MCAL_USART_init
+ * @brief 			- Initializes USART  (Supported feature ASYNCH. Only)!
+ * @param [in] 		- USARTx: where x can be (1..3 depending on device used)
+ * @retval 			-none
+ * Note				-Reset the Model By RCC
+ *============================================================================
+ */
+void MCAL_USART_init(USART_Typedef * USARTX,USART_config_t * config){
+	Global_UART_Config = config;
+	uint32_t pclk, BRR;
+
+	//	enable Clock for the USART
+	if(USART1 == USARTX){
+		RCC_USART1_CLK_EN();
+	}else if(USART2 == USARTX){
+		RCC_USART2_CLK_EN();
+	}else if(USART3 == USARTX){
+		RCC_USART3_CLK_EN();
+	}
+
+	//Enable USART Module
+	//USART_CR1  Bit 13 UE: USART enable
+	USARTX->CR1 |= (1<<13);
+
+	//Enable USART TX and RX according to the USART_Mode configuration item
+	//USART_CR1 Bit 3 TE: Transmitter enable & Bit 2 RE: Receiver enable
+	USARTX->CR1 |= config->USART_mode;
+
+	//Data length
+	USARTX->CR1 |= config->data_lenght;
+
+	//Parity control
+	USARTX->CR1 |= config->parity;
+
+	//Stop bits
+	USARTX->CR2 |= config->stop_bits;
+
+	//Control flow
+	USARTX->CR3 |= config->hwFlCt;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+void MCAL_USART_deinit(USART_Typedef * USARTX);
+
+//GPIO related functions
+void MCAL_USART_set_pins(USART_Typedef * USARTX);
+
+//Transmission functions
+void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+
+void MCAL_USART_TC_status(USART_Typedef * USARTX);
