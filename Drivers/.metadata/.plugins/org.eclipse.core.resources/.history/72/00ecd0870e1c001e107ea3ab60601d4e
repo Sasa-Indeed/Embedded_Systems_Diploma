@@ -1,0 +1,34 @@
+/*
+ * STM32F103C6_SPI_Driver.h
+ *
+ *  Created on: 6 Jul 2023
+ *      Author: Ahmed
+ */
+
+#ifndef INC_STM32F103C6_SPI_DRIVER_H_
+#define INC_STM32F103C6_SPI_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+#include "STM32F103x6.h"
+#include "STM32F103C6_GPIO_Driver.h"
+
+//=========================================================================
+
+
+//Configuration structure
+typedef struct{
+	uint16_t 		device_mode; 		//Specifies the SPI operating mode @ref SPI_device_mode
+	uint16_t 		communication_mode; //Specifies the SPI bidirectional mode  sate @ref SPI_communication_mode
+	uint16_t 		frame_format; 		//Specifies LSB or MSB @ref SPI_frame_format
+	uint16_t 		data_size; 			//Specifies the SPI bidirectional mode  sate @ref SPI_communication_mode
+	uint16_t 		CLK_polarity; //Specifies the SPI bidirectional mode  sate @ref SPI_communication_mode
+	uint16_t 		CLK_phase; //Specifies the SPI bidirectional mode  sate @ref SPI_communication_mode
+	uint16_t 		NSS; //Specifies the SPI bidirectional mode  sate @ref SPI_communication_mode
+
+
+}SPI_config_t;
+
+
+#endif /* INC_STM32F103C6_SPI_DRIVER_H_ */

@@ -2173,3 +2173,988 @@ Finished building: Drivers.hex
  
  
  
+23:26:54 **** Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:34:45: error: 'NUll' undeclared here (not in a function); did you mean 'NULL'?
+ SPI_config_t* global_SPI_config[2] = {NULL, NUll};
+                                             ^~~~
+                                             NULL
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_set_pins':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:137:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOA, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:145:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOA, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:156:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:164:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:173:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:183:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOA, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:192:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../Src/main.c:55:34: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_recive_data(USART1, &flag, enable);
+                                  ^
+In file included from ../Src/main.c:27:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:56:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:27:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:201:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:209:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOA, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:229:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOB, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:237:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOB, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:248:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:256:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:265:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:275:27: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+     MCAL_GPIO_init(GPIOB, pinConfig);
+                           ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:284:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:293:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:301:26: error: incompatible type for argument 2 of 'MCAL_GPIO_init'
+    MCAL_GPIO_init(GPIOB, pinConfig);
+                          ^~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:110:6: note: expected 'GPIO_pinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_pinConfig_t {aka struct <anonymous>}'
+ void MCAL_GPIO_init(GPIO_Typedef * GPIOX, GPIO_pinConfig_t * pinConfig);
+      ^~~~~~~~~~~~~~
+make: *** [STM32_F103C6_Drivers/SPI/subdir.mk:18: STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:29:14 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:34:45: error: 'NUll' undeclared here (not in a function); did you mean 'NULL'?
+ SPI_config_t* global_SPI_config[2] = {NULL, NUll};
+                                             ^~~~
+                                             NULL
+make: *** [STM32_F103C6_Drivers/SPI/subdir.mk:18: STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+23:29:29 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2880	      8	   1640	   4528	   11b0	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.list
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+14:20:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:129:2: error: 'pinConfig' undeclared (first use in this function); did you mean 'pinconfig'?
+  pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_PP;
+  ^~~~~~~~~
+  pinconfig
+../Src/main.c:129:2: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:127:19: warning: unused variable 'pinconfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinconfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:141:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:142:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:146:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:20:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:141:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:142:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:146:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+Finished building: Drivers.list
+   text	   data	    bss	    dec	    hex	filename
+   3156	      8	   1640	   4804	   12c4	Drivers.elf
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: default.size.stdout
+ 
+ 
+ 
+14:41:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:142:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:143:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:147:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4136	      8	   1640	   5784	   1698	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+15:04:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:142:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:143:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2912	      8	   1640	   4560	   11d0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+ 
+15:09:55 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:158:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:159:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2896	      8	   1640	   4544	   11c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+ 
+17:10:04 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+In file included from d:\learnindepthembedded\tools\cube ide\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\bin\../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include/sys/_types.h:159:0,
+                 from d:\learnindepthembedded\tools\cube ide\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\bin\../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include/sys/reent.h:15,
+                 from d:\learnindepthembedded\tools\cube ide\stm32cubeide_1.4.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208\tools\bin\../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/include/stdlib.h:18,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:15,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:11,
+                 from ../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:8:
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:16:39: error: invalid initializer
+ USART_config_t  Global_UART_Config  = NULL;
+                                       ^
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:142:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:143:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_set_pins':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:169:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:169:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:176:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:176:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:201:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:201:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:208:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:208:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:234:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:234:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:241:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:241:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_send_data':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:272:23: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+                       ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_recive_data':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:300:23: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+                       ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:302:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->parity == USART_PARITY_NONE){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:310:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->parity == USART_PARITY_NONE){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART1_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:336:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART2_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:340:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART3_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:344:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+make: *** [STM32_F103C6_Drivers/USART/subdir.mk:18: STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:10:49 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_set_pins':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:169:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:169:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:176:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:176:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:201:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:201:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:208:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:208:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:234:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:234:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:241:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:241:74: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+                                                                          ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_send_data':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:272:23: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+                       ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_recive_data':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:300:23: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+                       ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:302:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->parity == USART_PARITY_NONE){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:310:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->parity == USART_PARITY_NONE){
+                        ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART1_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:336:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART2_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:340:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'USART3_IRQHandler':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:344:20: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+  Global_UART_Config->p_IRQ_callback();
+                    ^~
+make: *** [STM32_F103C6_Drivers/USART/subdir.mk:18: STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:12:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c: In function 'MCAL_USART_recive_data':
+../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:302:24: error: invalid type argument of '->' (have 'USART_config_t {aka struct <anonymous>}')
+   if(Global_UART_Config->parity == USART_PARITY_NONE){
+                        ^~
+make: *** [STM32_F103C6_Drivers/USART/subdir.mk:18: STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:12:49 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2920	      8	   1656	   4584	   11e8	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+Finished building: Drivers.list
+ 
+17:20:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:142:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:143:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:148:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4156	      8	   1696	   5860	   16e4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+ 
+Finished building: Drivers.list
+Finished building: Drivers.bin
+ 
+ 
+17:44:45 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4156	      8	   1696	   5860	   16e4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.list
+ 
+ 
+ 
+17:51:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_TX_RX':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:334:9: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+   while(!(SPIx)->SPI_SR & SPI_SR_TXE);
+         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4072	      8	   1696	   5776	   1690	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+ 
+17:52:12 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4072	      8	   1696	   5776	   1690	Drivers.elf
+Finished building: default.size.stdout
+ 
+17:56:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_TX_RX':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:334:9: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+   while(!(SPIx)->SPI_SR & SPI_SR_TXE);
+         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4072	      8	   1696	   5776	   1690	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+17:59:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4088	      8	   1696	   5792	   16a0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+ 
+18:10:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_TX_RX':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:334:9: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+   while(!(SPIx)->SPI_SR & SPI_SR_TXE);
+         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4076	      8	   1696	   5780	   1694	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+18:12:30 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_TX_RX':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:334:9: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+   while(!(SPIx)->SPI_SR & SPI_SR_TXE);
+         ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4072	      8	   1696	   5776	   1690	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+18:14:31 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4072	      8	   1696	   5776	   1690	Drivers.elf
+Finished building: default.size.stdout
+ 
+18:22:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:142:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:143:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:148:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_TX_RX':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:334:9: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+   while(!(SPIx)->SPI_SR & SPI_SR_TXE);
+         ^~~~~~~~~~~~~~~
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4056	      8	   1696	   5760	   1680	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+ 
+18:28:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4140	      8	   1696	   5844	   16d4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+18:34:49 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:173:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:174:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:179:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4120	      8	   1696	   5824	   16c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+ 
+20:20:58 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'UART_callback':
+../Src/main.c:141:33: warning: passing argument 2 of 'MCAL_USART_recive_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_recive_data(USART1, &flag, disable);
+                                 ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:130:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:142:31: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_USART_send_data(USART1, &flag, enable);
+                               ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../Src/main.c:147:23: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+                       ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4140	      8	   1696	   5844	   16d4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.list
+ 
+ 
+ 
+20:58:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:106:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:168:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+../Src/main.c:169:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: default.size.stdout
+ 
+ 
+ 
+Finished building: Drivers.list
+ 

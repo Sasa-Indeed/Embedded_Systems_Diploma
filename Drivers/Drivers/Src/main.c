@@ -18,31 +18,85 @@
  */
 
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+#warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
 
+/*
+ * =======================================================================================
+ * 									Includes
+ * =======================================================================================
+ */
 #include "STM32F103x6.h"
 #include "STM32F103C6_GPIO_Driver.h"
 #include "STM32F103C6_EXTI_Driver.h"
 #include "STM32F103C6_USART_Driver.h"
+#include "STM32F103C6_SPI_Driver.h"
 #include "lcd.h"
 #include "keypad.h"
+
+
+/*
+ * =======================================================================================
+ * 							Generic Macros
+ * =======================================================================================
+ */
+
+//#define SPI_ACT_MASTER
+#define SPI_ACT_SLAVE
+
+/*
+ * =======================================================================================
+ * 							Generic Variables
+ * =======================================================================================
+ */
 
 unsigned char flag;
 
 //APIs
 void clock_init(void);
+void UART_callback(void);
+void UART_init(void);
+void SPI_init(void);
+void SPI_irq_callback(IRQ_SPI_src_t irq_src);
+
 
 int main(void){
 
 	//Initializing Peripherals
 	clock_init();
+	UART_init();
+	SPI_init();
+	while(1){
+
+	}
+}
+
+/*
+ *
+ * =======================================================================================
+ * 							APIs Implementations
+ * =======================================================================================
+ */
+void clock_init(void){
+	//Enabling GPIOs
+	RCC_GPIOA_CLK_EN();
+	RCC_GPIOB_CLK_EN();
+
+	//Enabling AFIO
+	RCC_AFIO_CLK_EN();
+
+}
+
+void UART_init(void){
 	USART_config_t config;
 
 	config.baud_rate = USART_BAUD_RATE_115200;
 	config.hwFlCt = USART_HWFLCT_NONE;
-	config.IRQ_enable = USART_IRQ_ENABLE_NONE;
-	config.p_IRQ_callback = NULL;
+
+	config.IRQ_enable = USART_IRQ_ENABLE_RXNEIE;
+
+	config.p_IRQ_callback = UART_callback;
+
 	config.parity = USART_PARITY_NONE;
 	config.data_lenght = USART_DATA_LENGHT_8B;
 	config.stop_bits = USART_STOP_BITS_1;
@@ -50,20 +104,76 @@ int main(void){
 
 	MCAL_USART_init(USART1, &config);
 	MCAL_USART_set_pins(USART1);
+}
 
-	while(1){
-		MCAL_USART_recive_data(USART1, &flag, enable);
+void SPI_init(void){
+	SPI_config_t config;
+	GPIO_pinConfig_t pinConfig;
+
+	//Common configuration between master & slave
+	config.CLK_phase = 	SPI_CLK_PHASE_EDGE2_DATA_CAPTURE;
+	config.CLK_polarity = SPI_CLK_POLARITY_IDLE_HIGH;
+	config.data_size = SPI_DATA_SIZE_8BIT;
+	config.frame_format = SPI_FRAME_FORMAT_MSB;
+	//Assume by default pclk2 = 8MHZ
+	config.baud_rate_prescaler = SPI_BAUD_RATE_PRESCALER_8;
+	config.communication_mode = SPI_DIRECTION_2LINES;
+
+#ifdef SPI_ACT_MASTER
+	config.device_mode = SPI_DEVICE_MODE_MASTER;
+	config.IRQ_enable = SPI_IRQ_ENABLE_NONE;
+	config.p_IRQ_callback = NULL;
+	config.NSS = SPI_NSS_SW_NSS_INTERNAL_SOFT_SET;
+
+	//Configuring SS by GPIO pin 4
+	pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_PP;
+	pinConfig.GPIO_pinNumber = GPIO_PIN_4;
+	pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
+	MCAL_GPIO_init(GPIOA, &pinConfig);
+
+#endif
+
+#ifdef SPI_ACT_SLAVE
+	config.device_mode = SPI_DEVICE_MODE_SLAVE;
+	config.IRQ_enable = SPI_IRQ_ENABLE_RXNEIE;
+	config.NSS = SPI_NSS_HW_SLAVE;
+	config.p_IRQ_callback = SPI_irq_callback;
+
+
+#endif
+
+	MCAL_SPI_init(SPI1, &config);
+	MCAL_SPI_set_pins(SPI1);
+
+
+
+	//Force the slave select high idle mode
+	MCAL_GPIO_writePin(GPIOA, GPIO_PIN_4, 1);
+
+}
+
+void UART_callback(void){
+#ifdef SPI_ACT_MASTER
+	MCAL_USART_recive_data(USART1, &flag, disable);
+	MCAL_USART_send_data(USART1, &flag, enable);
+
+	//Send to SPI
+
+	MCAL_GPIO_writePin(GPIOA, GPIO_PIN_4, 0);
+	MCAL_SPI_TX_RX(SPI1, &flag, pollingEnable);
+	MCAL_GPIO_writePin(GPIOA, GPIO_PIN_4, 1);
+#endif
+
+}
+
+void SPI_irq_callback(IRQ_SPI_src_t irq_src){
+#ifdef SPI_ACT_SLAVE
+	if(irq_src.RXNE){
+		flag = 0xf;
+		MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
 		MCAL_USART_send_data(USART1, &flag, enable);
 	}
+#endif
 }
 
-
-void clock_init(void){
-	RCC_GPIOA_CLK_EN();
-
-	RCC_GPIOB_CLK_EN();
-
-	RCC_AFIO_CLK_EN();
-
-}
 

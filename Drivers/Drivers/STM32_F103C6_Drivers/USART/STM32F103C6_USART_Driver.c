@@ -13,7 +13,7 @@
  * 							Generic Variables
  * =======================================================================================
  */
-USART_config_t * Global_UART_Config  = NULL;
+USART_config_t  Global_UART_Config;
 
 
 /*
@@ -40,8 +40,8 @@ USART_config_t * Global_UART_Config  = NULL;
 
 
 /*
- * =======
- * ================================================================================
+ *
+ * =======================================================================================
  * 							APIs Implementations
  * =======================================================================================
  */
@@ -56,7 +56,7 @@ USART_config_t * Global_UART_Config  = NULL;
  *============================================================================
  */
 void MCAL_USART_init(USART_Typedef * USARTX,USART_config_t * config){
-	Global_UART_Config = config;
+	Global_UART_Config = *config;
 	uint32_t pclk;
 
 	//	enable Clock for the USART
@@ -166,14 +166,14 @@ void MCAL_USART_set_pins(USART_Typedef * USARTX){
 		MCAL_GPIO_init(GPIOA, &pinConfig);
 
 		//PA11 CTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_CTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_11;
 			pinConfig.GPIO_mode = GPIO_MODE_INPUT_FLO;
 			MCAL_GPIO_init(GPIOA, &pinConfig);
 		}
 
 		//PA12 RTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_RTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_12;
 			pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_PP;
 			pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
@@ -198,14 +198,14 @@ void MCAL_USART_set_pins(USART_Typedef * USARTX){
 		MCAL_GPIO_init(GPIOA, &pinConfig);
 
 		//PA0 CTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_CTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_0;
 			pinConfig.GPIO_mode = GPIO_MODE_INPUT_FLO;
 			MCAL_GPIO_init(GPIOA, &pinConfig);
 		}
 
 		//PA1 RTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_RTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_1;
 			pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_PP;
 			pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
@@ -231,14 +231,14 @@ void MCAL_USART_set_pins(USART_Typedef * USARTX){
 		MCAL_GPIO_init(GPIOB, &pinConfig);
 
 		//PA12 CTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_CTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_CTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_12;
 			pinConfig.GPIO_mode = GPIO_MODE_INPUT_FLO;
 			MCAL_GPIO_init(GPIOB, &pinConfig);
 		}
 
 		//PA13 RTS
-		if(Global_UART_Config->hwFlCt == USART_HWFLCT_RTS || Global_UART_Config->hwFlCt == USART_HWFLCT_RTS_CTS){
+		if(Global_UART_Config.hwFlCt == USART_HWFLCT_RTS || Global_UART_Config.hwFlCt == USART_HWFLCT_RTS_CTS){
 			pinConfig.GPIO_pinNumber = GPIO_PIN_13;
 			pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_PP;
 			pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
@@ -269,7 +269,7 @@ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling p
 	}
 
 	//Checking the data length
-	if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+	if(Global_UART_Config.data_lenght == USART_DATA_LENGHT_9B){
 		USARTX->DR = (*data & (uint32_t)(0x1FF));
 	}else{
 		USARTX->DR = (*data & (uint8_t)(0xFF));
@@ -297,9 +297,9 @@ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling
 	}
 
 	//Checking the data length
-	if(Global_UART_Config->data_lenght == USART_DATA_LENGHT_9B){
+	if(Global_UART_Config.data_lenght == USART_DATA_LENGHT_9B){
 		//No parity so all 9 bits are considered data
-		if(Global_UART_Config->parity == USART_PARITY_NONE){
+		if(Global_UART_Config.parity == USART_PARITY_NONE){
 			*((uint16_t*)data) = USARTX->DR;
 		}else{
 			*((uint16_t*)data) = (USARTX->DR & (uint8_t)0xFF);
@@ -307,7 +307,7 @@ void MCAL_USART_recive_data(USART_Typedef * USARTX, uint16_t* data, enum polling
 
 	}else{
 		//No parity so all 8 bits are considered data
-		if(Global_UART_Config->parity == USART_PARITY_NONE){
+		if(Global_UART_Config.parity == USART_PARITY_NONE){
 			*((uint16_t*)data) = (USARTX->DR & (uint8_t)0xFF);
 		}else{
 			*((uint16_t*)data) = (USARTX->DR & (uint8_t)0x7F);
@@ -333,13 +333,13 @@ void MCAL_USART_TC_status(USART_Typedef * USARTX){
 
 //ISR
 void USART1_IRQHandler (void){
-	Global_UART_Config->p_IRQ_callback();
+	Global_UART_Config.p_IRQ_callback();
 }
 
 void USART2_IRQHandler (void){
-	Global_UART_Config->p_IRQ_callback();
+	Global_UART_Config.p_IRQ_callback();
 }
 
 void USART3_IRQHandler (void){
-	Global_UART_Config->p_IRQ_callback();
+	Global_UART_Config.p_IRQ_callback();
 }

@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="ENABLE"/>
+		<item key="selection" value="global_SPI_config"/>
 		<list key="findhistory">
+			<item value="global_SPI_config"/>
 			<item value="enable"/>
 			<item value="BaudRate"/>
 			<item value="RS_Switch"/>

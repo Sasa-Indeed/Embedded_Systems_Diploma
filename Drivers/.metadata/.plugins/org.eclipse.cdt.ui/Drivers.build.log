@@ -1,6 +1,26 @@
-17:06:21 **** Incremental Build of configuration Debug for project Drivers ****
+20:58:48 **** Incremental Build of configuration Debug for project Drivers ****
 make -j8 all 
-arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:106:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:168:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
+      ^~~~~~~~~~~~~~
+../Src/main.c:169:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
 arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Drivers.elf
  
@@ -8,16 +28,16 @@ arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
 arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
 arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
 arm-none-eabi-size   Drivers.elf 
-Finished building: Drivers.list
    text	   data	    bss	    dec	    hex	filename
-   2688	      8	   1632	   4328	   10e8	Drivers.elf
- 
-Finished building: default.size.stdout
+   4036	      8	   1696	   5740	   166c	Drivers.elf
 Finished building: Drivers.bin
 Finished building: Drivers.hex
+Finished building: default.size.stdout
  
  
+ 
+Finished building: Drivers.list
  
 
-17:06:27 Build Finished. 0 errors, 0 warnings. (took 5s.956ms)
+20:58:53 Build Finished. 0 errors, 3 warnings. (took 4s.887ms)
 

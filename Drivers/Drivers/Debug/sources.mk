@@ -25,6 +25,7 @@ HAL/LCD \
 STM32_F103C6_Drivers/EXTI \
 STM32_F103C6_Drivers/GPIO \
 STM32_F103C6_Drivers/RCC \
+STM32_F103C6_Drivers/SPI \
 STM32_F103C6_Drivers/USART \
 Src \
 Startup \
