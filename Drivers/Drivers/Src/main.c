@@ -31,9 +31,10 @@
 #include "STM32F103C6_EXTI_Driver.h"
 #include "STM32F103C6_USART_Driver.h"
 #include "STM32F103C6_SPI_Driver.h"
+#include "STM32F103C6_I2C_Driver.h"
 #include "lcd.h"
 #include "keypad.h"
-
+#include "EEPROM.h"
 
 /*
  * =======================================================================================
@@ -64,8 +65,27 @@ int main(void){
 
 	//Initializing Peripherals
 	clock_init();
-	UART_init();
-	SPI_init();
+	eeprom_init();
+//	UART_init();
+//	SPI_init();
+
+	//Test case 1
+	unsigned char ch1 [] = {0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7};
+	unsigned char ch2 [7];
+
+	eeprom_write_nBytes(0xAF, ch1, 7);
+	eeprom_read_nBytes(0xAF, ch2, 7);
+
+	//Test case 2
+
+	ch1[0] = 0xA;
+	ch1[1] = 0xB;
+	ch1[2] = 0xC;
+	ch1[3] = 0xD;
+
+	eeprom_write_nBytes(0xFFF, ch1, 4);
+	eeprom_read_nBytes(0xFFF, ch2, 4);
+
 	while(1){
 
 	}

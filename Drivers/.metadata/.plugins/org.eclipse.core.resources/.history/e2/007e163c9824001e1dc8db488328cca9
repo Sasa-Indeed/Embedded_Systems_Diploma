@@ -1,0 +1,114 @@
+/*
+ * STM32F103C6_I2C_Driver.h
+ *
+ *  Created on: 15 Jul 2023
+ *      Author: Ahmed
+ */
+
+#ifndef INC_STM32F103C6_I2C_DRIVER_H_
+#define INC_STM32F103C6_I2C_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+#include "STM32F103x6.h"
+#include "STM32F103C6_GPIO_Driver.h"
+#include "STM32F103C6_RCC_Driver.h"
+
+
+//=========================================================================
+
+
+//Configuration structures
+
+typedef struct{
+	uint16_t			enable_dual_address;   // 1-Enable    0-Disable
+	uint32_t			addressing_slave_mode;//This parameter must be configured from @ref addressing_slave_mode
+	uint16_t			primary_slave_address;
+	uint16_t			secondary_slave_address;
+}i2c_slave_address_t;
+
+typedef enum{
+	i2c_ev_stop,
+	i2c_error_af,
+	i2c_ev_addr_matched,
+	i2c_ev_data_req, //The app layer should send the data (I2C_slaveSendData) in this state
+	i2c_ev_data_rcv   //The app layer should read the data (I2C_slaveReciveData) in this state
+}slave_state;
+
+typedef struct{
+	uint32_t 					clock_speed;/*Specifies the clock frequency. This parameter must be configured from
+	 	 	 	 	 	 	 	 	 	 	 @ref clock_speed*/
+	uint32_t					stretch_mode;   //This parameter must be configured from @ref stretch_mode
+	uint32_t					i2c_mode;	    //This parameter specifies I2C mode must be configured from @ref i2c_mode
+	i2c_slave_address_t			slave_address;  //This parameter is for slave addresses
+	uint32_t 					ack_control; 	/*Enables or disables acknowledgment in the MCU. This parameter must
+	 	 	 	 	 	 	 	 	 	 	 	be configured from @ref ack_control*/
+	uint32_t 					general_call_address_detection;//This parameter must be configured from @ref general_call_address_detection
+
+	void(* p_slave_event_callback)(slave_state state);
+}I2C_config_t;
+
+typedef enum{
+	with_stop,
+	without_stop
+}stop_condition;
+
+typedef enum{
+	start,
+	repeat_start
+}repeated_start;
+
+
+//-------------------------------------------------------------------
+//==================Macros Configuration References==================
+//-------------------------------------------------------------------
+
+//@ref clock_speed
+#define I2C_SCLK_SM_50K															(uint32_t)(50000U)
+#define I2C_SCLK_SM_100K														(uint32_t)(100000U)
+#define I2C_SCLK_FM_200K														(uint32_t)(200000U)//Fast mode not supported!!!!
+#define I2C_SCLK_FM_400K														(uint32_t)(400000U)//Fast mode not supported!!!!
+
+//@ref stretch_mode
+#define I2C_STRETCH_MODE_ENABLE													(uint32_t)(0)
+#define I2C_STRETCH_MODE_DISABLE												I2C_CR1_NOSTRETCH
+
+//@ref i2c_mode
+#define I2C_MODE_I2C															(uint32_t)(0)
+#define I2C_MODE_SMBUS															I2C_CR1_SMBUS
+
+//@ref addressing_slave_mode
+#define I2C_ADDRESSING_SLAVE_MODE_7BIT											(uint32_t)(0)
+#define I2C_ADDRESSING_SLAVE_MODE_10BIT											I2C_OAR1_ADDMODE
+
+//@ref ack_control
+#define I2C_ACK_CONTROL_DISABLE													(uint32_t)(0)
+#define I2C_ACK_CONTROL_ENABLE													I2C_CR1_ACK
+
+//@ref general_call_address_detection
+#define I2C_GENERAL_CALL_ADDRESS_DETECTION_DISABLE								(uint32_t)(0)
+#define I2C_GENERAL_CALL_ADDRESS_DETECTION_ENABLE								I2C_CR1_ENGC
+
+//------------------------------------------------------------------------------------------
+//								APIs supported by "MCAL I2C Driver"
+//------------------------------------------------------------------------------------------
+//Initializations APIs
+void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config);
+
+void MCAL_I2C_deinit(I2C_Typedef * I2Cx);
+
+//GPIO related functions
+void MCAL_I2C_set_pins(I2C_Typedef * I2Cx);
+
+
+//Transmission functions
+void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+		stop_condition stopCon, repeated_start start);
+
+void MCAL_I2C_master_RX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+		stop_condition stopCon, repeated_start start);
+
+
+
+#endif /* INC_STM32F103C6_I2C_DRIVER_H_ */

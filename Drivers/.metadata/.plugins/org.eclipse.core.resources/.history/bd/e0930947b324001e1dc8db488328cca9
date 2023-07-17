@@ -1,0 +1,28 @@
+/*
+ * EEPROM.c
+ *
+ *  Created on: 17 Jul 2023
+ *      Author: Ahmed
+ */
+#include "EEPROM.h"
+
+void eeprom_init(void){
+	//I2C init
+	//PB6: I2C1_SCL
+	//PB7: I2C1_SDA
+
+	I2C_config_t config;
+
+	config.general_call_address_detection = I2C_GENERAL_CALL_ADDRESS_DETECTION_ENABLE;
+	config.ack_control = I2C_ACK_CONTROL_ENABLE;
+	config.clock_speed = I2C_SCLK_SM_100K;
+	config.i2c_mode = I2C_MODE_I2C;
+	config.p_slave_event_callback = NULL;
+	config.stretch_mode = I2C_STRETCH_MODE_ENABLE;
+
+	MCAL_I2C_set_pins(I2C1);
+	MCAL_I2C_init(I2C1, config);
+
+}
+unsigned char eeprom_write_nBytes(unsigned int memory_adderss,unsigned char * data, uint8_t dataLen);
+unsigned char eeprom_write_nBytes(unsigned int memory_adderss,uint8_t * data, uint8_t dataLen);

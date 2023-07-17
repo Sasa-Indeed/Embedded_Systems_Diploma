@@ -1,0 +1,340 @@
+/*
+ * STM32F103C6_I2C_Driver.c
+ *
+ *  Created on: 15 Jul 2023
+ *      Author: Ahmed
+ */
+
+/*
+ * =======================================================================================
+ * 									Includes
+ * =======================================================================================
+ */
+#include "STM32F103C6_I2C_Driver.h"
+
+
+/*
+ * =======================================================================================
+ * 							Generic Macros
+ * =======================================================================================
+ */
+
+#define I2C1_INDEX											0
+#define I2C2_INDEX											1
+
+#define I2C_EVENT_MASTER_BYTE_TRANSMITTING				(uint32_t)(0x00070080)
+
+/*
+ * =======================================================================================
+ * 							Generic Variables
+ * =======================================================================================
+ */
+
+I2C_config_t global_I2C_config[2] = {NULL, NULL};
+
+typedef enum{
+	disable = 0 ,
+	enable = 1
+}functional_state;
+
+
+typedef enum{
+	reset = 0,
+	set = 1
+}flag_status;
+
+typedef enum{
+	busy_flag = 0,
+	EV5,
+	EV6
+}status;
+
+typedef enum{
+	transmitter = 0,
+	receiver = 1
+}direction;
+
+
+/*
+ * =======================================================================================
+ * 							Helper Functions Headers
+ * =======================================================================================
+ */
+
+void generate_start(I2C_Typedef * I2Cx, functional_state newState, repeated_start start);
+flag_status get_flag_status(I2C_Typedef * I2Cx, status flag);
+//direction implies to read or write
+void send_address(I2C_Typedef * I2Cx,uint16_t address,direction direc);
+
+/*
+ *
+ * =======================================================================================
+ * 							APIs Implementations
+ * =======================================================================================
+ */
+
+//Initializations APIs
+void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config){
+	uint16_t tempReg = 0, freqRange = 0, result = 0;
+	uint32_t pclk1 = 0;
+	//Enable RCC clock
+	if(I2Cx == I2C1){
+		global_I2C_config[I2C1_INDEX] = * config;
+		RCC_I2C1_CLK_EN();
+	}else{
+		global_I2C_config[I2C2_INDEX] = * config;
+		RCC_I2C2_CLK_EN();
+	}
+
+	if(config->i2c_mode == I2C_MODE_I2C){
+		//1-
+		/*---------------------------------INIT Timing---------------------------------*/
+		//Get the I2Cx CR2 value
+		tempReg = I2Cx->I2C_CR2;
+		//Clear frequency FREQ[5:0] bits
+		tempReg &= ~(I2C_CR2_FREQ);
+		//Get pclk1 frequency value
+		pclk1 = MCAL_RCC_getPCLK1Freq();
+		//Set frequency bits depending on pclk1 value
+		freqRange = (uint16_t)(pclk1 / 1000000);
+
+		tempReg |= freqRange;
+		//Write to I2Cx CR2
+		I2Cx->I2C_CR2 = tempReg;
+		//Configure the clock control registers (I2C_CRR)
+
+		//Disable the selected I2C peripheral to configure time
+		I2Cx->I2C_CR1 &= ~(I2C_CR1_PE);
+
+		tempReg = 0;
+
+		//Configure speed in standard mode
+		if ((config->clock_speed == I2C_SCLK_SM_50K) || (config->clock_speed == I2C_SCLK_SM_100K)) {
+
+			/*Standard mode speed calculation
+			 * Tclk = CRR * Tpclk1
+			 * CRR = Tclk / (2 * Tpclk1)
+			 * CRR = Fpclk1 / (2 * I2C_ClockFrequency) */
+			result = (uint16_t)(pclk1 / (config->clock_speed << 1));
+
+			tempReg |= result;
+
+			//Write to I2C_CRR
+			I2Cx->I2C_CCR = result;
+
+			//I2C_TRISE Configuration
+			I2Cx->I2C_TRISE = freqRange + 1;
+
+		} else {
+			//Fast mode not supported yet!!!
+		}
+
+		/*---------------------------------I2Cx CR1 Configuration---------------------------------*/
+
+		//Get the I2Cx CR1 value
+		tempReg = I2Cx->I2C_CR1;
+
+		tempReg |= (uint16_t)(config->ack_control | config->general_call_address_detection
+				| config->i2c_mode | config->stretch_mode);
+
+		//Write to I2Cx CR1
+		I2Cx->I2C_CR1 = tempReg;
+
+		/*---------------------------------I2Cx OAR1 & OAR2 Configuration---------------------------------*/
+		tempReg = 0;
+
+		if (config->slave_address.enable_dual_address == 1) {
+			tempReg |= I2C_OAR2_ENDUAL;
+			tempReg |= config->slave_address.secondary_slave_address << I2C_OAR2_ADD2_Pos;
+			I2Cx->I2C_OAR2 = tempReg;
+		}
+
+		tempReg = 0;
+		tempReg |= config->slave_address.primary_slave_address << 1;
+		tempReg |= config->slave_address.addressing_slave_mode;
+		I2Cx->I2C_OAR1;
+
+	}else{
+		//SMBUS MODE not supported yet!!!!
+	}
+
+
+	if(config->p_slave_event_callback != NULL){
+		//Enable IRQ
+		I2Cx->I2C_CR2 |= (I2C_CR2_ITERREN);
+		I2Cx->I2C_CR2 |= (I2C_CR2_ITBUFEN);
+		I2Cx->I2C_CR2 |= (I2C_CR2_ITEVTEN);
+
+		if (I2Cx == I2C1) {
+			NVIC_IRQ31_I2C1_EV_ENABLE;
+			NVIC_IRQ32_I2C1_ER_ENABLE;
+		} else {
+			NVIC_IRQ33_I2C2_EV_ENABLE;
+			NVIC_IRQ34_I2C2_ER_ENABLE;
+		}
+
+		I2Cx->I2C_SR1 = 0;
+		I2Cx->I2C_SR2 = 0;
+	}
+
+	//Enable I2C peripheral
+	I2Cx->I2C_CR1 |= I2C_CR1_PE;
+}
+
+void MCAL_I2C_deinit(I2C_Typedef * I2Cx){
+	if (I2Cx == I2C1) {
+		NVIC_IRQ31_I2C1_EV_DISABLE;
+		NVIC_IRQ32_I2C1_ER_DISABLE;
+		RCC_I2C1_RESET();
+	} else {
+		NVIC_IRQ33_I2C2_EV_DISABLE;
+		NVIC_IRQ34_I2C2_ER_DISABLE;
+		RCC_I2C2_RESET();
+	}
+}
+
+//GPIO related functions
+void MCAL_I2C_set_pins(I2C_Typedef * I2Cx){
+	GPIO_pinConfig_t pinConfig;
+
+	if (I2Cx == I2C1) {
+		// PB 6 : I2C1_SCL
+		// PB 7 : I2C1_SDA
+
+		pinConfig.GPIO_pinNumber = GPIO_PIN_6;
+		pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_OD;
+		pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
+		MCAL_GPIO_init(GPIOB, &pinConfig);
+
+		pinConfig.GPIO_pinNumber = GPIO_PIN_7;
+		pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_OD;
+		pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
+		MCAL_GPIO_init(GPIOB, &pinConfig);
+
+	} else {
+		// PB 10 : I2C1_SCL
+		// PB 11 : I2C1_SDA
+
+		pinConfig.GPIO_pinNumber = GPIO_PIN_10;
+		pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_OD;
+		pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
+		MCAL_GPIO_init(GPIOB, &pinConfig);
+
+		pinConfig.GPIO_pinNumber = GPIO_PIN_11;
+		pinConfig.GPIO_mode = GPIO_MODE_OUTPUT_AF_OD;
+		pinConfig.GPIO_output_speed = GPIO_SPEED_10M;
+		MCAL_GPIO_init(GPIOB, &pinConfig);
+	}
+}
+
+//Transmission functions
+void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+		stop_condition stopCon, repeated_start start){
+	//todo
+	//Support timeout (configure timer working for specific amount of time before letting go)
+	//1.Set the start bit in the I2C_CR1 register to generate a start condition
+	generate_start(I2Cx, enable, start);
+
+	//2.Wait for EV5
+	//EV5: SB=1, cleared by reading SR1 register followed by writing DR register with address
+	while(!get_flag_status(I2Cx, EV5));
+
+	//3.Send address
+	send_address(I2Cx, devAddr, transmitter);
+
+	//4.Wait for EV6
+	//EV6: ADDR=1, cleared by reading SR1 register followed by reading SR2
+	while(!get_flag_status(I2Cx, EV6));
+
+	//5.Check TRA, BUSY, MSL, TXE flags
+}
+
+
+
+
+
+void MCAL_I2C_master_RX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+		stop_condition stopCon, repeated_start start);
+
+void generate_start(I2C_Typedef * I2Cx, functional_state newState, repeated_start start){
+
+	if(start != repeat_start){
+		//Check if bus is idle
+		while(get_flag_status(I2Cx, busy_flag));
+	}
+
+
+	if (newState != disable) {
+		//Generate a start condition
+		I2Cx->I2C_CR1 |= I2C_CR1_START;
+	} else {
+		//Disable the start condition
+		I2Cx->I2C_CR1 &= ~(I2C_CR1_START);
+	}
+}
+
+flag_status get_flag_status(I2C_Typedef * I2Cx, status flag){
+	flag_status bitStat = reset;
+
+	switch (flag) {
+		case busy_flag:{
+			if ((I2Cx->I2C_SR2) & (I2C_SR2_BUSY)) {
+				bitStat = set;
+			} else {
+				bitStat = reset;
+			}
+
+			break;
+		}
+
+		case EV5:{
+			if ((I2Cx->I2C_SR1) & (I2C_SR1_SB)) {
+				bitStat = set;
+			} else {
+				bitStat = reset;
+			}
+
+			break;
+		}
+
+		case EV6:{
+			if ((I2Cx->I2C_SR1) & (I2C_SR1_ADDR)) {
+				bitStat = set;
+			} else {
+				bitStat = reset;
+			}
+
+			break;
+		}
+
+		default:
+			break;
+	}
+
+
+
+
+	return bitStat;
+}
+
+void send_address(I2C_Typedef * I2Cx,uint16_t address,direction direc){
+	uint8_t index = (I2Cx == I2C1) ? I2C1_INDEX : I2C2_INDEX;
+
+	if(global_I2C_config[index].slave_address.addressing_slave_mode == I2C_ADDRESSING_SLAVE_MODE_7BIT){
+		address = address << 1;
+
+		if (direc != transmitter) {
+			//Set the address' bit 0 to 1 read
+			address |= 1<<0;
+		} else {
+			//Set the address' bit 0 to 0 for write
+			address &= ~(1<<0);
+		}
+
+		//Send the address
+		I2Cx->I2C_DR = address;
+
+	}else{
+		//10 bits not supported yet!!!
+	}
+}

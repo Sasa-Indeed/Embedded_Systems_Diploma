@@ -3158,3 +3158,1643 @@ Finished building: default.size.stdout
  
 Finished building: Drivers.list
  
+14:29:19 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/lcd.h:15,
+                 from ../HAL/LCD/lcd.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+In file included from ../Src/main.c:29:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_RCC_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_EXTI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:0: warning: "SPI1" redefined
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:234:0: note: this is the location of the previous definition
+ #define SPI1          ((SPI_Typedef *) SPI1_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:238:0: warning: "SPI2" redefined
+ #define SPI2          ((I2C_Typedef *) I2C2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_init':
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:235:0: note: this is the location of the previous definition
+ #define SPI2          ((SPI_Typedef *) SPI2_BASE)
+ 
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:46:10: warning: comparison of distinct pointer types lacks a cast
+  if(SPIx == SPI1){
+          ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:49:16: warning: comparison of distinct pointer types lacks a cast
+  }else if(SPIx == SPI2){
+                ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:91:11: warning: comparison of distinct pointer types lacks a cast
+   if(SPIx == SPI1){
+           ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:93:18: warning: comparison of distinct pointer types lacks a cast
+   }else if (SPIx == SPI2) {
+                  ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_deinit':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:109:10: warning: comparison of distinct pointer types lacks a cast
+  if(SPIx == SPI1){
+          ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:112:17: warning: comparison of distinct pointer types lacks a cast
+  }else if (SPIx == SPI2) {
+                 ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'MCAL_SPI_set_pins':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:123:11: warning: comparison of distinct pointer types lacks a cast
+  if (SPIx == SPI1) {
+           ^~
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'SPI_init':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:215:17: warning: comparison of distinct pointer types lacks a cast
+  } else if(SPIx == SPI2) {
+                 ^~
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:23: warning: passing argument 1 of 'MCAL_SPI_init' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+                       ^
+../Src/main.c:145:16: note: in expansion of macro 'SPI1'
+  MCAL_SPI_init(SPI1, &config);
+                ^~~~
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:123:6: note: expected 'SPI_Typedef * {aka struct <anonymous> *}' but argument is of type 'I2C_Typedef * {aka struct <anonymous> *}'
+ void MCAL_SPI_init(SPI_Typedef * SPIx,SPI_config_t * config);
+      ^~~~~~~~~~~~~
+In file included from ../Src/main.c:29:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:23: warning: passing argument 1 of 'MCAL_SPI_set_pins' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+                       ^
+../Src/main.c:146:20: note: in expansion of macro 'SPI1'
+  MCAL_SPI_set_pins(SPI1);
+                    ^~~~
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:127:6: note: expected 'SPI_Typedef * {aka struct <anonymous> *}' but argument is of type 'I2C_Typedef * {aka struct <anonymous> *}'
+ void MCAL_SPI_set_pins(SPI_Typedef * SPIx);
+      ^~~~~~~~~~~~~~~~~
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+In file included from ../Src/main.c:29:0:
+../Src/main.c: In function 'SPI_irq_callback':
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:237:23: warning: passing argument 1 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define SPI1          ((I2C_Typedef *) I2C1_BASE)
+                       ^
+../Src/main.c:173:18: note: in expansion of macro 'SPI1'
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                  ^~~~
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'SPI_Typedef * {aka struct <anonymous> *}' but argument is of type 'I2C_Typedef * {aka struct <anonymous> *}'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'SPI1_IRQHandler':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:339:22: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.TXE = ((SPI1->SPI_SR & (1<<1)) >> 1);
+                      ^~
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:340:23: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.RXNE = ((SPI1->SPI_SR & (1<<0)) >> 0);
+                       ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:341:23: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.ERRI = ((SPI1->SPI_SR & (1<<4)) >> 4);
+                       ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c: In function 'SPI2_IRQHandler':
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:349:22: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.TXE = ((SPI2->SPI_SR & (1<<1)) >> 1);
+                      ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:350:23: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.RXNE = ((SPI2->SPI_SR & (1<<0)) >> 0);
+                       ^~
+../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:351:23: error: 'I2C_Typedef {aka struct <anonymous>}' has no member named 'SPI_SR'
+  irq_src.ERRI = ((SPI2->SPI_SR & (1<<4)) >> 4);
+                       ^~
+make: *** [STM32_F103C6_Drivers/SPI/subdir.mk:18: STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:30:10 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+Finished building: Drivers.list
+ 
+ 
+ 
+15:08:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_RCC_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_EXTI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/lcd.h:15,
+                 from ../HAL/LCD/lcd.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from ../Src/main.c:29:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/keypad.h:14,
+                 from ../HAL/Keypad/keypad.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+15:29:05 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_EXTI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_RCC_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/lcd.h:15,
+                 from ../HAL/LCD/lcd.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+In file included from ../Src/main.c:29:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/keypad.h:14,
+                 from ../HAL/Keypad/keypad.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+Finished building: Drivers.list
+ 
+19:25:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_RCC_Driver.h:11:0,
+                 from ../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from ../Src/main.c:29:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_EXTI_Driver.h:15:0,
+                 from ../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/lcd.h:15,
+                 from ../HAL/LCD/lcd.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_GPIO_Driver.h:15:0,
+                 from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/keypad.h:14,
+                 from ../HAL/Keypad/keypad.c:8:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+19:33:33 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:14:0,
+                 from ../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:13:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:315:0: warning: "I2C1_ER_IRQ" redefined
+ #define  I2C1_ER_IRQ   34
+ 
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103x6.h:313:0: note: this is the location of the previous definition
+ #define  I2C1_ER_IRQ   32
+ 
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:29:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:29:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:29:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:29:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:29:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+21:22:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+ 
+22:26:07 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.d" -MT"STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/USART/STM32F103C6_USART_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.d" -MT"STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/SPI/STM32F103C6_SPI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.d" -MT"STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.d" -MT"STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/GPIO/STM32F103C6_GPIO_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.d" -MT"STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/EXTI/STM32F103C6_EXTI_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LCD/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LCD/lcd.d" -MT"HAL/LCD/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LCD/lcd.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c: In function 'MCAL_RCC_getSYSCLKFreq':
+../STM32_F103C6_Drivers/RCC/STM32F103C6_RCC_Driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:111:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:173:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:174:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 "../HAL/Keypad/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/Keypad/keypad.d" -MT"HAL/Keypad/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/Keypad/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+22:27:41 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+18:55:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'get_flag_status':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:241:20: warning: unused variable 'dummyRead' [-Wunused-variable]
+  volatile uint32_t dummyRead;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+19:05:46 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'MCAL_I2C_master_TX':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:225:17: error: 'I2Cx' undeclared (first use in this function); did you mean 'I2C1'?
+  generate_start(I2Cx, enable, start);
+                 ^~~~
+                 I2C1
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:225:17: note: each undeclared identifier is reported only once for each function it appears in
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'get_flag_status':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:253:20: warning: unused variable 'dummyRead' [-Wunused-variable]
+  volatile uint32_t dummyRead;
+                    ^~~~~~~~~
+make: *** [STM32_F103C6_Drivers/I2C/subdir.mk:18: STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+19:07:18 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'get_flag_status':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:253:20: warning: unused variable 'dummyRead' [-Wunused-variable]
+  volatile uint32_t dummyRead;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+20:30:38 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:32:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'get_flag_status':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:274:20: warning: unused variable 'dummyRead' [-Wunused-variable]
+  volatile uint32_t dummyRead;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+21:34:07 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'get_flag_status':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:279:33: warning: variable 'lastEvent' set but not used [-Wunused-but-set-variable]
+  uint32_t flag1 = 0, flag2 = 0, lastEvent = 0;
+                                 ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+ 
+21:38:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+22:19:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'MCAL_I2C_master_TX':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:264:5: error: 'stop' undeclared (first use in this function); did you mean 'utoa'?
+  if(stop == with_stop){
+     ^~~~
+     utoa
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:264:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [STM32_F103C6_Drivers/I2C/subdir.mk:18: STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:19:31 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4036	      8	   1696	   5740	   166c	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+15:48:03 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'MCAL_I2C_master_RX':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:295:2: warning: implicit declaration of function 'acknowledge_config' [-Wimplicit-function-declaration]
+  acknowledge_config(I2Cx, enable);
+  ^~~~~~~~~~~~~~~~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:463:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4536	      8	   1768	   6312	   18a8	Drivers.elf
+Finished building: Drivers.list
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+17:12:51 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:465:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_init':
+../HAL/EEPROM/EEPROM.c:24:22: error: incompatible type for argument 2 of 'MCAL_I2C_init'
+  MCAL_I2C_init(I2C1, config);
+                      ^~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:97:6: note: expected 'I2C_config_t * {aka struct <anonymous> *}' but argument is of type 'I2C_config_t {aka struct <anonymous>}'
+ void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config);
+      ^~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: At top level:
+../HAL/EEPROM/EEPROM.c:45:15: error: redefinition of 'eeprom_write_nBytes'
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,uint8_t * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c:28:15: note: previous definition of 'eeprom_write_nBytes' was here
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,unsigned char * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_write_nBytes':
+../HAL/EEPROM/EEPROM.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [HAL/EEPROM/subdir.mk:18: HAL/EEPROM/EEPROM.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:13:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_init':
+../HAL/EEPROM/EEPROM.c:24:22: error: incompatible type for argument 2 of 'MCAL_I2C_init'
+  MCAL_I2C_init(I2C1, config);
+                      ^~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:97:6: note: expected 'I2C_config_t * {aka struct <anonymous> *}' but argument is of type 'I2C_config_t {aka struct <anonymous>}'
+ void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config);
+      ^~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: At top level:
+../HAL/EEPROM/EEPROM.c:45:15: error: redefinition of 'eeprom_write_nBytes'
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,uint8_t * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c:28:15: note: previous definition of 'eeprom_write_nBytes' was here
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,unsigned char * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_write_nBytes':
+../HAL/EEPROM/EEPROM.c:51:49: warning: passing argument 3 of 'MCAL_I2C_master_TX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_I2C_master_TX(I2C1, EEPROM_SLAVE_ADDRESS, &buffer, 2, with_stop, start); //Write address only
+                                                 ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:106:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+      ^~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [HAL/EEPROM/subdir.mk:18: HAL/EEPROM/EEPROM.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:13:26 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_init':
+../HAL/EEPROM/EEPROM.c:24:22: error: incompatible type for argument 2 of 'MCAL_I2C_init'
+  MCAL_I2C_init(I2C1, config);
+                      ^~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:97:6: note: expected 'I2C_config_t * {aka struct <anonymous> *}' but argument is of type 'I2C_config_t {aka struct <anonymous>}'
+ void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config);
+      ^~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: At top level:
+../HAL/EEPROM/EEPROM.c:45:15: error: redefinition of 'eeprom_write_nBytes'
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,uint8_t * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c:28:15: note: previous definition of 'eeprom_write_nBytes' was here
+ unsigned char eeprom_write_nBytes(unsigned int memory_adderss,unsigned char * data, uint8_t dataLen){
+               ^~~~~~~~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_write_nBytes':
+../HAL/EEPROM/EEPROM.c:51:49: warning: passing argument 3 of 'MCAL_I2C_master_TX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_I2C_master_TX(I2C1, EEPROM_SLAVE_ADDRESS, &buffer, 2, with_stop, start); //Write address only
+                                                 ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:106:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+      ^~~~~~~~~~~~~~~~~~
+make: *** [HAL/EEPROM/subdir.mk:18: HAL/EEPROM/EEPROM.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:14:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_init':
+../HAL/EEPROM/EEPROM.c:24:22: error: incompatible type for argument 2 of 'MCAL_I2C_init'
+  MCAL_I2C_init(I2C1, config);
+                      ^~~~~~
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:97:6: note: expected 'I2C_config_t * {aka struct <anonymous> *}' but argument is of type 'I2C_config_t {aka struct <anonymous>}'
+ void MCAL_I2C_init(I2C_Typedef * I2Cx,I2C_config_t * config);
+      ^~~~~~~~~~~~~
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_read_nBytes':
+../HAL/EEPROM/EEPROM.c:51:49: warning: passing argument 3 of 'MCAL_I2C_master_TX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_I2C_master_TX(I2C1, EEPROM_SLAVE_ADDRESS, &buffer, 2, with_stop, start); //Write address only
+                                                 ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:106:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+      ^~~~~~~~~~~~~~~~~~
+make: *** [HAL/EEPROM/subdir.mk:18: HAL/EEPROM/EEPROM.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+17:15:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../HAL/EEPROM/EEPROM.c: In function 'eeprom_read_nBytes':
+../HAL/EEPROM/EEPROM.c:51:49: warning: passing argument 3 of 'MCAL_I2C_master_TX' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_I2C_master_TX(I2C1, EEPROM_SLAVE_ADDRESS, &buffer, 2, with_stop, start); //Write address only
+                                                 ^
+In file included from D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc/EEPROM.h:14:0,
+                 from ../HAL/EEPROM/EEPROM.c:7:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_I2C_Driver.h:106:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint8_t (*)[2] {aka unsigned char (*)[2]}'
+ void MCAL_I2C_master_TX(I2C_Typedef * I2Cx, uint16_t devAddr,uint8_t* data,uint32_t dataLen,
+      ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4536	      8	   1768	   6312	   18a8	Drivers.elf
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+Finished building: default.size.stdout
+ 
+ 
+ 
+Finished building: Drivers.list
+ 
+17:15:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4536	      8	   1768	   6312	   18a8	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+17:29:16 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/EEPROM/EEPROM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/EEPROM/EEPROM.d" -MT"HAL/EEPROM/EEPROM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/EEPROM/EEPROM.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:465:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:112:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:174:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:175:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1892	      8	   1768	   3668	    e54	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+ 
+17:37:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'SPI_init':
+../Src/main.c:131:19: warning: unused variable 'pinConfig' [-Wunused-variable]
+  GPIO_pinConfig_t pinConfig;
+                   ^~~~~~~~~
+../Src/main.c: In function 'SPI_irq_callback':
+../Src/main.c:193:24: warning: passing argument 2 of 'MCAL_SPI_TX_RX' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_SPI_TX_RX(SPI1, &flag, pollingDisable);
+                        ^
+In file included from ../Src/main.c:33:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_SPI_Driver.h:133:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
+      ^~~~~~~~~~~~~~
+../Src/main.c:194:32: warning: passing argument 2 of 'MCAL_USART_send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   MCAL_USART_send_data(USART1, &flag, enable);
+                                ^
+In file included from ../Src/main.c:32:0:
+D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc/STM32F103C6_USART_Driver.h:129:6: note: expected 'uint16_t * {aka short unsigned int *}' but argument is of type 'unsigned char *'
+ void MCAL_USART_send_data(USART_Typedef * USARTX, uint16_t* data, enum polling poll);
+      ^~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+Finished building: Drivers.list
+ 
+17:44:45 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+ 
+18:10:01 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:465:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+18:10:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+ 
+18:20:23 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:465:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+ 
+18:40:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'MCAL_I2C_master_RX':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:280:18: warning: unused variable 'j' [-Wunused-variable]
+  uint32_t i = 0, j = 0;
+                  ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:467:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4552	      8	   1768	   6328	   18b8	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+18:46:54 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:465:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4560	      8	   1768	   6336	   18c0	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+18:56:43 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:467:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4548	      8	   1768	   6324	   18b4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+19:19:21 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-gcc -gdwarf-2 "../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/LearnInDepthEmbedded/Drivers/Drivers/HAL/inc" -I"D:/LearnInDepthEmbedded/Drivers/Drivers/STM32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.d" -MT"STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.o"
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                      ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:38: note: (near initialization for 'global_I2C_config[0].clock_speed')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                            ^~~~
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:44: note: (near initialization for 'global_I2C_config[0].stretch_mode')
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:33:37: warning: missing braces around initializer [-Wmissing-braces]
+ I2C_config_t global_I2C_config[2] = {NULL, NULL};
+                                     ^
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c: In function 'I2C1_EV_IRQHandler':
+../STM32_F103C6_Drivers/I2C/STM32F103C6_I2C_Driver.c:467:20: warning: variable 'dummyRead' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t dummyRead = 0 , temp1, temp2, temp3;
+                    ^~~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\LearnInDepthEmbedded\Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4548	      8	   1768	   6324	   18b4	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+19:23:02 **** Incremental Build of configuration Debug for project Drivers ****
+make -j8 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4548	      8	   1768	   6324	   18b4	Drivers.elf
+Finished building: default.size.stdout
+ 

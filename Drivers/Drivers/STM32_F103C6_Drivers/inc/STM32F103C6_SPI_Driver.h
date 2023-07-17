@@ -129,9 +129,8 @@ void MCAL_SPI_set_pins(SPI_Typedef * SPIx);
 //Transmission functions
 void MCAL_SPI_send_date(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
 void MCAL_SPI_receive_date(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
-
-void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);//For transmitting and receiving at the same time
-
+//For transmitting and receiving at the same time
+void MCAL_SPI_TX_RX(SPI_Typedef * SPIx, uint16_t* data, pollingMechnism pollEn);
 
 
 

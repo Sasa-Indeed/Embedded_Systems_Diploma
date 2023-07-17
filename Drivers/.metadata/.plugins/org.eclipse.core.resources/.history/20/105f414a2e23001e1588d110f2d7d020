@@ -1,0 +1,77 @@
+/*
+ * STM32F103C6_I2C_Driver.h
+ *
+ *  Created on: 15 Jul 2023
+ *      Author: Ahmed
+ */
+
+#ifndef INC_STM32F103C6_I2C_DRIVER_H_
+#define INC_STM32F103C6_I2C_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+#include "STM32F103x6.h"
+#include "STM32F103C6_GPIO_Driver.h"
+#include "STM32F103C6_RCC_Driver.h"
+
+
+//=========================================================================
+
+
+//Configuration structure
+
+typedef struct{
+	uint16_t			enable_dual_address;   // 1-Enable    0-Disable
+	uint32_t			addressing_slave_mode;//This parameter must be configured from @ref addressing_slave_mode
+	uint16_t			primary_slave_address;
+	uint16_t			secondary_slave_address;
+}i2c_device_address_t;
+
+
+typedef struct{
+	uint32_t 					clock_speed;/*Specifies the clock frequency. This parameter must be configured from
+	 	 	 	 	 	 	 	 	 	 	 @ref clock_speed*/
+	uint32_t					stretch_mode; //This parameter must be configured from @ref stretch_mode
+	uint32_t					i2c_mode;//This parameter specifies I2C mode must be configured from @ref i2c_mode
+	i2c_device_address_t		device_address;
+}I2C_config_t;
+
+
+
+//-------------------------------------------------------------------
+//==================Macros Configuration References==================
+//-------------------------------------------------------------------
+
+//@ref clock_speed
+#define I2C_SCLK_SM_50K										(uint32_t)(50000U)
+#define I2C_SCLK_SM_100K									(uint32_t)(100000U)
+#define I2C_SCLK_FM_200K									(uint32_t)(200000U)//Fast mode not supported!!!!
+#define I2C_SCLK_FM_400K									(uint32_t)(400000U)//Fast mode not supported!!!!
+
+//@ref stretch_mode
+#define I2C_STRETCH_MODE_ENABLE								(uint32_t)(0)
+#define I2C_STRETCH_MODE_DISABLE							I2C_CR1_NOSTRETCH
+
+//@ref i2c_mode
+#define I2C_MODE_I2C										(uint32_t)(0)
+#define I2C_MODE_SMBUS										I2C_CR1_SMBUS
+
+//@ref addressing_slave_mode
+#define I2C_ADDRESSING_SLAVE_MODE_7BIT						(uint32_t)(0)
+#define I2C_ADDRESSING_SLAVE_MODE_10BIT						I2C_OAR1_ADDMODE
+
+
+
+
+//------------------------------------------------------------------------------------------
+//								APIs supported by "MCAL I2C Driver"
+//------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+#endif /* INC_STM32F103C6_I2C_DRIVER_H_ */

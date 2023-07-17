@@ -1,0 +1,52 @@
+/*
+ * STM32F103C6_I2C_Driver.h
+ *
+ *  Created on: 15 Jul 2023
+ *      Author: Ahmed
+ */
+
+#ifndef INC_STM32F103C6_I2C_DRIVER_H_
+#define INC_STM32F103C6_I2C_DRIVER_H_
+
+//-----------------------------
+//Includes
+//-----------------------------
+#include "STM32F103x6.h"
+#include "STM32F103C6_GPIO_Driver.h"
+#include "STM32F103C6_RCC_Driver.h"
+
+
+//=========================================================================
+
+
+//Configuration structure
+typedef struct{
+	uint32_t 			I2C_clock_speed;/*Specifies the clock frequency. This parameter must be configured from
+	 	 	 	 	 	 	 	 	 	 	 @ref I2C_clock_speed*/
+}I2C_config_t;
+
+
+
+//-------------------------------------------------------------------
+//==================Macros Configuration References==================
+//-------------------------------------------------------------------
+
+//@ref I2C_clock_speed
+#define I2C_SCLK_SM_50K										(uint32_t)(50000U)
+#define I2C_SCLK_SM_100K									(uint32_t)(100000U)
+#define I2C_SCLK_FM_200K									(uint32_t)(200000U)//Fast mode not supported!!!!
+#define I2C_SCLK_FM_400K									(uint32_t)(400000U)//Fast mode not supported!!!!
+
+
+
+//------------------------------------------------------------------------------------------
+//								APIs supported by "MCAL I2C Driver"
+//------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+#endif /* INC_STM32F103C6_I2C_DRIVER_H_ */
