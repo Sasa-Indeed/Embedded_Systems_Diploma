@@ -38,6 +38,8 @@ SUBDIRS :=  \
 ../MCAL \
 ../HAL \
 ../MCAL/GPIO \
+../MCAL/I2C \
+../MCAL/Timer \
 ../MCAL/SPI \
 ../MCAL/UART \
 ../Inc
@@ -49,7 +51,10 @@ C_SRCS +=  \
 ../HAL/MAX2719/max2719.c \
 ../main.c \
 ../MCAL/GPIO/GPIO.c \
+../MCAL/I2C/I2C.c \
 ../MCAL/SPI/SPI.c \
+../MCAL/Timer/Timer.c \
+../MCAL/Timer/WDT.c \
 ../MCAL/UART/UART.c
 
 
@@ -64,7 +69,10 @@ HAL/LCD/lcd.o \
 HAL/MAX2719/max2719.o \
 main.o \
 MCAL/GPIO/GPIO.o \
+MCAL/I2C/I2C.o \
 MCAL/SPI/SPI.o \
+MCAL/Timer/Timer.o \
+MCAL/Timer/WDT.o \
 MCAL/UART/UART.o
 
 OBJS_AS_ARGS +=  \
@@ -72,7 +80,10 @@ HAL/LCD/lcd.o \
 HAL/MAX2719/max2719.o \
 main.o \
 MCAL/GPIO/GPIO.o \
+MCAL/I2C/I2C.o \
 MCAL/SPI/SPI.o \
+MCAL/Timer/Timer.o \
+MCAL/Timer/WDT.o \
 MCAL/UART/UART.o
 
 C_DEPS +=  \
@@ -80,7 +91,10 @@ HAL/LCD/lcd.d \
 HAL/MAX2719/max2719.d \
 main.d \
 MCAL/GPIO/GPIO.d \
+MCAL/I2C/I2C.d \
 MCAL/SPI/SPI.d \
+MCAL/Timer/Timer.d \
+MCAL/Timer/WDT.d \
 MCAL/UART/UART.d
 
 C_DEPS_AS_ARGS +=  \
@@ -88,7 +102,10 @@ HAL/LCD/lcd.d \
 HAL/MAX2719/max2719.d \
 main.d \
 MCAL/GPIO/GPIO.d \
+MCAL/I2C/I2C.d \
 MCAL/SPI/SPI.d \
+MCAL/Timer/Timer.d \
+MCAL/Timer/WDT.d \
 MCAL/UART/UART.d
 
 OUTPUT_FILE_PATH +=ATmega32_Driver.elf
@@ -133,7 +150,28 @@ MCAL/GPIO/GPIO.o: ../MCAL/GPIO/GPIO.c
 	@echo Finished building: $<
 	
 
+MCAL/I2C/I2C.o: ../MCAL/I2C/I2C.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 MCAL/SPI/SPI.o: ../MCAL/SPI/SPI.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+MCAL/Timer/Timer.o: ../MCAL/Timer/Timer.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+MCAL/Timer/WDT.o: ../MCAL/Timer/WDT.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

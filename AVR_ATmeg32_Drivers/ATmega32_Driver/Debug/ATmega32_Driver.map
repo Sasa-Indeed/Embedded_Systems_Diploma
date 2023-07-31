@@ -7,6 +7,12 @@ d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gn
 d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
                               HAL/LCD/lcd.o (__do_clear_bss)
 
+Allocating common symbols
+Common symbol       size              file
+
+G_callback_func     0x2               MCAL/Timer/Timer.o
+g_config            0x5               MCAL/Timer/Timer.o
+
 Discarded input sections
 
  .data          0x00000000        0x0 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
@@ -72,9 +78,54 @@ Discarded input sections
  .debug_str     0x00000000      0x1c3 MCAL/GPIO/GPIO.o
  .comment       0x00000000       0x31 MCAL/GPIO/GPIO.o
  .debug_frame   0x00000000       0x54 MCAL/GPIO/GPIO.o
+ .text          0x00000000        0x0 MCAL/I2C/I2C.o
+ .data          0x00000000        0x0 MCAL/I2C/I2C.o
+ .bss           0x00000000        0x0 MCAL/I2C/I2C.o
+ .debug_info    0x00000000       0x56 MCAL/I2C/I2C.o
+ .debug_abbrev  0x00000000       0x26 MCAL/I2C/I2C.o
+ .debug_aranges
+                0x00000000       0x18 MCAL/I2C/I2C.o
+ .debug_line    0x00000000       0x1a MCAL/I2C/I2C.o
+ .debug_str     0x00000000      0x170 MCAL/I2C/I2C.o
+ .comment       0x00000000       0x31 MCAL/I2C/I2C.o
  .text          0x00000000        0x0 MCAL/SPI/SPI.o
  .data          0x00000000        0x0 MCAL/SPI/SPI.o
  .bss           0x00000000        0x0 MCAL/SPI/SPI.o
+ .text          0x00000000        0x0 MCAL/Timer/Timer.o
+ .data          0x00000000        0x0 MCAL/Timer/Timer.o
+ .bss           0x00000000        0x0 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_init
+                0x00000000       0x56 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_deinit
+                0x00000000        0xa MCAL/Timer/Timer.o
+ .text.MCAL_timer0_GetCompareValue
+                0x00000000        0x8 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_SetCompareValue
+                0x00000000        0x4 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_GetCounterValue
+                0x00000000        0x8 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_SetCounterValue
+                0x00000000        0x4 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_GetOverflowValue
+                0x00000000        0xa MCAL/Timer/Timer.o
+ .text.MCAL_timer0_SetOverflowValue
+                0x00000000        0x6 MCAL/Timer/Timer.o
+ .text.MCAL_timer0_phaseCorrectPWM_DutyCycle
+                0x00000000       0x12 MCAL/Timer/Timer.o
+ .text          0x00000000        0x0 MCAL/Timer/WDT.o
+ .data          0x00000000        0x0 MCAL/Timer/WDT.o
+ .bss           0x00000000        0x0 MCAL/Timer/WDT.o
+ .text.WDT_on   0x00000000        0x6 MCAL/Timer/WDT.o
+ .text.WDT_off  0x00000000        0x8 MCAL/Timer/WDT.o
+ .debug_info    0x00000000       0x99 MCAL/Timer/WDT.o
+ .debug_abbrev  0x00000000       0x51 MCAL/Timer/WDT.o
+ .debug_aranges
+                0x00000000       0x28 MCAL/Timer/WDT.o
+ .debug_ranges  0x00000000       0x18 MCAL/Timer/WDT.o
+ .debug_line    0x00000000       0xd7 MCAL/Timer/WDT.o
+ .debug_str     0x00000000      0x189 MCAL/Timer/WDT.o
+ .comment       0x00000000       0x31 MCAL/Timer/WDT.o
+ .debug_frame   0x00000000       0x34 MCAL/Timer/WDT.o
  .text          0x00000000        0x0 MCAL/UART/UART.o
  .data          0x00000000        0x0 MCAL/UART/UART.o
  .bss           0x00000000        0x0 MCAL/UART/UART.o
@@ -200,7 +251,10 @@ LOAD HAL/LCD/lcd.o
 LOAD HAL/MAX2719/max2719.o
 LOAD main.o
 LOAD MCAL/GPIO/GPIO.o
+LOAD MCAL/I2C/I2C.o
 LOAD MCAL/SPI/SPI.o
+LOAD MCAL/Timer/Timer.o
+LOAD MCAL/Timer/WDT.o
 LOAD MCAL/UART/UART.o
 START GROUP
 LOAD d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
@@ -311,7 +365,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x208
+.text           0x00000000      0x2ae
  *(.vectors)
  .vectors       0x00000000       0x54 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x00000000                __vector_default
@@ -375,7 +429,6 @@ END GROUP
                 0x0000008e                __bad_interrupt
                 0x0000008e                __vector_6
                 0x0000008e                __vector_3
-                0x0000008e                __vector_11
                 0x0000008e                __vector_13
                 0x0000008e                __vector_17
                 0x0000008e                __vector_19
@@ -387,7 +440,6 @@ END GROUP
                 0x0000008e                __vector_15
                 0x0000008e                __vector_8
                 0x0000008e                __vector_14
-                0x0000008e                __vector_10
                 0x0000008e                __vector_16
                 0x0000008e                __vector_18
                 0x0000008e                __vector_20
@@ -412,11 +464,17 @@ END GROUP
  .text.SPI_transfer_data
                 0x000001fa        0xa MCAL/SPI/SPI.o
                 0x000001fa                SPI_transfer_data
-                0x00000204                . = ALIGN (0x2)
+ .text.__vector_10
+                0x00000204       0x4e MCAL/Timer/Timer.o
+                0x00000204                __vector_10
+ .text.__vector_11
+                0x00000252       0x58 MCAL/Timer/Timer.o
+                0x00000252                __vector_11
+                0x000002aa                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000204        0x0 d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000204                _exit
-                0x00000204                exit
+ .fini9         0x000002aa        0x0 d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000002aa                _exit
+                0x000002aa                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -435,11 +493,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000204        0x4 d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000002aa        0x4 d:/learnindepthembedded/tools/avr_studio/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000208                _etext = .
+                0x000002ae                _etext = .
 
-.data           0x00800060        0x0 load address 0x00000208
+.data           0x00800060        0x0 load address 0x000002ae
                 0x00800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -451,20 +509,26 @@ END GROUP
                 0x00800060                _edata = .
                 0x00800060                PROVIDE (__data_end, .)
 
-.bss            0x00800060        0x0
+.bss            0x00800060        0x8
                 0x00800060                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss.overflowCounter
+                0x00800060        0x1 MCAL/Timer/Timer.o
+                0x00800060                overflowCounter
  *(COMMON)
-                0x00800060                PROVIDE (__bss_end, .)
-                0x00000208                __data_load_start = LOADADDR (.data)
-                0x00000208                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800061        0x7 MCAL/Timer/Timer.o
+                0x00800061                G_callback_func
+                0x00800063                g_config
+                0x00800068                PROVIDE (__bss_end, .)
+                0x000002ae                __data_load_start = LOADADDR (.data)
+                0x000002ae                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800060        0x0
+.noinit         0x00800068        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800060                _end = .
+                0x00800068                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -510,6 +574,7 @@ END GROUP
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 main.o
  .comment       0x00000030       0x31 MCAL/SPI/SPI.o
+ .comment       0x00000030       0x31 MCAL/Timer/Timer.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
@@ -531,7 +596,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0x90
+.debug_aranges  0x00000000      0x100
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x38 HAL/MAX2719/max2719.o
@@ -539,38 +604,44 @@ END GROUP
                 0x00000038       0x30 main.o
  .debug_aranges
                 0x00000068       0x28 MCAL/SPI/SPI.o
+ .debug_aranges
+                0x00000090       0x70 MCAL/Timer/Timer.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xd69
+.debug_info     0x00000000     0x1010
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x4e6 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_info    0x000004e6      0x1e8 HAL/MAX2719/max2719.o
  .debug_info    0x000006ce      0x3ff main.o
  .debug_info    0x00000acd      0x29c MCAL/SPI/SPI.o
+ .debug_info    0x00000d69      0x2a7 MCAL/Timer/Timer.o
 
-.debug_abbrev   0x00000000      0x7fd
+.debug_abbrev   0x00000000      0x904
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x4a3 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_abbrev  0x000004a3       0xd9 HAL/MAX2719/max2719.o
  .debug_abbrev  0x0000057c      0x1a3 main.o
  .debug_abbrev  0x0000071f       0xde MCAL/SPI/SPI.o
+ .debug_abbrev  0x000007fd      0x107 MCAL/Timer/Timer.o
 
-.debug_line     0x00000000      0x637
+.debug_line     0x00000000      0x84b
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x116 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_line    0x00000116      0x162 HAL/MAX2719/max2719.o
  .debug_line    0x00000278      0x209 main.o
  .debug_line    0x00000481      0x1b6 MCAL/SPI/SPI.o
+ .debug_line    0x00000637      0x214 MCAL/Timer/Timer.o
 
-.debug_frame    0x00000000       0xfc
+.debug_frame    0x00000000      0x25c
  *(.debug_frame)
  .debug_frame   0x00000000       0x64 HAL/MAX2719/max2719.o
  .debug_frame   0x00000064       0x64 main.o
  .debug_frame   0x000000c8       0x34 MCAL/SPI/SPI.o
+ .debug_frame   0x000000fc      0x160 MCAL/Timer/Timer.o
 
-.debug_str      0x00000000      0x585
+.debug_str      0x00000000      0x734
  *(.debug_str)
  .debug_str     0x00000000      0x196 D:/LearnInDepthEmbedded/Tools/AVR_studio/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega32/avr5/crtatmega32.o
  .debug_str     0x00000196      0x1ad HAL/MAX2719/max2719.o
@@ -579,12 +650,15 @@ END GROUP
                                 0x412 (size before relaxing)
  .debug_str     0x0000056b       0x1a MCAL/SPI/SPI.o
                                 0x393 (size before relaxing)
+ .debug_str     0x00000585      0x1af MCAL/Timer/Timer.o
+                                0x32b (size before relaxing)
 
-.debug_loc      0x00000000      0x23b
+.debug_loc      0x00000000      0x476
  *(.debug_loc)
  .debug_loc     0x00000000       0xf2 HAL/MAX2719/max2719.o
  .debug_loc     0x000000f2      0x102 main.o
  .debug_loc     0x000001f4       0x47 MCAL/SPI/SPI.o
+ .debug_loc     0x0000023b      0x23b MCAL/Timer/Timer.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -604,11 +678,12 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x60
+.debug_ranges   0x00000000       0xc0
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x28 HAL/MAX2719/max2719.o
  .debug_ranges  0x00000028       0x20 main.o
  .debug_ranges  0x00000048       0x18 MCAL/SPI/SPI.o
+ .debug_ranges  0x00000060       0x60 MCAL/Timer/Timer.o
 
 .debug_macro
  *(.debug_macro)

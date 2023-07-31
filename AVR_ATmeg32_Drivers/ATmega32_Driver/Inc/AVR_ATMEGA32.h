@@ -5,7 +5,6 @@
  *  Author: Ahmed
  */ 
 
-
 #ifndef AVR_ATMEGA32_H_
 #define AVR_ATMEGA32_H_
 
@@ -57,6 +56,9 @@
 #define PINB						(*(volatile uint8_t *)(PORTB_BASE + PIN_OFFSET))
 #define PINC						(*(volatile uint8_t *)(PORTC_BASE + PIN_OFFSET))
 #define PIND						(*(volatile uint8_t *)(PORTD_BASE + PIN_OFFSET))
+
+
+
 
 
 

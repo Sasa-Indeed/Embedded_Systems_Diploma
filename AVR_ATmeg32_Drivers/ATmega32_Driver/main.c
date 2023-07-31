@@ -11,6 +11,7 @@
 #include "UART.h"
 #include "lcd.h"
 #include "SPI.h"
+#include "Timer.h"
 #include "max2719.h"
 
 void lab1(void);

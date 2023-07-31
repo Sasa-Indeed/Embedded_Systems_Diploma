@@ -3,29 +3,31 @@ ATmega32_Driver.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00000208  00000000  00000000  00000054  2**1
+  0 .text         000002ae  00000000  00000000  00000074  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800060  00800060  0000025c  2**0
+  1 .data         00000000  00800060  00800060  00000322  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .comment      00000030  00000000  00000000  0000025c  2**0
+  2 .bss          00000008  00800060  00800060  00000322  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000322  2**0
                   CONTENTS, READONLY
-  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000028c  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000354  2**2
                   CONTENTS, READONLY
-  4 .debug_aranges 00000090  00000000  00000000  000002c8  2**0
+  5 .debug_aranges 00000100  00000000  00000000  00000390  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   00000d69  00000000  00000000  00000358  2**0
+  6 .debug_info   00001010  00000000  00000000  00000490  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 000007fd  00000000  00000000  000010c1  2**0
+  7 .debug_abbrev 00000904  00000000  00000000  000014a0  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   00000637  00000000  00000000  000018be  2**0
+  8 .debug_line   0000084b  00000000  00000000  00001da4  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  000000fc  00000000  00000000  00001ef8  2**2
+  9 .debug_frame  0000025c  00000000  00000000  000025f0  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000585  00000000  00000000  00001ff4  2**0
+ 10 .debug_str    00000734  00000000  00000000  0000284c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    0000023b  00000000  00000000  00002579  2**0
+ 11 .debug_loc    00000476  00000000  00000000  00002f80  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000060  00000000  00000000  000027b4  2**0
+ 12 .debug_ranges 000000c0  00000000  00000000  000033f6  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -41,8 +43,8 @@ Disassembly of section .text:
   1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
-  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 02 01 	jmp	0x204	; 0x204 <__vector_10>
+  2c:	0c 94 29 01 	jmp	0x252	; 0x252 <__vector_11>
   30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
   38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
@@ -65,7 +67,7 @@ Disassembly of section .text:
   60:	10 e0       	ldi	r17, 0x00	; 0
   62:	a0 e6       	ldi	r26, 0x60	; 96
   64:	b0 e0       	ldi	r27, 0x00	; 0
-  66:	e8 e0       	ldi	r30, 0x08	; 8
+  66:	ee ea       	ldi	r30, 0xAE	; 174
   68:	f2 e0       	ldi	r31, 0x02	; 2
   6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
   6c:	05 90       	lpm	r0, Z+
@@ -84,11 +86,11 @@ Disassembly of section .text:
   7e:	1d 92       	st	X+, r1
 
 00000080 <.do_clear_bss_start>:
-  80:	a0 36       	cpi	r26, 0x60	; 96
+  80:	a8 36       	cpi	r26, 0x68	; 104
   82:	b2 07       	cpc	r27, r18
   84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
   86:	0e 94 95 00 	call	0x12a	; 0x12a <main>
-  8a:	0c 94 02 01 	jmp	0x204	; 0x204 <_exit>
+  8a:	0c 94 55 01 	jmp	0x2aa	; 0x2aa <_exit>
 
 0000008e <__bad_interrupt>:
   8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
@@ -419,8 +421,101 @@ uint8_t SPI_transfer_data(uint8_t data){
 }
  202:	08 95       	ret
 
-00000204 <_exit>:
- 204:	f8 94       	cli
+00000204 <__vector_10>:
+	} else {
+		OCR0 = 255 - Duty_Cycle;
+	}
+}
 
-00000206 <__stop_program>:
- 206:	ff cf       	rjmp	.-2      	; 0x206 <__stop_program>
+ISR(TIMER0_COMP_vect){
+ 204:	1f 92       	push	r1
+ 206:	0f 92       	push	r0
+ 208:	0f b6       	in	r0, 0x3f	; 63
+ 20a:	0f 92       	push	r0
+ 20c:	11 24       	eor	r1, r1
+ 20e:	2f 93       	push	r18
+ 210:	3f 93       	push	r19
+ 212:	4f 93       	push	r20
+ 214:	5f 93       	push	r21
+ 216:	6f 93       	push	r22
+ 218:	7f 93       	push	r23
+ 21a:	8f 93       	push	r24
+ 21c:	9f 93       	push	r25
+ 21e:	af 93       	push	r26
+ 220:	bf 93       	push	r27
+ 222:	ef 93       	push	r30
+ 224:	ff 93       	push	r31
+	G_callback_func();
+ 226:	e0 91 61 00 	lds	r30, 0x0061	; 0x800061 <G_callback_func>
+ 22a:	f0 91 62 00 	lds	r31, 0x0062	; 0x800062 <G_callback_func+0x1>
+ 22e:	09 95       	icall
+}
+ 230:	ff 91       	pop	r31
+ 232:	ef 91       	pop	r30
+ 234:	bf 91       	pop	r27
+ 236:	af 91       	pop	r26
+ 238:	9f 91       	pop	r25
+ 23a:	8f 91       	pop	r24
+ 23c:	7f 91       	pop	r23
+ 23e:	6f 91       	pop	r22
+ 240:	5f 91       	pop	r21
+ 242:	4f 91       	pop	r20
+ 244:	3f 91       	pop	r19
+ 246:	2f 91       	pop	r18
+ 248:	0f 90       	pop	r0
+ 24a:	0f be       	out	0x3f, r0	; 63
+ 24c:	0f 90       	pop	r0
+ 24e:	1f 90       	pop	r1
+ 250:	18 95       	reti
+
+00000252 <__vector_11>:
+
+ISR(TIMER0_OVF_vect){
+ 252:	1f 92       	push	r1
+ 254:	0f 92       	push	r0
+ 256:	0f b6       	in	r0, 0x3f	; 63
+ 258:	0f 92       	push	r0
+ 25a:	11 24       	eor	r1, r1
+ 25c:	2f 93       	push	r18
+ 25e:	3f 93       	push	r19
+ 260:	4f 93       	push	r20
+ 262:	5f 93       	push	r21
+ 264:	6f 93       	push	r22
+ 266:	7f 93       	push	r23
+ 268:	8f 93       	push	r24
+ 26a:	9f 93       	push	r25
+ 26c:	af 93       	push	r26
+ 26e:	bf 93       	push	r27
+ 270:	ef 93       	push	r30
+ 272:	ff 93       	push	r31
+	overflowCounter++;
+ 274:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 278:	8f 5f       	subi	r24, 0xFF	; 255
+ 27a:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+	G_callback_func();
+ 27e:	e0 91 61 00 	lds	r30, 0x0061	; 0x800061 <G_callback_func>
+ 282:	f0 91 62 00 	lds	r31, 0x0062	; 0x800062 <G_callback_func+0x1>
+ 286:	09 95       	icall
+ 288:	ff 91       	pop	r31
+ 28a:	ef 91       	pop	r30
+ 28c:	bf 91       	pop	r27
+ 28e:	af 91       	pop	r26
+ 290:	9f 91       	pop	r25
+ 292:	8f 91       	pop	r24
+ 294:	7f 91       	pop	r23
+ 296:	6f 91       	pop	r22
+ 298:	5f 91       	pop	r21
+ 29a:	4f 91       	pop	r20
+ 29c:	3f 91       	pop	r19
+ 29e:	2f 91       	pop	r18
+ 2a0:	0f 90       	pop	r0
+ 2a2:	0f be       	out	0x3f, r0	; 63
+ 2a4:	0f 90       	pop	r0
+ 2a6:	1f 90       	pop	r1
+ 2a8:	18 95       	reti
+
+000002aa <_exit>:
+ 2aa:	f8 94       	cli
+
+000002ac <__stop_program>:
+ 2ac:	ff cf       	rjmp	.-2      	; 0x2ac <__stop_program>
