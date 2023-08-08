@@ -3,6 +3,9 @@
  *
  * Created: 26/06/2023 12:24:49
  * Author : Ahmed
+ *
+ * This is the implementation of the main only if you want to see the driver go to
+ * AVR_ATmeg32_Drivers directory to view the ADC Driver
  */ 
 #define F_CPU 1000000UL
 

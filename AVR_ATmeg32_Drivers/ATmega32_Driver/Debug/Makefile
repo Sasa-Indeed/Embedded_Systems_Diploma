@@ -39,17 +39,21 @@ SUBDIRS :=  \
 ../HAL \
 ../MCAL/GPIO \
 ../MCAL/I2C \
+../MCAL/ADC \
 ../MCAL/Timer \
 ../MCAL/SPI \
 ../MCAL/UART \
-../Inc
+../Inc \
+../APP
 
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../APP/thermometer.c \
 ../HAL/LCD/lcd.c \
 ../HAL/MAX2719/max2719.c \
 ../main.c \
+../MCAL/ADC/ADC.c \
 ../MCAL/GPIO/GPIO.c \
 ../MCAL/I2C/I2C.c \
 ../MCAL/SPI/SPI.c \
@@ -65,9 +69,11 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+APP/thermometer.o \
 HAL/LCD/lcd.o \
 HAL/MAX2719/max2719.o \
 main.o \
+MCAL/ADC/ADC.o \
 MCAL/GPIO/GPIO.o \
 MCAL/I2C/I2C.o \
 MCAL/SPI/SPI.o \
@@ -76,9 +82,11 @@ MCAL/Timer/WDT.o \
 MCAL/UART/UART.o
 
 OBJS_AS_ARGS +=  \
+APP/thermometer.o \
 HAL/LCD/lcd.o \
 HAL/MAX2719/max2719.o \
 main.o \
+MCAL/ADC/ADC.o \
 MCAL/GPIO/GPIO.o \
 MCAL/I2C/I2C.o \
 MCAL/SPI/SPI.o \
@@ -87,9 +95,11 @@ MCAL/Timer/WDT.o \
 MCAL/UART/UART.o
 
 C_DEPS +=  \
+APP/thermometer.d \
 HAL/LCD/lcd.d \
 HAL/MAX2719/max2719.d \
 main.d \
+MCAL/ADC/ADC.d \
 MCAL/GPIO/GPIO.d \
 MCAL/I2C/I2C.d \
 MCAL/SPI/SPI.d \
@@ -98,9 +108,11 @@ MCAL/Timer/WDT.d \
 MCAL/UART/UART.d
 
 C_DEPS_AS_ARGS +=  \
+APP/thermometer.d \
 HAL/LCD/lcd.d \
 HAL/MAX2719/max2719.d \
 main.d \
+MCAL/ADC/ADC.d \
 MCAL/GPIO/GPIO.d \
 MCAL/I2C/I2C.d \
 MCAL/SPI/SPI.d \
@@ -122,66 +134,80 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+APP/thermometer.o: ../APP/thermometer.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
 HAL/LCD/lcd.o: ../HAL/LCD/lcd.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 HAL/MAX2719/max2719.o: ../HAL/MAX2719/max2719.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 ./main.o: .././main.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+MCAL/ADC/ADC.o: ../MCAL/ADC/ADC.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler : 5.4.0
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/GPIO/GPIO.o: ../MCAL/GPIO/GPIO.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/I2C/I2C.o: ../MCAL/I2C/I2C.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/SPI/SPI.o: ../MCAL/SPI/SPI.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/Timer/Timer.o: ../MCAL/Timer/Timer.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/Timer/WDT.o: ../MCAL/Timer/WDT.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 
 MCAL/UART/UART.o: ../MCAL/UART/UART.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	$(QUOTE)D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\include" -I"../Inc" -I"../HAL/LCD" -I"../HAL/MAX2719" -I"../APP"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -gdwarf-2 -Wall -mmcu=atmega32 -B "D:\LearnInDepthEmbedded\Tools\AVR_studio\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\gcc\dev\atmega32" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
 	@echo Finished building: $<
 	
 

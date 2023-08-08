@@ -15,8 +15,8 @@ main.d main.o: .././main.c \
  d:\learnindepthembedded\tools\avr_studio\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  d:\learnindepthembedded\tools\avr_studio\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  d:\learnindepthembedded\tools\avr_studio\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- ../Inc/../Utilities.h ../HAL/LCD/lcd.h ../Inc/SPI.h ../Inc/Timer.h \
- ../HAL/MAX2719/max2719.h
+ ../Inc/../Utilities.h ../HAL/LCD/lcd.h ../Inc/SPI.h ../Inc/ADC.h \
+ ../Inc/Timer.h ../HAL/MAX2719/max2719.h ../APP/thermometer.h
 
 d:\learnindepthembedded\tools\avr_studio\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -56,6 +56,10 @@ d:\learnindepthembedded\tools\avr_studio\atmel\studio\7.0\toolchain\avr8\avr8-gn
 
 ../Inc/SPI.h:
 
+../Inc/ADC.h:
+
 ../Inc/Timer.h:
 
 ../HAL/MAX2719/max2719.h:
+
+../APP/thermometer.h:
