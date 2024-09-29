@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>Compositions_and_Connectors</SHORT-NAME>
+			<!-- Learn-in-depth ENG. Ahmed Mostafa unit SWC, Session Composition and Connectors -->
+			<ELEMENTS>
+				<!-- Interface -->
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>IR_Light_Status</SHORT-NAME>
+					<DATA-ELEMENTS>
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>light_status</SHORT-NAME>
+							<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+					</DATA-ELEMENTS>
+				</SENDER-RECEIVER-INTERFACE>
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>IR_Light_Control</SHORT-NAME>
+					<DATA-ELEMENTS>
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>light_control</SHORT-NAME>
+							<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+					</DATA-ELEMENTS>
+				</SENDER-RECEIVER-INTERFACE>
+				<!-- SWCs -->
+				<SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Light_Status_Sensor</SHORT-NAME>
+					<PORTS>
+						<P-PORT-PROTOTYPE>
+							<SHORT-NAME>Light_Status_P_Port</SHORT-NAME>
+							<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Compositions_and_Connectors/IR_Light_Status</PROVIDED-INTERFACE-TREF>
+						</P-PORT-PROTOTYPE>
+					</PORTS>
+				</SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+				<APPLICATION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Light_Algo_SWC</SHORT-NAME>
+					<PORTS>
+						<R-PORT-PROTOTYPE>
+							<SHORT-NAME>Light_Algo_SWC_R_Port</SHORT-NAME>
+							<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Compositions_and_Connectors/IR_Light_Status</REQUIRED-INTERFACE-TREF>
+						</R-PORT-PROTOTYPE>
+						<P-PORT-PROTOTYPE>
+							<SHORT-NAME>Light_Algo_SWC_R_Port</SHORT-NAME>
+							<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Compositions_and_Connectors/IR_Light_Control</PROVIDED-INTERFACE-TREF>
+						</P-PORT-PROTOTYPE>
+					</PORTS>
+				</APPLICATION-SW-COMPONENT-TYPE>	
+				<SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Light_Control_Actuator</SHORT-NAME>
+					<PORTS>
+						<R-PORT-PROTOTYPE>
+							<SHORT-NAME>Light_Control_Actuator_R_Port</SHORT-NAME>
+							<REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Compositions_and_Connectors/IR_Light_Control</REQUIRED-INTERFACE-TREF>
+						</R-PORT-PROTOTYPE>
+					</PORTS>
+				</SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+				<!-- Composition SWCs -->
+				<COMPOSITION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Composition1_Algo_LightStatus</SHORT-NAME>
+					<PORTS>
+					<P-PORT-PROTOTYPE>
+						<SHORT-NAME>Comp_Algo_P_Port</SHORT-NAME>
+						<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Compositions_and_Connectors/IR_Light_Control</PROVIDED-INTERFACE-TREF>
+					</P-PORT-PROTOTYPE>
+					</PORTS>
+					<COMPONENTS>
+						<SW-COMPONENT-PROTOTYPE>
+							<SHORT-NAME>SWC1_LightStatus_SA</SHORT-NAME>
+							<TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Compositions_and_Connectors/Light_Status_Sensor</TYPE-TREF>
+						</SW-COMPONENT-PROTOTYPE>
+						<SW-COMPONENT-PROTOTYPE>
+							<SHORT-NAME>SWC2_LightAlgo</SHORT-NAME>
+							<TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Compositions_and_Connectors/Light_Algo_SWC</TYPE-TREF>
+						</SW-COMPONENT-PROTOTYPE>
+					</COMPONENTS>
+					<CONNECTORS>
+					<ASSEMBLY-SW-CONNECTOR>
+						<SHORT-NAME>LightStatus_LightAlgo_AssembleyConnector</SHORT-NAME>
+						<PROVIDER-IREF>
+							<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus/SWC1_LightStatus_SA</CONTEXT-COMPONENT-REF>
+							<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Compositions_and_Connectors/Light_Status_Sensor/Light_Status_P_Port</TARGET-P-PORT-REF>
+						</PROVIDER-IREF>
+						<REQUESTER-IREF>
+							<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus/SWC2_LightAlgo</CONTEXT-COMPONENT-REF>
+							<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Compositions_and_Connectors/Light_Algo_SWC/Light_Algo_SWC_R_Port</TARGET-R-PORT-REF>
+						</REQUESTER-IREF>
+					</ASSEMBLY-SW-CONNECTOR>
+					<DELEGATION-SW-CONNECTOR>
+						<SHORT-NAME>LightAlgo_Delegation</SHORT-NAME>
+						<INNER-PORT-IREF>
+							<P-PORT-IN-COMPOSITION-INSTANCE-REF>
+								<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus/SWC2_LightAlgo</CONTEXT-COMPONENT-REF>
+								<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Compositions_and_Connectors/Light_Algo_SWC/Light_Algo_SWC_R_Port</TARGET-P-PORT-REF>
+							</P-PORT-IN-COMPOSITION-INSTANCE-REF>
+						</INNER-PORT-IREF>
+						<OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus/Comp_Algo_P_Port</OUTER-PORT-REF>
+					</DELEGATION-SW-CONNECTOR>
+					</CONNECTORS>
+				</COMPOSITION-SW-COMPONENT-TYPE>
+				<COMPOSITION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>TopLevel_COMP_SWC</SHORT-NAME>
+					<COMPONENTS>
+						<SW-COMPONENT-PROTOTYPE>
+							<SHORT-NAME>SWC1_Comp_LightStatus_LightAlgo</SHORT-NAME>
+							<TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus</TYPE-TREF>
+						</SW-COMPONENT-PROTOTYPE>
+						<SW-COMPONENT-PROTOTYPE>
+							<SHORT-NAME>SWC2_LightControl</SHORT-NAME>
+							<TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Compositions_and_Connectors/Light_Control_Actuator</TYPE-TREF>
+						</SW-COMPONENT-PROTOTYPE>
+					</COMPONENTS>
+					<CONNECTORS>
+						<ASSEMBLY-SW-CONNECTOR>
+							<SHORT-NAME>COMP1_LightActuator_AssemblyConnector</SHORT-NAME>
+							<PROVIDER-IREF>
+								<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Compositions_and_Connectors/TopLevel_COMP_SWC/SWC1_Comp_LightStatus_LightAlgo</CONTEXT-COMPONENT-REF>
+								<TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Compositions_and_Connectors/Composition1_Algo_LightStatus/Comp_Algo_P_Port</TARGET-P-PORT-REF>
+							</PROVIDER-IREF>
+							<REQUESTER-IREF>
+								<CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Compositions_and_Connectors/TopLevel_COMP_SWC/SWC2_LightControl</CONTEXT-COMPONENT-REF>
+								<TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Compositions_and_Connectors/Light_Control_Actuator/Light_Control_Actuator_R_Port</TARGET-R-PORT-REF>
+							</REQUESTER-IREF>
+						</ASSEMBLY-SW-CONNECTOR>
+					</CONNECTORS>
+				</COMPOSITION-SW-COMPONENT-TYPE>			
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>
