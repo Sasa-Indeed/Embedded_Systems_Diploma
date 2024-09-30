@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+	<AR-PACKAGES>
+		<AR-PACKAGE>
+			<SHORT-NAME>Runnnable_Lab1</SHORT-NAME>
+			<!-- Learn-in-depth ENG. Ahmed Mostafa unit SWC, Session Runnable -->
+			<ELEMENTS>
+				<!-- Interface -->
+				<SENDER-RECEIVER-INTERFACE>
+					<SHORT-NAME>IF_Throttle</SHORT-NAME>
+					<DATA-ELEMENTS>
+						<VARIABLE-DATA-PROTOTYPE>
+							<SHORT-NAME>throttle_CMD</SHORT-NAME>
+							<TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint32</TYPE-TREF>
+						</VARIABLE-DATA-PROTOTYPE>
+					</DATA-ELEMENTS>
+				</SENDER-RECEIVER-INTERFACE>
+				<!-- SWCs -->
+				<APPLICATION-SW-COMPONENT-TYPE>
+					<SHORT-NAME>Throttle_Control_SWC</SHORT-NAME>
+					<PORTS>
+						<P-PORT-PROTOTYPE>
+							<SHORT-NAME>Throttle_Control_SWC_P_Port</SHORT-NAME>
+							<PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Runnnable_Lab1/IF_Throttle</PROVIDED-INTERFACE-TREF>
+						</P-PORT-PROTOTYPE>
+					</PORTS>
+					<INTERNAL-BEHAVIORS>
+						<SWC-INTERNAL-BEHAVIOR>
+							<SHORT-NAME>Throttle_Control_SWC_BH</SHORT-NAME>
+							<RUNNABLES>
+								<RUNNABLE-ENTITY>
+									<SHORT-NAME>SET_CMD_RUN</SHORT-NAME>
+									<MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+									<CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+									<DATA-WRITE-ACCESSS>
+										<VARIABLE-ACCESS>
+											<SHORT-NAME>CMD_Data</SHORT-NAME>
+											<ACCESSED-VARIABLE>
+												<AUTOSAR-VARIABLE-IREF>
+													<PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Runnnable_Lab1/Throttle_Control_SWC/Throttle_Control_SWC_P_Port</PORT-PROTOTYPE-REF>
+													<TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Runnnable_Lab1/IF_Throttle/throttle_CMD</TARGET-DATA-PROTOTYPE-REF>
+												</AUTOSAR-VARIABLE-IREF>
+											</ACCESSED-VARIABLE>
+										</VARIABLE-ACCESS>
+									</DATA-WRITE-ACCESSS>
+									<SYMBOL>SET_CMD</SYMBOL>
+								</RUNNABLE-ENTITY>
+							</RUNNABLES>
+						</SWC-INTERNAL-BEHAVIOR>
+					</INTERNAL-BEHAVIORS>
+				</APPLICATION-SW-COMPONENT-TYPE>			
+			</ELEMENTS>
+		</AR-PACKAGE>
+	</AR-PACKAGES>
+</AUTOSAR>
