@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;DoorLock_Indication_Packages/Test.arxml&apos;" deleteContents="false" description="Delete resource &apos;DoorLock_Indication_Packages/Test.arxml&apos;" element1="/DoorLock_Indication_Packages/Test.arxml" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1728850305898"/>
+</session>

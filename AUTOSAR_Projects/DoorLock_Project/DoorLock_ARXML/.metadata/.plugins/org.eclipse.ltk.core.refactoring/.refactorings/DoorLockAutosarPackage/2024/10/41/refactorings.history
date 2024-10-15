@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DoorLockAutosarPackage/DoorLock_Package.xml&apos; to &apos;DoorLock_Packages.xml&apos;" description="Rename resource &apos;DoorLock_Package.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DoorLock_Package.xml" name="DoorLock_Packages.xml" stamp="1728586262080" updateReferences="true"/>
+</session>

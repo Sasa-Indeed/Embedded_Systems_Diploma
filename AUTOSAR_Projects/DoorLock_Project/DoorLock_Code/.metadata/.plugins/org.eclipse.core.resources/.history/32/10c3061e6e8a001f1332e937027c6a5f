@@ -1,0 +1,19 @@
+/*
+ * DoorSensorAbstractionSWC.c
+ *
+ *  Created on: Oct 14, 2024
+ *      Author: ENG. Ahmed
+ */
+
+#include "RTE_GEN/Rte_DoorSensorAbstractionSWC.h"
+
+
+Std_ReturnType LED_Switch_Runnable(myunit8 LedState){
+
+}
+
+
+void ReadDoorSensor_Runnable(void){
+
+}
+

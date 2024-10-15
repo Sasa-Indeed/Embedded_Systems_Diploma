@@ -1,0 +1,2 @@
+../DoorLock_AUTOSAR_Implementation/MCAL/DIO.c:10:15:DIO_ReadChannel	16	static
+../DoorLock_AUTOSAR_Implementation/MCAL/DIO.c:14:6:DIO_WriteChannel	16	static

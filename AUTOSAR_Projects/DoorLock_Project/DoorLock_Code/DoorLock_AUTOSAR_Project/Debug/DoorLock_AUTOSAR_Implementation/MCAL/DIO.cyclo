@@ -1,0 +1,2 @@
+../DoorLock_AUTOSAR_Implementation/MCAL/DIO.c:10:15:DIO_ReadChannel	1
+../DoorLock_AUTOSAR_Implementation/MCAL/DIO.c:14:6:DIO_WriteChannel	1

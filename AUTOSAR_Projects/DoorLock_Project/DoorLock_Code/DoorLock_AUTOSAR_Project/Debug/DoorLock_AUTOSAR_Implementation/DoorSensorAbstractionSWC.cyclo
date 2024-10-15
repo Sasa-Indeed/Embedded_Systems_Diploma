@@ -1,0 +1,2 @@
+../DoorLock_AUTOSAR_Implementation/DoorSensorAbstractionSWC.c:21:16:LED_Switch_Runnable	3
+../DoorLock_AUTOSAR_Implementation/DoorSensorAbstractionSWC.c:41:6:ReadDoorSensor_Runnable	1

@@ -1,0 +1,17 @@
+/*
+ * DIO.h
+ *
+ *  Created on: Oct 10, 2024
+ *      Author: Ahmed
+ */
+
+#ifndef MCAL_DIO_H_
+#define MCAL_DIO_H_
+
+#include "stm32f103x8_gpio_driver.h"
+
+unsigned char DIO_ReadChannel(unsigned char ID);
+
+
+
+#endif /* MCAL_DIO_H_ */

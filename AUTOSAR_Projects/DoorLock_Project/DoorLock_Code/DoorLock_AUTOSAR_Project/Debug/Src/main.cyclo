@@ -1,0 +1,4 @@
+../Src/main.c:43:6:wait_cycles	1
+../Src/main.c:49:6:MCU_init	1
+../Src/main.c:71:6:StartOS	3
+../Src/main.c:99:5:main	1

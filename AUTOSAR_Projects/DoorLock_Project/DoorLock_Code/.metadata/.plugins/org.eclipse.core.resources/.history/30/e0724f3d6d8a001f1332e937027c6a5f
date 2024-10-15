@@ -1,0 +1,17 @@
+/*
+ * DoorLock_Indication_SWC.c
+ *
+ *  Created on: Oct 14, 2024
+ *      Author: Ahmed
+ */
+
+#include "RTE_GEN/Rte_DoorLock_Indication_SWC.h"
+
+void DoorLock_Indication_Runnable(void){
+	unsigned char doorState = 0;
+
+	//Read doorState from RTE SR Interface
+
+
+}
+
