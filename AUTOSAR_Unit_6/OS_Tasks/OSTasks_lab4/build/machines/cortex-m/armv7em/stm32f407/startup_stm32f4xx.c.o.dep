@@ -1,0 +1,74 @@
+build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o: \
+ ../../../machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\types.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\_ansi.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\newlib.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\config.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\ieeefp.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\cdefs.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h \
+ d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stddef.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_types.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_types.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\lock.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\endian.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_endian.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\select.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_sigset.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_timeval.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\timespec.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_timespec.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_pthreadtypes.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\sched.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\types.h
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\types.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\_ansi.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\newlib.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\config.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\ieeefp.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\cdefs.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h:
+
+d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stddef.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_types.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_types.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\lock.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\endian.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_endian.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\select.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_sigset.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_timeval.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\timespec.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_timespec.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_pthreadtypes.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\sched.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\types.h:

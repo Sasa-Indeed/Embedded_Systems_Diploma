@@ -1,0 +1,23 @@
+build/machines/cortex-m/armv7em/tpl_interrupts.S.o: \
+ ../../../machines/cortex-m/armv7em/tpl_interrupts.S \
+ ../../../machines/cortex-m/tpl_assembler.h \
+ ../../../machines/cortex-m/tpl_asm_definitions.h \
+ LearnInDepth_SW/tpl_cortex_definitions.h ../../../os/tpl_as_memmap.h \
+ LearnInDepth_SW/tpl_app_define.h ../../../os/tpl_config_def.h \
+ ../../../os/tpl_config_check.h LearnInDepth_SW/AsMemMap.h
+
+../../../machines/cortex-m/tpl_assembler.h:
+
+../../../machines/cortex-m/tpl_asm_definitions.h:
+
+LearnInDepth_SW/tpl_cortex_definitions.h:
+
+../../../os/tpl_as_memmap.h:
+
+LearnInDepth_SW/tpl_app_define.h:
+
+../../../os/tpl_config_def.h:
+
+../../../os/tpl_config_check.h:
+
+LearnInDepth_SW/AsMemMap.h:

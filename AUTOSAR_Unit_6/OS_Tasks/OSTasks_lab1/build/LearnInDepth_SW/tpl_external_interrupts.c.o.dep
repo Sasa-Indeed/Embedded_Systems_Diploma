@@ -1,0 +1,122 @@
+build/LearnInDepth_SW/tpl_external_interrupts.c.o: \
+ LearnInDepth_SW/tpl_external_interrupts.c \
+ ../../../machines/cortex-m/tpl_machine.h \
+ ../../../machines/cortex-m/tpl_machine_cortex.h \
+ ../../../machines/cortex-m/tpl_os_std_types.h \
+ ../../../os/tpl_os_internal_types.h \
+ ../../../machines/cortex-m/tpl_os_std_types.h \
+ ../../../os/tpl_os_custom_types.h ../../../os/tpl_os_application_def.h \
+ LearnInDepth_SW/tpl_app_define.h ../../../os/tpl_config_def.h \
+ ../../../os/tpl_config_check.h LearnInDepth_SW/tpl_app_custom_types.h \
+ ../../../os/tpl_compiler.h LearnInDepth_SW/Compiler.h \
+ LearnInDepth_SW/Compiler_Cfg.h ../../../os/tpl_compiler.h \
+ ../../../os/tpl_os_custom_types.h \
+ ../../../machines/cortex-m/tpl_machine.h \
+ ../../../machines/cortex-m/tpl_os_kernel_stack.h \
+ LearnInDepth_SW/cmsis_wrapper.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cm4.h \
+ d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stdint.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\stdint.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_intsup.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmInstr.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmFunc.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmSimd.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/stm32f4xx_conf.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.h \
+ LearnInDepth_SW/tpl_cortex_definitions.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/lib/pinAccess.h \
+ ../../../os/tpl_memmap.h LearnInDepth_SW/MemMap.h
+
+../../../machines/cortex-m/tpl_machine.h:
+
+../../../machines/cortex-m/tpl_machine_cortex.h:
+
+../../../machines/cortex-m/tpl_os_std_types.h:
+
+../../../os/tpl_os_internal_types.h:
+
+../../../machines/cortex-m/tpl_os_std_types.h:
+
+../../../os/tpl_os_custom_types.h:
+
+../../../os/tpl_os_application_def.h:
+
+LearnInDepth_SW/tpl_app_define.h:
+
+../../../os/tpl_config_def.h:
+
+../../../os/tpl_config_check.h:
+
+LearnInDepth_SW/tpl_app_custom_types.h:
+
+../../../os/tpl_compiler.h:
+
+LearnInDepth_SW/Compiler.h:
+
+LearnInDepth_SW/Compiler_Cfg.h:
+
+../../../os/tpl_compiler.h:
+
+../../../os/tpl_os_custom_types.h:
+
+../../../machines/cortex-m/tpl_machine.h:
+
+../../../machines/cortex-m/tpl_os_kernel_stack.h:
+
+LearnInDepth_SW/cmsis_wrapper.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/stm32f4xx.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cm4.h:
+
+d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stdint.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\stdint.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_intsup.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmInstr.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmFunc.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmSimd.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/stm32f4xx_conf.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.h:
+
+LearnInDepth_SW/tpl_cortex_definitions.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/lib/pinAccess.h:
+
+../../../os/tpl_memmap.h:
+
+LearnInDepth_SW/MemMap.h:

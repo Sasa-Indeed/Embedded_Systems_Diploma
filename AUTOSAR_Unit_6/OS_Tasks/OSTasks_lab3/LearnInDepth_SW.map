@@ -1,0 +1,1470 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+NVIC_InitStructure  0x4               build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 build/os/tpl_os_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_kernel.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_timeobj_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_timeobj_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_timeobj_kernel.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_action.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_action.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_action.c.o
+ .osCode        0x00000000       0x42 build/os/tpl_os_action.c.o
+ .debug_info    0x00000000      0x5d5 build/os/tpl_os_action.c.o
+ .debug_abbrev  0x00000000      0x169 build/os/tpl_os_action.c.o
+ .debug_aranges
+                0x00000000       0x28 build/os/tpl_os_action.c.o
+ .debug_ranges  0x00000000       0x18 build/os/tpl_os_action.c.o
+ .debug_line    0x00000000      0x25e build/os/tpl_os_action.c.o
+ .debug_str     0x00000000      0x63a build/os/tpl_os_action.c.o
+ .comment       0x00000000       0x7f build/os/tpl_os_action.c.o
+ .debug_frame   0x00000000       0x58 build/os/tpl_os_action.c.o
+ .ARM.attributes
+                0x00000000       0x33 build/os/tpl_os_action.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_error.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_error.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_error.c.o
+ .debug_info    0x00000000      0x4a4 build/os/tpl_os_error.c.o
+ .debug_abbrev  0x00000000      0x105 build/os/tpl_os_error.c.o
+ .debug_aranges
+                0x00000000       0x18 build/os/tpl_os_error.c.o
+ .debug_line    0x00000000      0x20b build/os/tpl_os_error.c.o
+ .debug_str     0x00000000      0x533 build/os/tpl_os_error.c.o
+ .comment       0x00000000       0x7f build/os/tpl_os_error.c.o
+ .ARM.attributes
+                0x00000000       0x37 build/os/tpl_os_error.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_os_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_os_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_os_kernel.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_os.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_os.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_os.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_interrupt_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_interrupt_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_interrupt_kernel.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_task_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_task_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_task_kernel.c.o
+ .text          0x00000000        0x0 build/os/tpl_os_resource_kernel.c.o
+ .data          0x00000000        0x0 build/os/tpl_os_resource_kernel.c.o
+ .bss           0x00000000        0x0 build/os/tpl_os_resource_kernel.c.o
+ .osConst       0x00000000        0x2 build/os/tpl_os_resource_kernel.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_app_config.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_app_config.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_app_config.c.o
+ .rodata.AppSTD
+                0x00000000        0x1 build/LearnInDepth_SW/tpl_app_config.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_invoque.S.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_invoque.S.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_invoque.S.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .osVar         0x00000000        0x0 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_vectors.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_vectors.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_vectors.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .text          0x00000000        0x0 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .data          0x00000000        0x0 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .bss           0x00000000        0x0 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .bss.tpl_isr2_disabled
+                0x00000000        0x1 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/tpl_sc_handler.S.o
+ .data          0x00000000        0x0 build/machines/cortex-m/tpl_sc_handler.S.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/tpl_sc_handler.S.o
+ .osVar         0x00000000        0x0 build/machines/cortex-m/tpl_sc_handler.S.o
+ .osConst       0x00000000        0x0 build/machines/cortex-m/tpl_sc_handler.S.o
+ .text          0x00000000        0x0 build/machines/cortex-m/tpl_startup.S.o
+ .data          0x00000000        0x0 build/machines/cortex-m/tpl_startup.S.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/tpl_startup.S.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .debug_info    0x00000000      0x146 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .debug_abbrev  0x00000000       0x7a build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .debug_aranges
+                0x00000000       0x18 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .debug_line    0x00000000      0x1a7 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .debug_str     0x00000000      0x2a7 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .comment       0x00000000       0x7f build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .ARM.attributes
+                0x00000000       0x37 build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .data.AHBPrescTable
+                0x00000000       0x10 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0xf4 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .text.PendSV_Handler
+                0x00000000        0x6 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .text.SysTick_ClearFlag
+                0x00000000        0xc build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .text.TIM2_IRQ_ClearFlag
+                0x00000000       0x22 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.clockForGpio
+                0x00000000      0x134 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.pinMode  0x00000000      0x1b8 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.digitalWrite
+                0x00000000       0xcc build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.digitalToggle
+                0x00000000       0xd8 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.digitalRead
+                0x00000000       0xc0 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.pinAlt   0x00000000      0x148 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text.pinAnalog
+                0x00000000       0xdc build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_info    0x00000000      0x567 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_abbrev  0x00000000      0x164 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_aranges
+                0x00000000       0x50 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_ranges  0x00000000       0x40 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_line    0x00000000      0x474 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_str     0x00000000      0x454 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .comment       0x00000000       0x7f build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .debug_frame   0x00000000      0x11c build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .ARM.attributes
+                0x00000000       0x33 build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_DeInit
+                0x00000000      0x1c8 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_StructInit
+                0x00000000       0x32 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_PinLockConfig
+                0x00000000       0xe4 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_ReadInputData
+                0x00000000       0xa8 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000      0x13c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_ReadOutputData
+                0x00000000       0xa8 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_SetBits
+                0x00000000       0xbc build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_ResetBits
+                0x00000000       0xbc build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_WriteBit
+                0x00000000      0x150 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_Write
+                0x00000000       0xac build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_ToggleBits
+                0x00000000       0xb4 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text.GPIO_PinAFConfig
+                0x00000000      0x26c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .data.APBAHBPrescTable
+                0x00000000       0x10 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_DeInit
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_HSEConfig
+                0x00000000       0x44 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_WaitForHSEStartUp
+                0x00000000       0x50 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x4c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_HSICmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_LSEConfig
+                0x00000000       0x60 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_LSICmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLConfig
+                0x00000000       0xb8 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLCmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLI2SConfig
+                0x00000000       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLI2SCmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLSAIConfig
+                0x00000000       0x78 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PLLSAICmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_MCO1Config
+                0x00000000       0x98 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_MCO2Config
+                0x00000000       0x98 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_SYSCLKConfig
+                0x00000000       0x54 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_GetSYSCLKSource
+                0x00000000       0x1c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_HCLKConfig
+                0x00000000       0x78 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PCLK1Config
+                0x00000000       0x68 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_PCLK2Config
+                0x00000000       0x6c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_GetClocksFreq
+                0x00000000      0x150 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_RTCCLKConfig
+                0x00000000      0x1e0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_RTCCLKCmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_BackupResetCmd
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_I2SCLKConfig
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_SAIBlockACLKConfig
+                0x00000000       0x5c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_SAIBlockBCLKConfig
+                0x00000000       0x5c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_SAIPLLI2SClkDivConfig
+                0x00000000       0x54 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_SAIPLLSAIClkDivConfig
+                0x00000000       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_LTDCCLKDivConfig
+                0x00000000       0x64 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_TIMCLKPresConfig
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB2PeriphClockCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB3PeriphClockCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_APB1PeriphClockCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB1PeriphResetCmd
+                0x00000000       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB2PeriphResetCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB3PeriphResetCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_APB1PeriphResetCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_APB2PeriphResetCmd
+                0x00000000       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB1PeriphClockLPModeCmd
+                0x00000000       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB2PeriphClockLPModeCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_AHB3PeriphClockLPModeCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_APB1PeriphClockLPModeCmd
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_APB2PeriphClockLPModeCmd
+                0x00000000       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_LSEModeConfig
+                0x00000000       0x50 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_ITConfig
+                0x00000000       0x7c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_GetFlagStatus
+                0x00000000       0xd4 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_ClearFlag
+                0x00000000       0x1c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_GetITStatus
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text.RCC_ClearITPendingBit
+                0x00000000       0x30 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_DeInit
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_StructInit
+                0x00000000       0x2a build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_GenerateSWInterrupt
+                0x00000000       0x3c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_GetFlagStatus
+                0x00000000       0xec build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_ClearFlag
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_GetITStatus
+                0x00000000       0xf0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text.EXTI_ClearITPendingBit
+                0x00000000       0x38 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_DeInit
+                0x00000000       0x1c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_MemoryRemapConfig
+                0x00000000       0x40 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_MemorySwappingBank
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_ETH_MediaInterfaceConfig
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_CompensationCellCmd
+                0x00000000       0x34 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text.SYSCFG_GetCompensationCellStatus
+                0x00000000       0x30 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .text.NVIC_PriorityGroupConfig
+                0x00000000       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .text.NVIC_SetVectorTable
+                0x00000000       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .text.NVIC_SystemLPConfig
+                0x00000000       0x70 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .text.SysTick_CLKSourceConfig
+                0x00000000       0x50 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_PIN
+                0x00000000        0x2 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_CLK
+                0x00000000        0x4 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_EXTI_LINE
+                0x00000000        0x2 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_PORT_SOURCE
+                0x00000000        0x1 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_PIN_SOURCE
+                0x00000000        0x1 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .rodata.BUTTON_IRQn
+                0x00000000        0x1 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ COMMON         0x00000000        0x4 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .text          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+ .data          0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+ .bss           0x00000000        0x0 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+VECTOR           0x08000000         0x00000188         xr
+FLASH            0x08000188         0x0000fe78         xr
+RAM              0x20000000         0x00020000         xrw
+MEMORY_B1        0x60000000         0x00000000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/os/tpl_os_kernel.c.o
+LOAD build/os/tpl_os_timeobj_kernel.c.o
+LOAD build/os/tpl_os_action.c.o
+LOAD build/os/tpl_os_error.c.o
+LOAD build/os/tpl_os_os_kernel.c.o
+LOAD build/os/tpl_os_os.c.o
+LOAD build/os/tpl_os_interrupt_kernel.c.o
+LOAD build/os/tpl_os_task_kernel.c.o
+LOAD build/os/tpl_os_resource_kernel.c.o
+LOAD build/LearnInDepth_SW.c.o
+LOAD build/LearnInDepth_SW/tpl_app_config.c.o
+LOAD build/LearnInDepth_SW/tpl_dispatch_table.c.o
+LOAD build/LearnInDepth_SW/tpl_invoque.S.o
+LOAD build/LearnInDepth_SW/tpl_primary_irq.S.o
+LOAD build/LearnInDepth_SW/tpl_vectors.c.o
+LOAD build/LearnInDepth_SW/tpl_external_interrupts.c.o
+LOAD build/LearnInDepth_SW/tpl_app_interrupts.c.o
+LOAD build/machines/cortex-m/tpl_machine_cortex.c.o
+LOAD build/machines/cortex-m/tpl_sc_handler.S.o
+LOAD build/machines/cortex-m/tpl_startup.S.o
+LOAD build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+LOAD build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+LOAD build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/tpl_memory_protection.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/lib/pinAccess.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+LOAD build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+                0x20020000                _estack = 0x20020000
+                0x00000000                _Min_Heap_Size = 0x0
+                0x00000400                _Min_Stack_Size = 0x400
+
+.isr_vector     0x08000000      0x188
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x188 build/LearnInDepth_SW/tpl_vectors.c.o
+                0x08000000                tpl_it_vectors
+                0x08000188                . = ALIGN (0x4)
+                0x08000188                . = ALIGN (0x4)
+
+ostext          0x08000188     0x198c
+ *(.SC_handler)
+ *(.EI_handler)
+ *(.osCode)
+ .osCode        0x08000188      0x8b8 build/os/tpl_os_kernel.c.o
+                0x08000188                tpl_begin_alarm_callback
+                0x080001a0                tpl_end_alarm_callback
+                0x080001b8                tpl_alarm_callback_running
+                0x080001cc                tpl_current_os_state
+                0x0800022c                tpl_schedule_from_running
+                0x08000270                tpl_start_scheduling
+                0x08000288                tpl_start
+                0x08000300                tpl_run_elected
+                0x08000378                tpl_block
+                0x080003a4                tpl_release
+                0x080003e0                tpl_front_proc
+                0x0800040c                tpl_terminate
+                0x08000440                tpl_init_proc
+                0x08000474                tpl_put_preempted_proc
+                0x080004cc                tpl_put_new_proc
+                0x08000550                tpl_init_os
+                0x08000608                tpl_get_internal_resource
+                0x08000690                tpl_release_internal_resource
+                0x080006e0                tpl_call_terminate_task_service
+                0x08000714                tpl_call_terminate_isr2_service
+                0x0800075c                tpl_activate_task
+                0x080007d4                tpl_set_event
+                0x080007f4                tpl_compare_entries
+                0x08000884                tpl_bubble_up
+                0x08000904                tpl_bubble_down
+                0x080009b8                tpl_remove_front_proc
+                0x08000a14                tpl_preempt
+ .osCode        0x08000a40      0x2f0 build/os/tpl_os_timeobj_kernel.c.o
+                0x08000a40                tpl_enable_counters
+                0x08000a58                tpl_insert_time_obj
+                0x08000b36                tpl_remove_time_obj
+                0x08000ba8                tpl_counter_tick
+ .osCode        0x08000d30       0xac build/os/tpl_os_os_kernel.c.o
+                0x08000d30                tpl_get_active_application_mode_service
+                0x08000d60                tpl_start_os_service
+                0x08000dac                tpl_call_shutdown_os
+                0x08000dc2                tpl_shutdown_os_service
+ .osCode        0x08000ddc      0x1e0 build/os/tpl_os_interrupt_kernel.c.o
+                0x08000ddc                tpl_get_interrupt_lock_status
+                0x08000e1c                tpl_reset_interrupt_lock_status
+                0x08000e58                tpl_terminate_isr2_service
+                0x08000e9c                tpl_null_it
+                0x08000eae                tpl_enable_all_interrupts_service
+                0x08000ecc                tpl_disable_all_interrupts_service
+                0x08000efc                tpl_resume_all_interrupts_service
+                0x08000f34                tpl_suspend_all_interrupts_service
+                0x08000f5c                tpl_resume_os_interrupts_service
+                0x08000f94                tpl_suspend_os_interrupts_service
+ .osCode        0x08000fbc      0x2f0 build/os/tpl_os_task_kernel.c.o
+                0x08000fbc                tpl_activate_task_service
+                0x08001034                tpl_terminate_task_service
+                0x080010a4                tpl_chain_task_service
+                0x08001154                tpl_schedule_service
+                0x080011d0                tpl_get_task_id_service
+                0x08001234                tpl_get_task_state_service
+ .osCode        0x080012ac      0x224 build/os/tpl_os_resource_kernel.c.o
+                0x080012ac                tpl_release_all_resources
+                0x0800130c                tpl_get_resource_service
+                0x0800140c                tpl_release_resource_service
+ .osCode        0x080014d0       0x40 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x080014d0                tpl_tick_SysTick
+                0x08001504                SysTick_Handler
+ .osCode        0x08001510       0x30 build/LearnInDepth_SW/tpl_primary_irq.S.o
+                0x08001510                tpl_primary_irq_handler_SysTick
+ .osCode        0x08001540       0x20 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+                0x08001540                tpl_init_external_interrupts
+ .osCode        0x08001560       0x24 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+                0x08001560                tpl_init_it_priority
+                0x0800156c                tpl_disable_os_interrupts
+                0x08001578                tpl_enable_os_interrupts
+ .osCode        0x08001584       0xe0 build/machines/cortex-m/tpl_machine_cortex.c.o
+                0x08001584                tpl_init_context
+                0x080015f0                tpl_init_machine
+                0x08001600                tpl_shutdown
+                0x0800160a                tpl_init_machine_generic
+                0x08001616                tpl_init_machine_specific
+                0x08001648                tpl_check_stack_footprint
+ .osCode        0x08001664       0x6c build/machines/cortex-m/tpl_sc_handler.S.o
+                0x08001664                tpl_sc_handler
+ .osCode        0x080016d0       0x1c build/machines/cortex-m/tpl_startup.S.o
+                0x080016d0                tpl_reset_handler
+ .osCode        0x080016ec       0x4c build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+                0x080016ec                tpl_save_context
+                0x08001712                tpl_load_context
+ .osCode        0x08001738       0x44 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+                0x08001738                tpl_save_context_under_it
+                0x0800175a                tpl_load_context_under_it
+ .osCode        0x0800177c       0x2c build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+                0x0800177c                tpl_disable_interrupts
+                0x08001790                tpl_enable_interrupts
+ .osCode        0x080017a8       0x7c build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+                0x080017f8                tpl_set_systick_timer
+ .osCode        0x08001824      0x104 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+                0x08001824                initBoard
+                0x0800184c                ledOn
+                0x0800186c                ledOff
+                0x0800188c                ledToggle
+                0x080018ac                readButton
+                0x080018fc                delay
+ *(.osApiCode)
+ .osApiCode     0x08001928       0x2a build/os/tpl_os_os.c.o
+                0x08001928                StartOS
+ .osApiCode     0x08001952      0x1c2 build/LearnInDepth_SW/tpl_invoque.S.o
+                0x08001952                GetActiveApplicationMode
+                0x08001968                tpl_start_os
+                0x0800197e                ShutdownOS
+                0x08001994                EnableAllInterrupts
+                0x080019ae                DisableAllInterrupts
+                0x080019c8                ResumeAllInterrupts
+                0x080019e2                SuspendAllInterrupts
+                0x080019fc                ResumeOSInterrupts
+                0x08001a16                SuspendOSInterrupts
+                0x08001a30                CallTerminateISR2
+                0x08001a4a                ActivateTask
+                0x08001a60                TerminateTask
+                0x08001a76                ChainTask
+                0x08001a8c                Schedule
+                0x08001aa2                GetTaskID
+                0x08001ab8                GetTaskState
+                0x08001ace                CallTerminateTask
+                0x08001ae8                GetResource
+                0x08001afe                ReleaseResource
+ *(.appCommonCode)
+                0x08001b14                . = ALIGN (0x4)
+
+osconst         0x08001b14       0xf4
+ *(.osConst)
+ .osConst       0x08001b14        0x2 build/os/tpl_os_kernel.c.o
+                0x08001b14                INVALID_PROC
+                0x08001b15                INVALID_TASK
+ *fill*         0x08001b16        0x2 
+ .osConst       0x08001b18       0x84 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x08001b18                tpl_stat_proc_table
+                0x08001b28                tpl_dyn_proc_table
+                0x08001b38                tpl_resource_table
+                0x08001b3c                IDLE_TASK_task_stat_desc
+                0x08001b54                Task1_task_stat_desc
+                0x08001b6c                Task2_task_stat_desc
+                0x08001b84                Task3_task_stat_desc
+ .osConst       0x08001b9c       0x4c build/LearnInDepth_SW/tpl_dispatch_table.c.o
+                0x08001b9c                tpl_dispatch_table
+ *(.osApiConst)
+ .osApiConst    0x08001be8       0x20 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x08001be8                proc_name_table
+                0x08001bf8                Task1
+                0x08001bf9                Task2
+                0x08001bfa                Task3
+                0x08001bfc                OSTICKSPERBASE
+                0x08001c00                OSMAXALLOWEDVALUE
+                0x08001c04                OSMINCYCLE
+                0x08001c08                . = ALIGN (0x4)
+
+apptext         0x08001c08      0x128
+                0x08001c08                __PROGCONST_SECTION_START = .
+                0x08001c08                __SEG_START_APP_CODE_CONST_RGN = .
+                0x08001c08                . = ALIGN (0x4)
+ *(.Task_Task1Code)
+ .Task_Task1Code
+                0x08001c08       0x6c build/LearnInDepth_SW.c.o
+                0x08001c08                Task1_function
+ *(.Task_Task2Code)
+ .Task_Task2Code
+                0x08001c74       0x6c build/LearnInDepth_SW.c.o
+                0x08001c74                Task2_function
+ *(.Task_Task3Code)
+ .Task_Task3Code
+                0x08001ce0       0x50 build/LearnInDepth_SW.c.o
+                0x08001ce0                Task3_function
+                0x08001d1c                assert_failed
+                0x08001d30                . = ALIGN (0x4)
+
+appconst        0x08001d30      0x1f8
+ *(.rodata)
+ .rodata        0x08001d30       0x1f build/LearnInDepth_SW/tpl_app_config.c.o
+ *fill*         0x08001d4f        0x1 
+ .rodata        0x08001d50       0x59 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ *fill*         0x08001da9        0x3 
+ .rodata        0x08001dac       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .rodata        0x08001e04       0x59 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ *fill*         0x08001e5d        0x3 
+ .rodata        0x08001e60       0x5b build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ *fill*         0x08001ebb        0x1 
+ .rodata        0x08001ebc       0x4f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ *(.rodata*)
+ .rodata.OSDEFAULTAPPMODE
+                0x08001f0b        0x1 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x08001f0b                OSDEFAULTAPPMODE
+ .rodata.tpl_task_app_mode
+                0x08001f0c        0x3 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x08001f0c                tpl_task_app_mode
+ *fill*         0x08001f0f        0x1 
+ .rodata.GPIO_PIN
+                0x08001f10        0x8 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08001f10                GPIO_PIN
+ .rodata.GPIO_CLK
+                0x08001f18       0x10 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08001f18                GPIO_CLK
+                0x08001f28                . = ALIGN (0x4)
+
+procconst       0x08001f28        0x0
+ *(.Task_Task1_SEC_CONST_32BIT)
+ *(.Task_Task1_SEC_CALIB_32BIT)
+ *(.Task_Task1_SEC_CARTO_32BIT)
+ *(.Task_Task1_SEC_CONFIG_DATA_32BIT)
+ *(.Task_Task1_SEC_CONST_16BIT)
+ *(.Task_Task1_SEC_CALIB_16BIT)
+ *(.Task_Task1_SEC_CARTO_16BIT)
+ *(.Task_Task1_SEC_CONFIG_DATA_16BIT)
+ *(.Task_Task1_SEC_CONST_8BIT)
+ *(.Task_Task1_SEC_CALIB_8BIT)
+ *(.Task_Task1_SEC_CARTO_8BIT)
+ *(.Task_Task1_SEC_CONFIG_DATA_8BIT)
+ *(.Task_Task1_SEC_CONST_BOOLEAN)
+ *(.Task_Task1_SEC_CALIB_BOOLEAN)
+ *(.Task_Task1_SEC_CARTO_BOOLEAN)
+ *(.Task_Task1_SEC_CONFIG_DATA_BOOLEAN)
+ *(.Task_Task1_SEC_CONST_UNSPECIFIED)
+ *(.Task_Task1_SEC_CALIB_UNSPECIFIED)
+ *(.Task_Task1_SEC_CARTO_UNSPECIFIED)
+ *(.Task_Task1_SEC_CONFIG_DATA_UNSPECIFIED)
+ *(.Task_Task2_SEC_CONST_32BIT)
+ *(.Task_Task2_SEC_CALIB_32BIT)
+ *(.Task_Task2_SEC_CARTO_32BIT)
+ *(.Task_Task2_SEC_CONFIG_DATA_32BIT)
+ *(.Task_Task2_SEC_CONST_16BIT)
+ *(.Task_Task2_SEC_CALIB_16BIT)
+ *(.Task_Task2_SEC_CARTO_16BIT)
+ *(.Task_Task2_SEC_CONFIG_DATA_16BIT)
+ *(.Task_Task2_SEC_CONST_8BIT)
+ *(.Task_Task2_SEC_CALIB_8BIT)
+ *(.Task_Task2_SEC_CARTO_8BIT)
+ *(.Task_Task2_SEC_CONFIG_DATA_8BIT)
+ *(.Task_Task2_SEC_CONST_BOOLEAN)
+ *(.Task_Task2_SEC_CALIB_BOOLEAN)
+ *(.Task_Task2_SEC_CARTO_BOOLEAN)
+ *(.Task_Task2_SEC_CONFIG_DATA_BOOLEAN)
+ *(.Task_Task2_SEC_CONST_UNSPECIFIED)
+ *(.Task_Task2_SEC_CALIB_UNSPECIFIED)
+ *(.Task_Task2_SEC_CARTO_UNSPECIFIED)
+ *(.Task_Task2_SEC_CONFIG_DATA_UNSPECIFIED)
+ *(.Task_Task3_SEC_CONST_32BIT)
+ *(.Task_Task3_SEC_CALIB_32BIT)
+ *(.Task_Task3_SEC_CARTO_32BIT)
+ *(.Task_Task3_SEC_CONFIG_DATA_32BIT)
+ *(.Task_Task3_SEC_CONST_16BIT)
+ *(.Task_Task3_SEC_CALIB_16BIT)
+ *(.Task_Task3_SEC_CARTO_16BIT)
+ *(.Task_Task3_SEC_CONFIG_DATA_16BIT)
+ *(.Task_Task3_SEC_CONST_8BIT)
+ *(.Task_Task3_SEC_CALIB_8BIT)
+ *(.Task_Task3_SEC_CARTO_8BIT)
+ *(.Task_Task3_SEC_CONFIG_DATA_8BIT)
+ *(.Task_Task3_SEC_CONST_BOOLEAN)
+ *(.Task_Task3_SEC_CALIB_BOOLEAN)
+ *(.Task_Task3_SEC_CARTO_BOOLEAN)
+ *(.Task_Task3_SEC_CONFIG_DATA_BOOLEAN)
+ *(.Task_Task3_SEC_CONST_UNSPECIFIED)
+ *(.Task_Task3_SEC_CALIB_UNSPECIFIED)
+ *(.Task_Task3_SEC_CARTO_UNSPECIFIED)
+ *(.Task_Task3_SEC_CONFIG_DATA_UNSPECIFIED)
+                0x08001f28                . = ALIGN (0x4)
+                0x08001f27                __SEG_STOP_APP_CODE_CONST_RGN = (. - 0x1)
+                0x08001f27                __PROGCONST_SECTION_STOP = (. - 0x1)
+
+.text           0x08001f28      0xd2c
+                0x08001f28                . = ALIGN (0x4)
+ *(.text)
+ *(.text*)
+ .text.mydelay  0x08001f28       0x26 build/LearnInDepth_SW.c.o
+                0x08001f28                mydelay
+ *fill*         0x08001f4e        0x2 
+ .text.main     0x08001f50       0x20 build/LearnInDepth_SW.c.o
+                0x08001f50                main
+ .text.NVIC_SetPriority
+                0x08001f70       0x54 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .text.idle_function
+                0x08001fc4        0x8 build/machines/cortex-m/tpl_machine_cortex.c.o
+                0x08001fc4                idle_function
+ .text.NVIC_SetPriority
+                0x08001fcc       0x54 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .text.__libc_init_array
+                0x08002020       0x70 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+                0x08002020                __libc_init_array
+ .text.__libc_fini_array
+                0x08002090       0x40 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+                0x08002090                __libc_fini_array
+ .text.SystemInit
+                0x080020d0       0x5c build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+                0x080020d0                SystemInit
+ .text.SetSysClock
+                0x0800212c       0xf4 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .text.NMI_Handler
+                0x08002220        0x8 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x08002220                NMI_Handler
+ .text.HardFault_Handler
+                0x08002228       0x64 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x08002228                HardFault_Handler
+ .text.MemManage_Handler
+                0x0800228c        0x8 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x0800228c                MemManage_Handler
+ .text.BusFault_Handler
+                0x08002294        0x8 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x08002294                BusFault_Handler
+ .text.UsageFault_Handler
+                0x0800229c        0x8 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x0800229c                UsageFault_Handler
+ .text.DebugMonitor_Handler
+                0x080022a4        0x6 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                0x080022a4                DebugMonitor_Handler
+ *fill*         0x080022aa        0x2 
+ .text.GPIO_Init
+                0x080022ac      0x248 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+                0x080022ac                GPIO_Init
+ .text.GPIO_ReadInputDataBit
+                0x080024f4      0x13c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+                0x080024f4                GPIO_ReadInputDataBit
+ .text.RCC_AHB1PeriphClockCmd
+                0x08002630       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+                0x08002630                RCC_AHB1PeriphClockCmd
+ .text.RCC_APB2PeriphClockCmd
+                0x080026a4       0x74 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+                0x080026a4                RCC_APB2PeriphClockCmd
+ .text.EXTI_Init
+                0x08002718      0x150 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+                0x08002718                EXTI_Init
+ .text.SYSCFG_EXTILineConfig
+                0x08002868      0x134 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+                0x08002868                SYSCFG_EXTILineConfig
+ .text.NVIC_Init
+                0x0800299c       0xfc build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+                0x0800299c                NVIC_Init
+ .text.STM_EVAL_LEDInit
+                0x08002a98       0x5c build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002a98                STM_EVAL_LEDInit
+ .text.STM_EVAL_LEDOn
+                0x08002af4       0x30 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002af4                STM_EVAL_LEDOn
+ .text.STM_EVAL_LEDOff
+                0x08002b24       0x30 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002b24                STM_EVAL_LEDOff
+ .text.STM_EVAL_LEDToggle
+                0x08002b54       0x3c build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002b54                STM_EVAL_LEDToggle
+ .text.STM_EVAL_PBInit
+                0x08002b90       0x98 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002b90                STM_EVAL_PBInit
+ .text.STM_EVAL_PBGetState
+                0x08002c28       0x2c build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x08002c28                STM_EVAL_PBGetState
+ *(.glue_7)
+ .glue_7        0x08002c54        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x08002c54        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x08002c54                . = ALIGN (0x4)
+                0x08002c54                _etext = .
+                0x08002c54                _exit = .
+
+.vfp11_veneer   0x08002c54        0x0
+ .vfp11_veneer  0x08002c54        0x0 linker stubs
+
+.v4_bx          0x08002c54        0x0
+ .v4_bx         0x08002c54        0x0 linker stubs
+
+.iplt           0x08002c54        0x0
+ .iplt          0x08002c54        0x0 build/os/tpl_os_kernel.c.o
+
+.after_vectors  0x08002c54       0x94
+ .after_vectors
+                0x08002c54       0x94 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+                0x08002c54                tpl_continue_reset_handler
+                0x08002ca0                system_init
+
+.rel.dyn        0x08002ce8        0x0
+ .rel.iplt      0x08002ce8        0x0 build/os/tpl_os_kernel.c.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x08002ce8        0x0
+                0x08002ce8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x08002ce8                __exidx_end = .
+
+.preinit_array  0x08002ce8        0x4
+                0x08002ce8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+ .preinit_array_sysinit
+                0x08002ce8        0x4 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+                0x08002ce8                p_system_init
+                0x08002cec                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x08002cec        0x0
+                0x08002cec                PROVIDE (__init_array_start, .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+                0x08002cec                PROVIDE (__init_array_end, .)
+
+.fini_array     0x08002cec        0x0
+                0x08002cec                PROVIDE (__fini_array_start, .)
+ *(.fini_array*)
+ *(SORT_BY_NAME(.fini_array.*))
+                0x08002cec                PROVIDE (__fini_array_end, .)
+                0x08002cec                _sidata = .
+
+.data           0x20000000      0x140 load address 0x08002cec
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.SystemCoreClock
+                0x20000000        0x4 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+                0x20000000                SystemCoreClock
+ .data.GPIO_PORT
+                0x20000004       0x10 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x20000004                GPIO_PORT
+ .data.BUTTON_PORT
+                0x20000014        0x4 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                0x20000014                BUTTON_PORT
+ .data.previousState.5511
+                0x20000018        0x1 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+ *(.osVar)
+ *fill*         0x20000019        0x3 
+ .osVar         0x2000001c        0x4 build/os/tpl_os_kernel.c.o
+                0x2000001c                INTERNAL_RES_SCHEDULER
+ .osVar         0x20000020        0x1 build/os/tpl_os_timeobj_kernel.c.o
+ .osVar         0x20000021        0x1 build/os/tpl_os_os_kernel.c.o
+ *fill*         0x20000022        0x2 
+ .osVar         0x20000024       0x14 build/os/tpl_os_interrupt_kernel.c.o
+                0x20000024                tpl_locking_depth
+                0x20000028                tpl_user_task_lock
+                0x2000002c                tpl_cpt_user_task_lock_All
+                0x20000030                tpl_cpt_user_task_lock_OS
+                0x20000034                tpl_cpt_os_task_lock
+ .osVar         0x20000038      0x108 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x20000038                tpl_kern
+                0x20000054                tpl_ready_list
+                0x20000060                tpl_tail_for_prio
+                0x20000068                SystemCounter_counter_desc
+                0x20000084                res_sched_rez_desc
+                0x2000008c                tpl_time_counter
+                0x20000090                IDLE_TASK_int_context
+                0x200000b4                IDLE_TASK_task_desc
+                0x200000bc                Task1_int_context
+                0x200000e0                Task1_task_desc
+                0x200000e8                Task2_int_context
+                0x2000010c                Task2_task_desc
+                0x20000114                Task3_int_context
+                0x20000138                Task3_task_desc
+ *(.Task_Task1_SEC_VAR_POWER_ON_INIT_32BIT)
+ *(.Task_Task1_SEC_VAR_POWER_ON_INIT_16BIT)
+ *(.Task_Task1_SEC_VAR_POWER_ON_INIT_8BIT)
+ *(.Task_Task1_SEC_VAR_POWER_ON_INIT_BOOLEAN)
+ *(.Task_Task1_SEC_VAR_POWER_ON_INIT_UNSPECIFIED)
+ *(.Task_Task2_SEC_VAR_POWER_ON_INIT_32BIT)
+ *(.Task_Task2_SEC_VAR_POWER_ON_INIT_16BIT)
+ *(.Task_Task2_SEC_VAR_POWER_ON_INIT_8BIT)
+ *(.Task_Task2_SEC_VAR_POWER_ON_INIT_BOOLEAN)
+ *(.Task_Task2_SEC_VAR_POWER_ON_INIT_UNSPECIFIED)
+ *(.Task_Task3_SEC_VAR_POWER_ON_INIT_32BIT)
+ *(.Task_Task3_SEC_VAR_POWER_ON_INIT_16BIT)
+ *(.Task_Task3_SEC_VAR_POWER_ON_INIT_8BIT)
+ *(.Task_Task3_SEC_VAR_POWER_ON_INIT_BOOLEAN)
+ *(.Task_Task3_SEC_VAR_POWER_ON_INIT_UNSPECIFIED)
+                0x20000140                . = ALIGN (0x4)
+                0x20000140                _edata = .
+
+.igot.plt       0x20000140        0x0 load address 0x08002e2c
+ .igot.plt      0x20000140        0x0 build/os/tpl_os_kernel.c.o
+
+.Task_IDLE_TASKStack
+                0x20000140      0x12c load address 0x08002e2c
+ .Task_IDLE_TASKStack
+                0x20000140      0x12c build/LearnInDepth_SW/tpl_app_config.c.o
+                0x20000140                IDLE_TASK_stack_zone
+
+.Task_Task1_SEC_VAR
+                0x2000026c       0x14 load address 0x08002f58
+                0x20000280                . = ALIGN (__SEG_ALIGN_Task_Task1_VAR_RGN)
+ *fill*         0x2000026c       0x14 
+                0x20000280                __SEG_START_Task_Task1_VAR_RGN = .
+ *(.Task_Task1_SEC_VAR_NOINIT_32BIT)
+ *(.Task_Task1_SEC_VAR_FAST_32BIT)
+ *(.Task_Task1_SEC_VAR_32BIT)
+ *(.Task_Task1_SEC_VAR_NOINIT_16BIT)
+ *(.Task_Task1_SEC_VAR_FAST_16BIT)
+ *(.Task_Task1_SEC_VAR_16BIT)
+ *(.Task_Task1_SEC_VAR_NOINIT_8BIT)
+ *(.Task_Task1_SEC_VAR_FAST_8BIT)
+ *(.Task_Task1_SEC_VAR_8BIT)
+ *(.Task_Task1_SEC_VAR_NOINIT_BOOLEAN)
+ *(.Task_Task1_SEC_VAR_FAST_BOOLEAN)
+ *(.Task_Task1_SEC_VAR_BOOLEAN)
+ *(.Task_Task1_SEC_VAR_NOINIT_UNSPECIFIED)
+ *(.Task_Task1_SEC_VAR_FAST_UNSPECIFIED)
+ *(.Task_Task1_SEC_VAR_UNSPECIFIED)
+                0x20000280                __SEG_END_Task_Task1_VAR_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000400                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000200                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000100                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000080                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000040                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x00000020                __SEG_SIZE_Task_Task1_VAR_RGN = ((__SEG_END_Task_Task1_VAR_RGN - __SEG_START_Task_Task1_VAR_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task1_VAR_RGN
+                0x2000028c                __SEG_ALIGN_Task_Task1_VAR_RGN = __SEG_SIZE_Task_Task1_VAR_RGN
+
+.Task_Task2_SEC_VAR
+                0x20000280        0x0
+                0x20000280                . = ALIGN (__SEG_ALIGN_Task_Task2_VAR_RGN)
+                0x20000280                __SEG_START_Task_Task2_VAR_RGN = .
+ *(.Task_Task2_SEC_VAR_NOINIT_32BIT)
+ *(.Task_Task2_SEC_VAR_FAST_32BIT)
+ *(.Task_Task2_SEC_VAR_32BIT)
+ *(.Task_Task2_SEC_VAR_NOINIT_16BIT)
+ *(.Task_Task2_SEC_VAR_FAST_16BIT)
+ *(.Task_Task2_SEC_VAR_16BIT)
+ *(.Task_Task2_SEC_VAR_NOINIT_8BIT)
+ *(.Task_Task2_SEC_VAR_FAST_8BIT)
+ *(.Task_Task2_SEC_VAR_8BIT)
+ *(.Task_Task2_SEC_VAR_NOINIT_BOOLEAN)
+ *(.Task_Task2_SEC_VAR_FAST_BOOLEAN)
+ *(.Task_Task2_SEC_VAR_BOOLEAN)
+ *(.Task_Task2_SEC_VAR_NOINIT_UNSPECIFIED)
+ *(.Task_Task2_SEC_VAR_FAST_UNSPECIFIED)
+ *(.Task_Task2_SEC_VAR_UNSPECIFIED)
+                0x20000280                __SEG_END_Task_Task2_VAR_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000400                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000200                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000100                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000080                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000040                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x00000020                __SEG_SIZE_Task_Task2_VAR_RGN = ((__SEG_END_Task_Task2_VAR_RGN - __SEG_START_Task_Task2_VAR_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task2_VAR_RGN
+                0x200002a0                __SEG_ALIGN_Task_Task2_VAR_RGN = __SEG_SIZE_Task_Task2_VAR_RGN
+
+.Task_Task3_SEC_VAR
+                0x20000280        0x0
+                0x20000280                . = ALIGN (__SEG_ALIGN_Task_Task3_VAR_RGN)
+                0x20000280                __SEG_START_Task_Task3_VAR_RGN = .
+ *(.Task_Task3_SEC_VAR_NOINIT_32BIT)
+ *(.Task_Task3_SEC_VAR_FAST_32BIT)
+ *(.Task_Task3_SEC_VAR_32BIT)
+ *(.Task_Task3_SEC_VAR_NOINIT_16BIT)
+ *(.Task_Task3_SEC_VAR_FAST_16BIT)
+ *(.Task_Task3_SEC_VAR_16BIT)
+ *(.Task_Task3_SEC_VAR_NOINIT_8BIT)
+ *(.Task_Task3_SEC_VAR_FAST_8BIT)
+ *(.Task_Task3_SEC_VAR_8BIT)
+ *(.Task_Task3_SEC_VAR_NOINIT_BOOLEAN)
+ *(.Task_Task3_SEC_VAR_FAST_BOOLEAN)
+ *(.Task_Task3_SEC_VAR_BOOLEAN)
+ *(.Task_Task3_SEC_VAR_NOINIT_UNSPECIFIED)
+ *(.Task_Task3_SEC_VAR_FAST_UNSPECIFIED)
+ *(.Task_Task3_SEC_VAR_UNSPECIFIED)
+                0x20000280                __SEG_END_Task_Task3_VAR_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000400                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000200                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000100                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000080                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000040                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x00000020                __SEG_SIZE_Task_Task3_VAR_RGN = ((__SEG_END_Task_Task3_VAR_RGN - __SEG_START_Task_Task3_VAR_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task3_VAR_RGN
+                0x200002a0                __SEG_ALIGN_Task_Task3_VAR_RGN = __SEG_SIZE_Task_Task3_VAR_RGN
+
+.Task_Task1_SEC_STACK
+                0x20000280     0x1938 load address 0x08002f6c
+                0x20001000                . = ALIGN (__SEG_ALIGN_Task_Task1_STACK_RGN)
+ *fill*         0x20000280      0xd80 
+                0x20001000                __SEG_START_Task_Task1_STACK_RGN = .
+ *(.Task_Task1Stack)
+ .Task_Task1Stack
+                0x20001000      0xbb8 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x20001000                Task1_stack_zone
+                0x20001bb8                . = ALIGN (0x4)
+                0x20001bb8                __SEG_END_Task_Task1_STACK_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task1_STACK_RGN
+                [0x20001280]                __SEG_SIZE_Task_Task1_STACK_RGN = ((__SEG_END_Task_Task1_STACK_RGN - __SEG_START_Task_Task1_STACK_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task1_STACK_RGN
+                0x20001280                __SEG_ALIGN_Task_Task1_STACK_RGN = __SEG_SIZE_Task_Task1_STACK_RGN
+
+.Task_Task2_SEC_STACK
+                0x20001bb8     0x1000 load address 0x080048a4
+                0x20002000                . = ALIGN (__SEG_ALIGN_Task_Task2_STACK_RGN)
+ *fill*         0x20001bb8      0x448 
+                0x20002000                __SEG_START_Task_Task2_STACK_RGN = .
+ *(.Task_Task2Stack)
+ .Task_Task2Stack
+                0x20002000      0xbb8 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x20002000                Task2_stack_zone
+                0x20002bb8                . = ALIGN (0x4)
+                0x20002bb8                __SEG_END_Task_Task2_STACK_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task2_STACK_RGN
+                [0x20002bb8]                __SEG_SIZE_Task_Task2_STACK_RGN = ((__SEG_END_Task_Task2_STACK_RGN - __SEG_START_Task_Task2_STACK_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task2_STACK_RGN
+                0x20002bb8                __SEG_ALIGN_Task_Task2_STACK_RGN = __SEG_SIZE_Task_Task2_STACK_RGN
+
+.Task_Task3_SEC_STACK
+                0x20002bb8     0x1000 load address 0x080058a4
+                0x20003000                . = ALIGN (__SEG_ALIGN_Task_Task3_STACK_RGN)
+ *fill*         0x20002bb8      0x448 
+                0x20003000                __SEG_START_Task_Task3_STACK_RGN = .
+ *(.Task_Task3Stack)
+ .Task_Task3Stack
+                0x20003000      0xbb8 build/LearnInDepth_SW/tpl_app_config.c.o
+                0x20003000                Task3_stack_zone
+                0x20003bb8                . = ALIGN (0x4)
+                0x20003bb8                __SEG_END_Task_Task3_STACK_RGN = .
+                0x00001000                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x1000)?0x1000:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x400)?0x400:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x200)?0x200:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x100)?0x100:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x80)?0x80:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x40)?0x40:__SEG_SIZE_Task_Task3_STACK_RGN
+                [0x20003bb8]                __SEG_SIZE_Task_Task3_STACK_RGN = ((__SEG_END_Task_Task3_STACK_RGN - __SEG_START_Task_Task3_STACK_RGN) < 0x20)?0x20:__SEG_SIZE_Task_Task3_STACK_RGN
+                0x20003bb8                __SEG_ALIGN_Task_Task3_STACK_RGN = __SEG_SIZE_Task_Task3_STACK_RGN
+
+appvars
+                0x20003bb8                . = ALIGN (0x4)
+
+.bss            0x20003bb8        0x0
+                0x20003bb8                _sbss = .
+                0x20003bb8                __bss_start__ = _sbss
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x20003bb8                . = ALIGN (0x4)
+                0x20003bb8                _ebss = .
+                0x20003bb8                __bss_end__ = _ebss
+
+._user_heap_stack
+                0x20003bb8      0x400 load address 0x080068a4
+                0x20003bb8                . = ALIGN (0x4)
+                0x20003bb8                __heap_start__ = .
+                [!provide]                PROVIDE (end, .)
+                [!provide]                PROVIDE (_end, .)
+                0x20003bb8                . = (. + _Min_Heap_Size)
+                0x20003fb8                . = (. + _Min_Stack_Size)
+ *fill*         0x20003bb8      0x400 
+                0x20003fb8                . = ALIGN (0x4)
+
+.memory_b1_text
+ *(.mb1text)
+ *(.mb1text*)
+ *(.mb1rodata)
+ *(.mb1rodata*)
+
+/DISCARD/
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+
+.ARM.attributes
+                0x00000000       0x35
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x33 build/os/tpl_os_kernel.c.o
+ .ARM.attributes
+                0x00000033       0x33 build/os/tpl_os_timeobj_kernel.c.o
+ .ARM.attributes
+                0x00000066       0x33 build/os/tpl_os_os_kernel.c.o
+ .ARM.attributes
+                0x00000099       0x33 build/os/tpl_os_os.c.o
+ .ARM.attributes
+                0x000000cc       0x33 build/os/tpl_os_interrupt_kernel.c.o
+ .ARM.attributes
+                0x000000ff       0x33 build/os/tpl_os_task_kernel.c.o
+ .ARM.attributes
+                0x00000132       0x33 build/os/tpl_os_resource_kernel.c.o
+ .ARM.attributes
+                0x00000165       0x33 build/LearnInDepth_SW.c.o
+ .ARM.attributes
+                0x00000198       0x33 build/LearnInDepth_SW/tpl_app_config.c.o
+ .ARM.attributes
+                0x000001cb       0x37 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .ARM.attributes
+                0x00000202       0x25 build/LearnInDepth_SW/tpl_invoque.S.o
+ .ARM.attributes
+                0x00000227       0x25 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .ARM.attributes
+                0x0000024c       0x37 build/LearnInDepth_SW/tpl_vectors.c.o
+ .ARM.attributes
+                0x00000283       0x33 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .ARM.attributes
+                0x000002b6       0x33 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .ARM.attributes
+                0x000002e9       0x33 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .ARM.attributes
+                0x0000031c       0x25 build/machines/cortex-m/tpl_sc_handler.S.o
+ .ARM.attributes
+                0x00000341       0x25 build/machines/cortex-m/tpl_startup.S.o
+ .ARM.attributes
+                0x00000366       0x25 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .ARM.attributes
+                0x0000038b       0x25 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .ARM.attributes
+                0x000003b0       0x25 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .ARM.attributes
+                0x000003d5       0x33 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .ARM.attributes
+                0x00000408       0x33 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .ARM.attributes
+                0x0000043b       0x33 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .ARM.attributes
+                0x0000046e       0x33 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .ARM.attributes
+                0x000004a1       0x33 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .ARM.attributes
+                0x000004d4       0x33 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .ARM.attributes
+                0x00000507       0x33 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .ARM.attributes
+                0x0000053a       0x33 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .ARM.attributes
+                0x0000056d       0x33 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .ARM.attributes
+                0x000005a0       0x33 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .ARM.attributes
+                0x000005d3       0x33 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+LOAD d:/learn_in_depth/tools/arm/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib\libc.a
+LOAD d:/learn_in_depth/tools/arm/bin/../lib/gcc/arm-none-eabi/7.2.1\libgcc.a
+OUTPUT(LearnInDepth_SW.axf elf32-littlearm)
+
+.debug_info     0x00000000     0xa944
+ .debug_info    0x00000000      0xcfb build/os/tpl_os_kernel.c.o
+ .debug_info    0x00000cfb      0x7cd build/os/tpl_os_timeobj_kernel.c.o
+ .debug_info    0x000014c8      0x6e4 build/os/tpl_os_os_kernel.c.o
+ .debug_info    0x00001bac      0x4f7 build/os/tpl_os_os.c.o
+ .debug_info    0x000020a3      0x75c build/os/tpl_os_interrupt_kernel.c.o
+ .debug_info    0x000027ff      0x787 build/os/tpl_os_task_kernel.c.o
+ .debug_info    0x00002f86      0x790 build/os/tpl_os_resource_kernel.c.o
+ .debug_info    0x00003716      0x315 build/LearnInDepth_SW.c.o
+ .debug_info    0x00003a2b      0x9ca build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_info    0x000043f5      0x56a build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .debug_info    0x0000495f       0x26 build/LearnInDepth_SW/tpl_invoque.S.o
+ .debug_info    0x00004985       0x26 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .debug_info    0x000049ab      0x583 build/LearnInDepth_SW/tpl_vectors.c.o
+ .debug_info    0x00004f2e      0x343 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_info    0x00005271      0x4df build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_info    0x00005750      0xc30 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_info    0x00006380       0x26 build/machines/cortex-m/tpl_sc_handler.S.o
+ .debug_info    0x000063a6       0x26 build/machines/cortex-m/tpl_startup.S.o
+ .debug_info    0x000063cc       0x26 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .debug_info    0x000063f2       0x26 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .debug_info    0x00006418       0x26 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .debug_info    0x0000643e      0x731 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_info    0x00006b6f      0x28c build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_info    0x00006dfb      0x60e build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_info    0x00007409      0xa17 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_info    0x00007e20      0x627 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_info    0x00008447      0xe63 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_info    0x000092aa      0x380 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_info    0x0000962a      0x2a2 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_info    0x000098cc      0x547 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_info    0x00009e13      0x8bd build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_info    0x0000a6d0      0x274 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_abbrev   0x00000000     0x26af
+ .debug_abbrev  0x00000000      0x24a build/os/tpl_os_kernel.c.o
+ .debug_abbrev  0x0000024a      0x1c4 build/os/tpl_os_timeobj_kernel.c.o
+ .debug_abbrev  0x0000040e      0x16b build/os/tpl_os_os_kernel.c.o
+ .debug_abbrev  0x00000579      0x130 build/os/tpl_os_os.c.o
+ .debug_abbrev  0x000006a9      0x1cd build/os/tpl_os_interrupt_kernel.c.o
+ .debug_abbrev  0x00000876      0x1a7 build/os/tpl_os_task_kernel.c.o
+ .debug_abbrev  0x00000a1d      0x18b build/os/tpl_os_resource_kernel.c.o
+ .debug_abbrev  0x00000ba8      0x130 build/LearnInDepth_SW.c.o
+ .debug_abbrev  0x00000cd8      0x187 build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_abbrev  0x00000e5f      0x109 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .debug_abbrev  0x00000f68       0x14 build/LearnInDepth_SW/tpl_invoque.S.o
+ .debug_abbrev  0x00000f7c       0x14 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .debug_abbrev  0x00000f90      0x12b build/LearnInDepth_SW/tpl_vectors.c.o
+ .debug_abbrev  0x000010bb       0xde build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_abbrev  0x00001199      0x121 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_abbrev  0x000012ba      0x2de build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_abbrev  0x00001598       0x14 build/machines/cortex-m/tpl_sc_handler.S.o
+ .debug_abbrev  0x000015ac       0x14 build/machines/cortex-m/tpl_startup.S.o
+ .debug_abbrev  0x000015c0       0x14 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .debug_abbrev  0x000015d4       0x14 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .debug_abbrev  0x000015e8       0x14 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .debug_abbrev  0x000015fc      0x18c build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_abbrev  0x00001788      0x136 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_abbrev  0x000018be      0x15a build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_abbrev  0x00001a18      0x185 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_abbrev  0x00001b9d      0x1d6 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_abbrev  0x00001d73      0x1cf build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_abbrev  0x00001f42      0x1da build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_abbrev  0x0000211c      0x148 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_abbrev  0x00002264      0x174 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_abbrev  0x000023d8      0x1c3 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_abbrev  0x0000259b      0x114 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_aranges  0x00000000      0x948
+ .debug_aranges
+                0x00000000       0xf0 build/os/tpl_os_kernel.c.o
+ .debug_aranges
+                0x000000f0       0x40 build/os/tpl_os_timeobj_kernel.c.o
+ .debug_aranges
+                0x00000130       0x38 build/os/tpl_os_os_kernel.c.o
+ .debug_aranges
+                0x00000168       0x20 build/os/tpl_os_os.c.o
+ .debug_aranges
+                0x00000188       0x68 build/os/tpl_os_interrupt_kernel.c.o
+ .debug_aranges
+                0x000001f0       0x48 build/os/tpl_os_task_kernel.c.o
+ .debug_aranges
+                0x00000238       0x30 build/os/tpl_os_resource_kernel.c.o
+ .debug_aranges
+                0x00000268       0x48 build/LearnInDepth_SW.c.o
+ .debug_aranges
+                0x000002b0       0x28 build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_aranges
+                0x000002d8       0x18 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .debug_aranges
+                0x000002f0       0x20 build/LearnInDepth_SW/tpl_invoque.S.o
+ .debug_aranges
+                0x00000310       0x20 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .debug_aranges
+                0x00000330       0x18 build/LearnInDepth_SW/tpl_vectors.c.o
+ .debug_aranges
+                0x00000348       0x20 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_aranges
+                0x00000368       0x30 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_aranges
+                0x00000398       0x58 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_aranges
+                0x000003f0       0x20 build/machines/cortex-m/tpl_sc_handler.S.o
+ .debug_aranges
+                0x00000410       0x20 build/machines/cortex-m/tpl_startup.S.o
+ .debug_aranges
+                0x00000430       0x20 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .debug_aranges
+                0x00000450       0x20 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .debug_aranges
+                0x00000470       0x20 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .debug_aranges
+                0x00000490       0x30 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_aranges
+                0x000004c0       0x38 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_aranges
+                0x000004f8       0x30 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_aranges
+                0x00000528       0x60 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_aranges
+                0x00000588       0x88 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_aranges
+                0x00000610      0x1c0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_aranges
+                0x000007d0       0x58 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_aranges
+                0x00000828       0x50 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_aranges
+                0x00000878       0x40 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_aranges
+                0x000008b8       0x48 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_aranges
+                0x00000900       0x48 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_ranges   0x00000000      0x6e0
+ .debug_ranges  0x00000000       0xf8 build/os/tpl_os_kernel.c.o
+ .debug_ranges  0x000000f8       0x30 build/os/tpl_os_timeobj_kernel.c.o
+ .debug_ranges  0x00000128       0x28 build/os/tpl_os_os_kernel.c.o
+ .debug_ranges  0x00000150       0x10 build/os/tpl_os_os.c.o
+ .debug_ranges  0x00000160       0x58 build/os/tpl_os_interrupt_kernel.c.o
+ .debug_ranges  0x000001b8       0x38 build/os/tpl_os_task_kernel.c.o
+ .debug_ranges  0x000001f0       0x20 build/os/tpl_os_resource_kernel.c.o
+ .debug_ranges  0x00000210       0x38 build/LearnInDepth_SW.c.o
+ .debug_ranges  0x00000248       0x18 build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_ranges  0x00000260       0x10 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_ranges  0x00000270       0x20 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_ranges  0x00000290       0x48 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_ranges  0x000002d8       0x20 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_ranges  0x000002f8       0x28 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_ranges  0x00000320       0x20 build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_ranges  0x00000340       0x50 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_ranges  0x00000390       0x78 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_ranges  0x00000408      0x1b0 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_ranges  0x000005b8       0x48 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_ranges  0x00000600       0x40 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_ranges  0x00000640       0x30 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_ranges  0x00000670       0x38 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_ranges  0x000006a8       0x38 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_line     0x00000000     0x57e0
+ .debug_line    0x00000000      0x434 build/os/tpl_os_kernel.c.o
+ .debug_line    0x00000434      0x2ff build/os/tpl_os_timeobj_kernel.c.o
+ .debug_line    0x00000733      0x27f build/os/tpl_os_os_kernel.c.o
+ .debug_line    0x000009b2      0x23e build/os/tpl_os_os.c.o
+ .debug_line    0x00000bf0      0x2cc build/os/tpl_os_interrupt_kernel.c.o
+ .debug_line    0x00000ebc      0x37b build/os/tpl_os_task_kernel.c.o
+ .debug_line    0x00001237      0x329 build/os/tpl_os_resource_kernel.c.o
+ .debug_line    0x00001560      0x329 build/LearnInDepth_SW.c.o
+ .debug_line    0x00001889      0x2ad build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_line    0x00001b36      0x266 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .debug_line    0x00001d9c      0x12b build/LearnInDepth_SW/tpl_invoque.S.o
+ .debug_line    0x00001ec7       0x66 build/LearnInDepth_SW/tpl_primary_irq.S.o
+ .debug_line    0x00001f2d      0x27b build/LearnInDepth_SW/tpl_vectors.c.o
+ .debug_line    0x000021a8      0x1f7 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_line    0x0000239f      0x237 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_line    0x000025d6      0x327 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_line    0x000028fd       0x91 build/machines/cortex-m/tpl_sc_handler.S.o
+ .debug_line    0x0000298e       0x5f build/machines/cortex-m/tpl_startup.S.o
+ .debug_line    0x000029ed       0x81 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+ .debug_line    0x00002a6e       0x86 build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+ .debug_line    0x00002af4       0x78 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+ .debug_line    0x00002b6c      0x242 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_line    0x00002dae      0x131 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_line    0x00002edf      0x22b build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_line    0x0000310a      0x3bd build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_line    0x000034c7      0x8c8 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_line    0x00003d8f      0xb84 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_line    0x00004913      0x3d9 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_line    0x00004cec      0x30d build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_line    0x00004ff9      0x2a5 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_line    0x0000529e      0x2c5 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_line    0x00005563      0x27d build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_str      0x00000000     0x3112
+ .debug_str     0x00000000      0x8eb build/os/tpl_os_kernel.c.o
+                                0xa14 (size before relaxing)
+ .debug_str     0x000008eb       0xeb build/os/tpl_os_timeobj_kernel.c.o
+                                0x72f (size before relaxing)
+ .debug_str     0x000009d6       0x8f build/os/tpl_os_os_kernel.c.o
+                                0x710 (size before relaxing)
+ .debug_str     0x00000a65       0x3d build/os/tpl_os_os.c.o
+                                0x56f (size before relaxing)
+ .debug_str     0x00000aa2      0x1c7 build/os/tpl_os_interrupt_kernel.c.o
+                                0x814 (size before relaxing)
+ .debug_str     0x00000c69       0xb5 build/os/tpl_os_task_kernel.c.o
+                                0x72f (size before relaxing)
+ .debug_str     0x00000d1e       0x9d build/os/tpl_os_resource_kernel.c.o
+                                0x73c (size before relaxing)
+ .debug_str     0x00000dbb       0xae build/LearnInDepth_SW.c.o
+                                0x392 (size before relaxing)
+ .debug_str     0x00000e69      0x1d2 build/LearnInDepth_SW/tpl_app_config.c.o
+                                0x8e8 (size before relaxing)
+ .debug_str     0x0000103b       0x48 build/LearnInDepth_SW/tpl_dispatch_table.c.o
+                                0x5b5 (size before relaxing)
+ .debug_str     0x00001083       0x2d build/LearnInDepth_SW/tpl_invoque.S.o
+                                 0x90 (size before relaxing)
+ .debug_str     0x000010b0       0x22 build/LearnInDepth_SW/tpl_primary_irq.S.o
+                                 0x94 (size before relaxing)
+ .debug_str     0x000010d2       0x3c build/LearnInDepth_SW/tpl_vectors.c.o
+                                0x5d3 (size before relaxing)
+ .debug_str     0x0000110e      0x163 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+                                0x3ca (size before relaxing)
+ .debug_str     0x00001271       0x6d build/LearnInDepth_SW/tpl_app_interrupts.c.o
+                                0x585 (size before relaxing)
+ .debug_str     0x000012de      0x6a8 build/machines/cortex-m/tpl_machine_cortex.c.o
+                                0xccf (size before relaxing)
+ .debug_str     0x00001986       0x2c build/machines/cortex-m/tpl_sc_handler.S.o
+                                 0x9e (size before relaxing)
+ .debug_str     0x000019b2       0x29 build/machines/cortex-m/tpl_startup.S.o
+                                 0x9b (size before relaxing)
+ .debug_str     0x000019db       0x34 build/machines/cortex-m/armv7em/tpl_ctx_switch.S.o
+                                 0xa6 (size before relaxing)
+ .debug_str     0x00001a0f       0x3d build/machines/cortex-m/armv7em/tpl_ctx_switch_under_it.S.o
+                                 0xaf (size before relaxing)
+ .debug_str     0x00001a4c       0x34 build/machines/cortex-m/armv7em/tpl_interrupts.S.o
+                                 0xa6 (size before relaxing)
+ .debug_str     0x00001a80       0x94 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+                                0x8e5 (size before relaxing)
+ .debug_str     0x00001b14      0x175 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+                                0x342 (size before relaxing)
+ .debug_str     0x00001c89       0xdb build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+                                0x47d (size before relaxing)
+ .debug_str     0x00001d64      0x1c7 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+                                0x835 (size before relaxing)
+ .debug_str     0x00001f2b      0x342 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+                                0x56c (size before relaxing)
+ .debug_str     0x0000226d      0x6e5 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+                                0xa8e (size before relaxing)
+ .debug_str     0x00002952      0x1dc build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+                                0x43e (size before relaxing)
+ .debug_str     0x00002b2e      0x18c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+                                0x3da (size before relaxing)
+ .debug_str     0x00002cba      0x193 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+                                0x49a (size before relaxing)
+ .debug_str     0x00002e4d      0x1ee build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+                                0xc06 (size before relaxing)
+ .debug_str     0x0000303b       0xd7 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+                                0x354 (size before relaxing)
+
+.comment        0x00000000       0x7e
+ .comment       0x00000000       0x7e build/os/tpl_os_kernel.c.o
+                                 0x7f (size before relaxing)
+ .comment       0x0000007e       0x7f build/os/tpl_os_timeobj_kernel.c.o
+ .comment       0x0000007e       0x7f build/os/tpl_os_os_kernel.c.o
+ .comment       0x0000007e       0x7f build/os/tpl_os_os.c.o
+ .comment       0x0000007e       0x7f build/os/tpl_os_interrupt_kernel.c.o
+ .comment       0x0000007e       0x7f build/os/tpl_os_task_kernel.c.o
+ .comment       0x0000007e       0x7f build/os/tpl_os_resource_kernel.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW/tpl_app_config.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW/tpl_dispatch_table.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW/tpl_vectors.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .comment       0x0000007e       0x7f build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/tpl_machine_cortex.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .comment       0x0000007e       0x7f build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o
+
+.debug_frame    0x00000000     0x1be8
+ .debug_frame   0x00000000      0x3bc build/os/tpl_os_kernel.c.o
+ .debug_frame   0x000003bc       0xcc build/os/tpl_os_timeobj_kernel.c.o
+ .debug_frame   0x00000488       0xa0 build/os/tpl_os_os_kernel.c.o
+ .debug_frame   0x00000528       0x34 build/os/tpl_os_os.c.o
+ .debug_frame   0x0000055c      0x14c build/os/tpl_os_interrupt_kernel.c.o
+ .debug_frame   0x000006a8       0xe8 build/os/tpl_os_task_kernel.c.o
+ .debug_frame   0x00000790       0x80 build/os/tpl_os_resource_kernel.c.o
+ .debug_frame   0x00000810       0xe8 build/LearnInDepth_SW.c.o
+ .debug_frame   0x000008f8       0x48 build/LearnInDepth_SW/tpl_app_config.c.o
+ .debug_frame   0x00000940       0x30 build/LearnInDepth_SW/tpl_external_interrupts.c.o
+ .debug_frame   0x00000970       0x70 build/LearnInDepth_SW/tpl_app_interrupts.c.o
+ .debug_frame   0x000009e0      0x118 build/machines/cortex-m/tpl_machine_cortex.c.o
+ .debug_frame   0x00000af8       0x78 build/machines/cortex-m/armv7em/stm32f407/tpl_machine_stm32f407.c.o
+ .debug_frame   0x00000b70       0xa0 build/machines/cortex-m/armv7em/stm32f407/startup_stm32f4xx.c.o
+ .debug_frame   0x00000c10       0x7c build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o
+ .debug_frame   0x00000c8c       0xf8 build/machines/cortex-m/armv7em/stm32f407/handlers_stm32f4xx.c.o
+ .debug_frame   0x00000d84      0x214 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c.o
+ .debug_frame   0x00000f98      0x77c build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c.o
+ .debug_frame   0x00001714      0x130 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c.o
+ .debug_frame   0x00001844      0x108 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c.o
+ .debug_frame   0x0000194c       0xc4 build/machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.c.o
+ .debug_frame   0x00001a10       0xf4 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/stm32f4_discovery.c.o
+ .debug_frame   0x00001b04       0xe4 build/machines/cortex-m/armv7em/stm32f407/stm32f4discovery/tp.c.o

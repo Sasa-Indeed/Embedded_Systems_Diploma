@@ -1,0 +1,11 @@
+LearnInDepth_SW.oil: \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/config.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/kernel.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/api.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/api_ioc.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/cortex-m/config.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/cortex-m/armv7em/config.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/cortex-m/armv7em/buildOptions.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/cortex-m/armv7em/stm32f407/config.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/cortex-m/armv7em/stm32f407/stm32f4discovery/config.oil \
+ /D/Learn_In_Depth/AUTOSAR/Trampoline/AUTOSAR_IN_Depth/goil/templates/config/config2.5.oil
