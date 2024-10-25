@@ -1,0 +1,59 @@
+build/machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c.o: \
+ ../../../machines/cortex-m/armv7em/stm32f407/system_stm32f4xx.c \
+ ../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/stm32f4xx.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cm4.h \
+ d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stdint.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\stdint.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_intsup.h \
+ d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmInstr.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmFunc.h \
+ ../../../machines/cortex-m/CMSIS/Include/core_cmSimd.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/stm32f4xx_conf.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h \
+ ../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.h
+
+../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/stm32f4xx.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cm4.h:
+
+d:\learn_in_depth\tools\arm\lib\gcc\arm-none-eabi\7.2.1\include\stdint.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\stdint.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\machine\_default_types.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\features.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\_newlib_version.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_intsup.h:
+
+d:\learn_in_depth\tools\arm\arm-none-eabi\include\sys\_stdint.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmInstr.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmFunc.h:
+
+../../../machines/cortex-m/CMSIS/Include/core_cmSimd.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/CMSIS-ST/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/stm32f4xx_conf.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h:
+
+../../../machines/cortex-m/armv7em/stm32f407/STM32F4xx_StdPeriph_Driver/misc.h:
