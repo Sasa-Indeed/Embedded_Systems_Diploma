@@ -1,0 +1,19 @@
+build/LearnInDepth_SW/tpl_invoque.S.o: LearnInDepth_SW/tpl_invoque.S \
+ ../../../os/tpl_os_application_def.h LearnInDepth_SW/tpl_app_define.h \
+ ../../../os/tpl_config_def.h ../../../os/tpl_config_check.h \
+ LearnInDepth_SW/tpl_service_ids.h ../../../os/tpl_as_memmap.h \
+ LearnInDepth_SW/AsMemMap.h
+
+../../../os/tpl_os_application_def.h:
+
+LearnInDepth_SW/tpl_app_define.h:
+
+../../../os/tpl_config_def.h:
+
+../../../os/tpl_config_check.h:
+
+LearnInDepth_SW/tpl_service_ids.h:
+
+../../../os/tpl_as_memmap.h:
+
+LearnInDepth_SW/AsMemMap.h:

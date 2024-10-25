@@ -1,0 +1,14 @@
+build/machines/cortex-m/tpl_startup.S.o: \
+ ../../../machines/cortex-m/tpl_startup.S ../../../os/tpl_as_memmap.h \
+ LearnInDepth_SW/tpl_app_define.h ../../../os/tpl_config_def.h \
+ ../../../os/tpl_config_check.h LearnInDepth_SW/AsMemMap.h
+
+../../../os/tpl_as_memmap.h:
+
+LearnInDepth_SW/tpl_app_define.h:
+
+../../../os/tpl_config_def.h:
+
+../../../os/tpl_config_check.h:
+
+LearnInDepth_SW/AsMemMap.h:

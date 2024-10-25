@@ -1,0 +1,106 @@
+
+{
+  "alarm" : 
+  [
+    
+    {
+      "ACTION" : "SETEVENT",
+      "ACTION_S" : 
+      {
+        "EVENT" : "Task2_Event2",
+        "TASK" : "Task2"
+      },
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "ALARMTIME" : 30,
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "AppSTD"
+          }
+        ],
+        "CYCLETIME" : 30
+      },
+      "COUNTER" : "SystemCounter",
+      "NAME" : "Task2_Alarm"
+    }
+  ],
+  "event" : 
+  [
+    
+    {
+      "MASK" : 1,
+      "NAME" : "Task2_Event1",
+      "REF" : 1
+    },    
+    {
+      "MASK" : 2,
+      "NAME" : "Task2_Event2",
+      "REF" : 1
+    }
+  ],
+  "ioc" : [],
+  "isr" : [],
+  "message" : [],
+  "resource" : [],
+  "task" : 
+  [
+    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "AppSTD"
+          }
+        ]
+      },
+      "EVENT" : 
+      [
+        
+        {
+          "VALUE" : "Task2_Event1"
+        },        
+        {
+          "VALUE" : "Task2_Event2"
+        }
+      ],
+      "KIND" : "Task",
+      "NAME" : "Task2",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 2,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 3000,
+      "USEFLOAT" : "false",
+      "USEINTERNALRESOURCE" : "false"
+    },    
+    {
+      "ACTIVATION" : 1,
+      "AUTOSTART" : "true",
+      "AUTOSTART_S" : 
+      {
+        "APPMODE" : 
+        [
+          
+          {
+            "VALUE" : "AppSTD"
+          }
+        ]
+      },
+      "KIND" : "Task",
+      "NAME" : "Task1",
+      "NONPREEMPTABLE" : "false",
+      "PRIORITY" : 1,
+      "SCHEDULE" : "FULL",
+      "STACKSIZE" : 3000,
+      "USEFLOAT" : "false",
+      "USEINTERNALRESOURCE" : "false"
+    }
+  ]
+}
